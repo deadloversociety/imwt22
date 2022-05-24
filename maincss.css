@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
 
-nav {
+p {
     font-family: 'Roboto', sans-serif;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.navbar-brand {
+    margin-left: 1%;
+}
+
+.dropdown {
+    margin-right: -1%;
 }
