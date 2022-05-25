@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&display=swap');
 
-/* Start navbar */
+/* Start main navbar */
 nav {
     font-family: 'Merriweather', serif;
     font-size: 1em !important;
@@ -54,8 +54,13 @@ nav {
     -webkit-animation-name: slideIn;
     animation-name: slideIn;
   }
+/* End main Navbar */
 
-/* End Navbar */
+/* Secondary navbar */
+.sec-nav {
+    color: #333333;
+}
+
 
 body {
     font-family: 'Merriweather', serif;
