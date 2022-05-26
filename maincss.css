@@ -120,8 +120,8 @@ html {
 }
 
 .buttonHero {
-    background-color: #ac8ba5;
-    border: none;
+    background-color: #16161618;
+    border: 1px solid whitesmoke;
     color: white;
     padding: 15px 32px;
     /* REVISE UNITS*/
@@ -129,7 +129,7 @@ html {
     text-decoration: none;
     display: inline-block;
     font-size: 1em;
-    margin: 4px 2px;
+    margin-bottom: 0.5em;
     /* REVISE UNITS*/
     cursor: pointer;
     -webkit-transition-duration: 0.4s;
@@ -182,7 +182,7 @@ a.btnLink:active {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #764d6e;
+    background-color: #8d7588;
 }
 
 .card:hover .overlay {
@@ -191,7 +191,7 @@ a.btnLink:active {
 
 .text {
     color: white;
-    font-size: 20px;
+    font-size: 2em;
     position: absolute;
     top: 50%;
     left: 50%;
