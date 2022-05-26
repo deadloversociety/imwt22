@@ -157,6 +157,10 @@ html {
     position: relative;
 }
 
+#docimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");;
+}
+
 /* ====== Menu to choose the author */
 .container {
     position: relative;
