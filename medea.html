@@ -117,38 +117,28 @@
         </p>
         <hr class="solid">
     </div>
-    <div>
-        <!-- DA RIVEDERE !!!!! -->
-        <div class="row">
-            <div class="col-md-4">
-                <div class="container" onclick="showEur()">
-                    <img src="http://4.bp.blogspot.com/-q2_Z3Cl8xHI/UbB0Zj8HTzI/AAAAAAAAWDI/wwNUknBX1bI/s1600/medea+(1).jpg"
-                        alt="Euripides" class="image">
-                    <div class="overlay">
-                        <div class="text">Euripides</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="container" onclick="showApR()">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Argonautica.tif/lossy-page1-1200px-Argonautica.tif.jpg"
-                        alt="Apollonius" class="image">
-                    <div class="overlay">
-                        <div class="text">Apollonius of Rhodes</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="container" onclick="showOvd()">
-                    <img src="https://www.badoemart.it/photos/auctions/xlarge/4983.jpg" alt="Avatar" class="image">
-                    <div class="overlay">
-                        <div class="text">Ovid</div>
-                    </div>
-                </div>
-            </div>
+    <!-- Cards to choose the text -->
+    <div class="card-group">
+        <div class="card" onclick="showEur()">
+          <img class="card-img-top" src="imgs/euri.jpeg" alt="Card image cap">
+          <div class="overlay">
+            <div class="text">Euripides</div>
+          </div>
+        </div>
+        <div class="card" onclick="showApR()">
+          <img class="card-img-top" src="imgs/apollo.jpeg" alt="Card image cap">
+          <div class="overlay">
+            <div class="text">Apollonius of Rhodes</div>
+          </div>
+        </div>
+        <div class="card" onclick="showOvd()">
+          <img class="card-img-top" src="imgs/ovid.jpeg" alt="Card image cap">
+          <div class="overlay">
+            <div class="text">Ovid</div>
+          </div>
         </div>
     </div>
-
+    <!-- Text hiding/showing -->
     <div class="textsection">
         <article id="MedeaEur">
             <h2>Euripide</h2>
@@ -178,7 +168,7 @@
               </div>
         </article>
     </div>
-
+    <!-- Footer -->
     <footer class="py-3 my-4 bg-secondary">
         <div class="text-center p-3">
             MA "Digital Humanities and Digital Knowledge", University of Bologna <br>

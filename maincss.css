@@ -185,7 +185,7 @@ a.btnLink:active {
     background-color: #764d6e;
   }
   
-  .container:hover .overlay {
+  .card:hover .overlay {
     opacity: 1;
   }
   
