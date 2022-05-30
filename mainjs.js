@@ -45,6 +45,18 @@ var logoTimer = undefined;
 const LOGO_MILLIS = 800;
 const NUMB_DELAY = 2000;
 
+/*window.onload = function () {
+  dead = document.getElementById("dead");
+  logo = document.getElementById("logo");
+  dls = document.getElementById("DLStitle");
+  startShaking();
+  setTimeout(function () {
+    abortShaking();
+    dls.addEventListener("mouseover", startShaking);
+    dls.addEventListener("mouseout", abortShaking);
+  }, LOGO_MILLIS + NUMB_DELAY);
+};*/
+
 function abortShaking() {
   // If the animation is still ongoing
   if (logoTimer !== undefined) {
