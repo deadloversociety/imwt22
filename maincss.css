@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,400;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,400;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap%27');
 
 /* Start main navbar */
 nav {
@@ -111,12 +112,15 @@ body {
     text-decoration: none;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 #didocar:hover {
     background-color: #79432c;
 }
+
 #gincar:hover {
     background-color: #a3ae8b;
 }
+
 a.btnLink:link,
 a.btnLink:visited,
 a.btnLink:hover,
@@ -124,6 +128,7 @@ a.btnLink:active {
     color: white;
     text-decoration: none;
 }
+
 /* ----------- */
 .textsection {
     margin: 2% 10% 2% 10%;
@@ -158,7 +163,8 @@ html {
 }
 
 #docimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
+    ;
 }
 
 /* ====== Menu to choose the author */
@@ -261,7 +267,8 @@ a {
 
 .team-card img {
     display: flex;
-    /* width: 100%; */ /* BUT IT'S WRONG, not responsive */
+    /* width: 100%; */
+    /* BUT IT'S WRONG, not responsive */
 }
 
 .team-content {
@@ -354,4 +361,71 @@ footer {
 footer .fa-github {
     font-size: 2em;
     color: whitesmoke;
+}
+
+a.navbar-brand {
+    font-size: 1.45rem;
+    font-weight: bold;
+    position: relative;
+    top: 0.2rem;
+}
+
+#logo {
+    margin-right: 0.7rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.shake {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.8s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
