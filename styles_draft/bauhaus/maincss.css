@@ -105,7 +105,8 @@ nav {
 }
 
 .buttonHero {
-    background-color: #16161618;
+    filter: grayscale(0) !important;
+    background-color: red/*#16161618*/ !important; /* PERCHE NON VA!?!?!?!!?!?*/
     border: 1px solid whitesmoke;
     color: white;
     padding: 15px 32px;
