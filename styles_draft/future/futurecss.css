@@ -1,11 +1,33 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,400;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap%27');
-
+@font-face {
+    font-family: Pixel;
+    src: url("font/VCR_OSD_MONO_1.001.ttf");
+  }
+  @font-face {
+    font-family: Future;
+    src: url("font/orbitron/webfonts/orbitron-light-webfont.woff");
+  }
 /* Start main navbar */
+body {
+    font-family: 'Future', serif;
+}
+nav, .nav {
+    font-family: 'Pixel', serif;
+    font-size: 1.2em !important;
+}
+
 nav {
-    font-family: 'Merriweather', serif;
-    font-size: 1em !important;
+    background-color: #f1edbb !important;
+}
+
+.navbar {
+    background-color: #f9ac53 !important;
+}
+
+.nav {
+    background-color: #f62e97 !important;
 }
 
 @media (min-width: 768px) {
@@ -63,15 +85,12 @@ nav {
     color: #333333;
 }
 
-body {
-    font-family: 'Merriweather', serif;
-}
-
 /* ====== Home page carousel */
 .carousel-item {
     height: 100vh;
     min-height: 350px;
     background: no-repeat center center scroll;
+    filter: contrast(1.01) hue-rotate(-81deg) saturate(1.33) sepia(0.45);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -107,18 +126,18 @@ body {
 }
 
 .buttonHero:hover {
-    background-color: #764d6e;
+    background-color: #300350;
     color: white;
     text-decoration: none;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 #didocar:hover {
-    background-color: #79432c;
+    background-color: #e93479;
 }
 
 #gincar:hover {
-    background-color: #a3ae8b;
+    background-color: #153cb4;
 }
 
 a.btnLink:link,
@@ -151,7 +170,7 @@ html {
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.ilsuperuovo.it/wp-content/uploads/2019/06/gGAnw0h9TdQMfJYqztWBY0MSgdO-1.jpg");
-
+    filter: contrast(1.01) hue-rotate(-81deg) saturate(1.33) sepia(0.45) ;
     /* Set a specific height */
     height: 50%;
 
@@ -164,7 +183,7 @@ html {
 
 #docimg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
-    ;
+    filter: contrast(1.01) hue-rotate(-81deg) saturate(1.33) sepia(0.45);
 }
 
 /* ====== Menu to choose the author */
@@ -429,3 +448,7 @@ a.navbar-brand {
         transform: translate(1px, -2px) rotate(-1deg);
     }
 }
+
+img {
+    filter: contrast(1.01) hue-rotate(-81deg) saturate(1.33) sepia(0.45) ;
+} 
