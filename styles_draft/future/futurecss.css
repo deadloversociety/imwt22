@@ -156,6 +156,7 @@ a.btnLink:active {
     text-align: justify;
     text-justify: inter-word;
     font-size: 1.2em;
+    color: #585757;
 }
 
 #disclaimer {
@@ -377,11 +378,12 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 20px;
+    background-color: #300350 !important;
 }
 
 footer .fa-github {
     font-size: 2em;
-    color: whitesmoke;
+    color: white;
 }
 
 a.navbar-brand {
