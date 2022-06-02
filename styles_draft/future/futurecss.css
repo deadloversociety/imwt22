@@ -12,7 +12,9 @@
 /* Start main navbar */
 body {
     font-family: 'Future', serif;
+    background-color: #ffd8f0 !important;
 }
+
 nav, .nav {
     font-family: 'Pixel', serif;
     font-size: 1.2em !important;
