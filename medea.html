@@ -19,7 +19,7 @@
         </script>
 
     <!-- Local stylesheet and javascript -->
-    <link rel="stylesheet" href="maincss.css">
+    <link rel="stylesheet" href="css/maincss.css" id="currentlocalcss">
     <script src="mainjs.js"></script>
 </head>
 
@@ -69,7 +69,7 @@
                 <a class="nav-link sec-nav" href="#">Quotidiani 1800</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link sec-nav" href="styles_draft/bauhaus/medea.html">Bauhaus</a>
+                <a class="nav-link sec-nav" onclick="document.getElementById('currentlocalcss').href='css/baucss.css'">Bauhaus</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link sec-nav" href="#">Pop Art</a>
@@ -78,10 +78,10 @@
                 <a class="nav-link sec-nav" href="#">Vogue</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link sec-nav" href="#">Future</a>
+                <a class="nav-link sec-nav" onclick="document.getElementById('currentlocalcss').href='css/futurecss.css'">Future</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active sec-nav" href="#">Default</a>
+                <a class="nav-link active sec-nav" onclick="document.getElementById('currentlocalcss').href='css/maincss.css'">Default</a>
             </li>
         </ul>
     </header>
