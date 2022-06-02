@@ -122,6 +122,7 @@ nav {
     /* Safari */
     transition-duration: 0.4s;
     border-radius: 4px;
+
 }
 
 .buttonHero:hover {
@@ -129,6 +130,7 @@ nav {
     color: white;
     text-decoration: none;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 #didocar:hover {
@@ -155,6 +157,7 @@ a.btnLink:active {
     font-size: 1.2em;
 }
 
+
 #projectinfo, #teamsection {
     border: rgb(181, 76, 76) 0.3em solid;
     padding: 1em;
@@ -165,7 +168,6 @@ a.btnLink:active {
     border:  rgb(42, 45, 110) 0.25em solid;
     padding: 0.5em;
 }
-
 
 /* ====== Hero image */
 body,
@@ -192,6 +194,24 @@ html {
 #docimg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
     ;
+}
+
+#abstractMedea {
+    border-left: thick solid black;
+    border-bottom: thick solid black;
+    padding-left: 0.5em;
+    padding-bottom: 0px;
+}
+
+#abstractMedea hr {
+    display: none;
+}
+
+#abstractMedea h2::first-letter {
+    font-size: 2em;
+}
+article h3::first-letter {
+    font-size: 2em;
 }
 
 /* ====== Menu to choose the author */
@@ -241,7 +261,7 @@ html {
 
 .text {
     color: white;
-    font-size: 2em;
+    font-size: 4em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -475,3 +495,39 @@ a.navbar-brand {
 img {
     filter: grayscale(100%);
 } 
+
+/* Documentation */
+#documentation h2::first-letter {
+    font-size: 2em;
+}
+
+#projintro {
+    border-left: 0.2em solid black;
+    border-bottom: 0.2em solid black;
+    padding-left: 0.5em;
+    padding-bottom: 0px;
+}
+
+#websitstruct {
+    border-left: 0.2em solid rgb(42, 45, 110);
+    border-bottom: 0.2em solid rgb(42, 45, 110);
+    padding-left: 0.5em;
+    padding-bottom: 0px;
+    margin-top: 1em;
+}
+
+#metadatadoc {
+    border-left: 0.2em solid rgb(181, 76, 76);
+    border-bottom: 0.2em solid rgb(181, 76, 76);
+    padding-left: 0.5em;
+    padding-bottom: 0px;
+    margin-top: 1em;
+}
+
+#histolayout {
+    border-left: 0.2em solid #ada641;
+    border-bottom: 0.2em solid #ada641;
+    padding-left: 0.5em;
+    padding-bottom: 0px;
+    margin-top: 1em;
+}
