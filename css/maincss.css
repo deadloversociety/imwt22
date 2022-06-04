@@ -48,6 +48,7 @@
     -webkit-animation-name: slideIn;
     animation-name: slideIn;
 }
+
 /* End main Navbar */
 
 /* Secondary navbar */
@@ -64,7 +65,8 @@ nav {
     font-size: 1em !important;
 }
 
-.navbar, .nav {
+.navbar,
+.nav {
     background-color: #f8f9fa !important;
 }
 
@@ -430,4 +432,10 @@ a.navbar-brand {
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
+}
+
+.moodboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
