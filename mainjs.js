@@ -1,3 +1,6 @@
+function missingIssue() {
+  alert("This issue is not available. Stay tuned to read the next articles of our magazine!");
+}
 function showEur() {
   var x = document.getElementById("MedeaEur");
   var y = document.getElementById("MedeaApp");
