@@ -434,8 +434,10 @@ a.navbar-brand {
     }
 }
 
-.moodboard {
+#moodboard {
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+#moodboard a {
+    flex: 1;
 }
