@@ -109,6 +109,11 @@ nav {
     border-radius: 4px;
 }
 
+.buttonHero h3 {
+    color: white; 
+    text-decoration: none;
+}
+
 .buttonHero:hover {
     background-color: #764d6e;
     color: white;

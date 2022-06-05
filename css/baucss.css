@@ -103,7 +103,7 @@ nav {
 }
 
 .buttonHero {
-    filter: grayscale(0) !important;
+    filter: none !important;
     background-color: red/*#16161618*/ !important; /* PERCHE NON VA!?!?!?!!?!?*/
     border: 1px solid whitesmoke;
     color: white;
@@ -137,6 +137,11 @@ nav {
 
 #gincar:hover {
     background-color: #a3ae8b;
+}
+
+.buttonHero h3 {
+    color: white; 
+    text-decoration: none;
 }
 
 a.btnLink:link,

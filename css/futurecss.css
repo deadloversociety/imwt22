@@ -116,6 +116,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    filter: none;
 }
 
 .buttonHero {
@@ -138,7 +139,7 @@ nav {
 }
 
 .buttonHero:hover {
-    background-color: #ffd8f0;
+    background-color: #ff009d;
     text-decoration: none;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -149,6 +150,11 @@ nav {
 
 #gincar:hover {
     background-color: #3f579e;
+}
+
+.buttonHero h3 {
+    color: white; 
+    text-decoration: none;
 }
 
 a.btnLink:link,
