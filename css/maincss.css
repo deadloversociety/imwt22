@@ -237,6 +237,23 @@ html {
     margin-bottom: 2em;
 }
 
+.container {
+    width: 100% !important;
+}
+
+#OVoriginalText {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px;
+    display: none;
+}
+
+#OVtextEn {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px;
+}
+
 /* ==== Team Section: https://www.foolishdeveloper.com/2021/10/our-team-section-design.html ===== */
 
 .main {
