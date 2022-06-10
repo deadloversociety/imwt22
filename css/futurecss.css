@@ -267,6 +267,54 @@ html {
     border: #e93479 solid 0.2em;
 }
 
+.container {
+    width: 100% !important;
+}
+
+.buttonShowText {
+    border-radius: 0.2em;
+    padding: 0.5em;
+    margin-top: 1em;
+    background-color: #4900ff;
+    color: whitesmoke;
+    border: none;
+}
+
+.buttonShowText:hover {
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonHideText {
+    border-radius: 0.2em;
+    margin-top: 1em;
+    margin-left: 1em;
+    padding: 0.5em;
+    background-color: #4900ff;
+    color: whitesmoke;
+    border: none;
+}
+
+.buttonHideText:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#OVoriginalText,
+#ARoriginalText,
+#EUoriginalText {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px;
+    display: none;
+}
+
+#OVtextEn,
+#ARtextEn,
+#EUtextEn {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px;
+}
+
 /* ==== Team Section: https://www.foolishdeveloper.com/2021/10/our-team-section-design.html ===== */
 
 .main {

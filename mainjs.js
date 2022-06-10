@@ -2,21 +2,6 @@ function missingIssue() {
   alert("This issue is not available. Stay tuned to read the next articles of our magazine!");
 }
 
-function showOriginalOvid() {
-  var x = document.getElementById("OVoriginalText");
-  var y = document.getElementById("OVtextEn");
-  if (x.style.display === "none") {
-    alert("aaaaaa");
-    x.style.display = "block";
-    y.classList.add("col-sm-6", "col-md-5", "col-lg-6");
-  } 
-  /*else {
-    x.style.display = "none";
-    y.removeAttribute("class");
-  }*/
-  alert("oiii");
-}
-
 function showEur() {
   var x = document.getElementById("MedeaEur");
   var y = document.getElementById("MedeaApp");
@@ -54,6 +39,48 @@ function showOvd() {
   } else {
     x.style.display = "none";
   }
+}
+
+function showOriginalOvid() {
+  var x = document.getElementById("OVoriginalText");
+  var y = document.getElementById("OVtextEn");
+  x.style.display = "block";
+  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+}
+
+function hideOriginalOvid() {
+  var x = document.getElementById("OVoriginalText");
+  var y = document.getElementById("OVtextEn");
+  x.style.display = "none";
+  y.removeAttribute("class");
+}
+
+function showOriginalApRod() {
+  var x = document.getElementById("ARoriginalText");
+  var y = document.getElementById("ARtextEn");
+  x.style.display = "block";
+  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+}
+
+function hideOriginalApRod() {
+  var x = document.getElementById("ARoriginalText");
+  var y = document.getElementById("ARtextEn");
+  x.style.display = "none";
+  y.removeAttribute("class");
+}
+
+function showOriginalEurpd() {
+  var x = document.getElementById("EUoriginalText");
+  var y = document.getElementById("EUtextEn");
+  x.style.display = "block";
+  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+}
+
+function hideOriginalEurpd() {
+  var x = document.getElementById("EUoriginalText");
+  var y = document.getElementById("EUtextEn");
+  x.style.display = "none";
+  y.removeAttribute("class");
 }
 
 var dls = undefined;
