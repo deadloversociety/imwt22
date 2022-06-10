@@ -314,6 +314,7 @@ article h3::first-letter {
     border-radius: 0.2em;
     padding: 0.5em;
     margin-top: 1em;
+    color: white;
     background-color:  #ada641;
     border: none;
 }
