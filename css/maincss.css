@@ -237,6 +237,17 @@ html {
     margin-bottom: 2em;
 }
 
+.indexcompare {
+    padding: 2%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: none;
+}
+
+.indexcompare li:hover {
+    font-weight: bold;
+}
+
 .container {
     width: 100% !important;
 }
@@ -263,6 +274,19 @@ html {
 }
 
 .buttonHideText:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonCompText {
+    border-radius: 0.2em;
+    margin-top: 1em;
+    margin-left: 1em;
+    padding: 0.5em;
+    background-color: #E9D5DA;
+    border: none;
+}
+
+.buttonCompText:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 

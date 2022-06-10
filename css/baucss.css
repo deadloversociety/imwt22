@@ -293,6 +293,19 @@ article h3::first-letter {
     margin-bottom: 2em;
 }
 
+.indexcompare {
+    background-color: white;
+    padding: 2%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: none;
+    border: rgb(42, 45, 110) 0.2em solid;
+}
+
+.indexcompare li:hover {
+    font-weight: bold;
+}
+
 .container {
     width: 100% !important;
 }
@@ -301,9 +314,8 @@ article h3::first-letter {
     border-radius: 0.2em;
     padding: 0.5em;
     margin-top: 1em;
-    background-color: rgb(181, 76, 76);
+    background-color:  #ada641;
     border: none;
-    color: white;
 }
 
 .buttonShowText:hover {
@@ -315,12 +327,26 @@ article h3::first-letter {
     margin-top: 1em;
     margin-left: 1em;
     padding: 0.5em;
-    background-color:rgb(42, 45, 110);
+    background-color:rgb(181, 76, 76);
     border: none;
     color: white;
 }
 
 .buttonHideText:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonCompText {
+    border-radius: 0.2em;
+    margin-top: 1em;
+    margin-left: 1em;
+    padding: 0.5em;
+    background-color: rgb(42, 45, 110);
+    border: none;
+    color: white;
+}
+
+.buttonCompText:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 

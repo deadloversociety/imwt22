@@ -41,11 +41,15 @@ function showOvd() {
   }
 }
 
+// TESTO A FRONTE
+
 function showOriginalOvid() {
   var x = document.getElementById("OVoriginalText");
   var y = document.getElementById("OVtextEn");
   x.style.display = "block";
   y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+  $('.ovid').css('display','block');
+  $('.indexcompare').css('display','none');
 }
 
 function hideOriginalOvid() {
@@ -53,6 +57,7 @@ function hideOriginalOvid() {
   var y = document.getElementById("OVtextEn");
   x.style.display = "none";
   y.removeAttribute("class");
+  $('.indexcompare').css('display','none');
 }
 
 function showOriginalApRod() {
@@ -81,6 +86,60 @@ function hideOriginalEurpd() {
   var y = document.getElementById("EUtextEn");
   x.style.display = "none";
   y.removeAttribute("class");
+}
+
+// Comparison Ovid
+function compareOvid() {
+  var x = document.getElementById("OVoriginalText");
+  var y = document.getElementById("OVtextEn");
+  x.style.display = "block";
+  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+  $('.indexcompare').css('display','block');
+}
+
+function showOvid1() {
+  $('.ovid').css('display','none');
+  $('.MetVII1_73').css('display','block');
+}
+
+function showOvid2() {
+  $('.ovid').css('display','none');
+  $('.MetVII74_99').css('display','block');
+}
+
+function showOvid3() {
+  $('.ovid').css('display','none');
+  $('.MetVII100_158').css('display','block');
+}
+
+function showOvid4() {
+  $('.ovid').css('display','none');
+  $('.MetVII159_178').css('display','block');
+}
+
+function showOvid5() {
+  $('.ovid').css('display','none');
+  $('.MetVII179_233').css('display','block');
+}
+
+function showOvid6() {
+  $('.ovid').css('display','none');
+  $('.MetVII234_293').css('display','block');
+}
+
+function showOvid7() {
+  $('.ovid').css('display','none');
+  $('.MetVII294_349').css('display','block');
+}
+
+function showOvid8() {
+  $('.ovid').css('display','none');
+  $('.MetVII350_403').css('display','block');
+}
+
+function showOvid9() {
+  $('.ovid').css('display','none');
+  $('.MetVII404_424').css('display','block');
 }
 
 var dls = undefined;
