@@ -55,6 +55,8 @@ function showOriginalOvid() {
 function hideOriginalOvid() {
   var x = document.getElementById("OVoriginalText");
   var y = document.getElementById("OVtextEn");
+  $('.ovid').css('display','block');
+  $('.indexcompare').css('display','none');
   x.style.display = "none";
   y.removeAttribute("class");
   $('.indexcompare').css('display','none');
