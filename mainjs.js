@@ -2,6 +2,18 @@ function missingIssue() {
   alert("This issue is not available. Stay tuned to read the next articles of our magazine!");
 }
 
+// Only for Future: show card
+function showCap() {
+  var css = document.getElementById("currentlocalcss");
+  $('.profile-card').css('background','#fff');
+  $('.profile-card').css('box-shadow','0 0 22px #3336');
+  $('.caption').css('opacity','1');
+  switch (css.href) { /* WHY NOT WORKING */
+    case("css/futurecss.css"):
+      alert("oiii");
+  }
+}
+
 function showEur() {
   var x = document.getElementById("MedeaEur");
   var y = document.getElementById("MedeaApp");
