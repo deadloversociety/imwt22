@@ -5,12 +5,10 @@ function missingIssue() {
 // Only for Future: show card
 function showCap() {
   var css = document.getElementById("currentlocalcss");
-  $('.profile-card').css('background','#fff');
-  $('.profile-card').css('box-shadow','0 0 22px #3336');
-  $('.caption').css('opacity','1');
-  switch (css.href) { /* WHY NOT WORKING */
-    case("css/futurecss.css"):
-      alert("oiii");
+  if (css.href === "css/futurecss.css") { /* WHY NOT WORKING */
+    $('.profile-card').css('background','#fff');
+    $('.profile-card').css('box-shadow','0 0 22px #3336');
+    $('.caption').css('opacity','1');
   }
 }
 
