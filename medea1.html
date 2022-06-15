@@ -26,7 +26,7 @@
 <body>
     <header>
         <!-- First navbar -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
                 <div id="DLStitle">
                     <img id="logo" src="./imgs/heart.png" />
@@ -151,7 +151,7 @@
     </div>
     <!-- Text hiding/showing -->
     <div class="textsection">
-        <article id="MedeaEur">
+ <article id="MedeaEur">
             <h3>Euripides</h3>
             <button class="buttonShowText" onclick="showOriginalEurpd()" type="button">Show the original Greek
                 text</button>
@@ -271,7 +271,6 @@
             <div class="container">
                 <div class="row">
                     <div id="OVtextEn">
-                        <!-- Insert the content here!
                         <div class="ovid MetVII1_73">
                             <p>And now the Argonauts were ploughing through the sea in their ship, built in Thessalian
                                 Pagasae.
@@ -947,10 +946,9 @@
                                     she
                                     escaped death, in a dark mist, raised by her incantations.
                             </p>
-                        </div> -->
+                        </div>
                     </div>
                     <div id="OVoriginalText" class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">  
-                        <!-- Insert the content here!
                         <div class="ovid MetVII1_73">
                             <p>
                                 Iamque fretum Minyae Pagasaea puppe secabant,<br>
@@ -1410,8 +1408,8 @@
                                 signa sui generis facinusque excussit ab ore.<br>
                                 Effugit illa necem nebulis per carmina motis.<br>
                             </p>
-                        </div> -->
-                    </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </article>
@@ -1439,6 +1437,68 @@
         dls.addEventListener("mouseover", startShaking);
         dls.addEventListener("mouseout", abortShaking);
     </script>
+      	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+			$(document).ready(main);
+
+		function main() {
+			$.ajax({
+				method: 'GET',
+				url: 'dls.json',
+				success: function(d) {
+					for (var i=0; i<d.length; i++) {
+						var li = `<li><a href='#' onclick='load("`+d[i].url+`")'>`+d[i].label+`</a></li>`
+						$('#list').append(li)
+					}	
+				},
+				error: function() {
+					alert('No document to show')
+				}
+			});
+            
+			
+		$('#showcharmortal').click(function() {
+				if (this.checked) 
+					$('.charmortal').addClass('text-charmortal')
+				else
+					$('.charmortal').removeClass('text-charmortal')
+			})
+			$('#showcharimmortal').click(function() {
+				if (this.checked) 
+					$('.charimmortal').addClass('text-charimmortal')
+				else
+					$('.charimmortal').removeClass('text-charimmortal')
+			})
+			$('#showplaces').change(function() {
+				if (this.checked) 
+					$('.places').addClass('text-places')
+				else
+					$('.places').removeClass('text-places')
+			})
+            $('#showsequences').change(function() {
+				if (this.checked) 
+					$('.sequencess').addClass('text-sequence')
+				else
+					$('.sequences').removeClass('text-sequence')
+			})
+        }
+		function load(file) {
+			$.ajax({
+				method: 'GET',
+				url: file,
+				success: function(d) {
+					$('#file').html(d)
+					$('#title').html($('#file h1'))
+					$('.show').prop("checked", false)
+				},
+				error: function() {
+					alert('Could not load file '+file)
+				}
+			});
+		}		
+	</script>
 </body>
 
 </html>
