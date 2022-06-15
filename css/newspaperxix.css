@@ -103,7 +103,7 @@ nav {
     height: 100vh;
     min-height: 350px;
     background: no-repeat center center scroll;
-    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%) invert(100%);
+    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
