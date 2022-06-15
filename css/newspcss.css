@@ -1,5 +1,29 @@
 @font-face {
     font-family: Newspaper;
+    src: url("../fonts/newspaperxix/OldNewspaperTypes.ttf");
+  }
+
+@font-face {
+    font-family: Nameplate;
+    src: url("../fonts/newspaperxix/walbaum-fraktur.regular.ttf");
+  }
+
+/* WHAT TO DO WITH THE THIRD FONT? SHOULD WE USE IT? */
+
+  
+/* Start main navbar */
+body {
+    font-family: 'Newspaper', sans-serif !important;
+    background-color: #E0C9A6 !important;
+}
+
+nav {
+    font-family: 'Nameplate';
+    font-size: 1.2em !important;
+    background-color: #e0c9a6cc !important;
+    border-bottom: 0.2rem black;
+}
+
 /*.navbar {
     background-color: rgb(181, 76, 76) !important;
 }*/
