@@ -7,8 +7,11 @@
     font-family: Nameplate;
     src: url("../fonts/newspaperxix/walbaum-fraktur.regular.ttf");
   }
-/* WE MAY WANT TO ADD A THIRD FONT FOR THE MENU IN THE NAVBAR */
 
+@font-face {
+    font-family: MenuTitles;
+    src: url("../fonts/newspaperxix/OldKlarheit-Regular.ttf");
+}
 
 /* Start main navbar */
 @media (min-width: 768px) {
@@ -75,20 +78,32 @@ nav {
     font-family: 'Nameplate';
     font-size: 1.2em !important;
     background-color: #e0c9a6cc;
-    /* HERE WE SHOULD ADD A BORDER AT THE BOTTOM OF THE NAVBARS */
 }
 
-.navbar,
-.nav {
-    background-color: #f8f9fa !important;
+.navbar {
+    background-color: #E0C9A6;
+    border-bottom: thick double black;
 }
+
+.nav {
+    background-color: #ab9b81;
+    border-bottom: thick double black;
+}
+
+.navbar-menu {
+    font-family: 'Newspaper';
+    font-size: 1em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
 
 /* ====== Home page carousel */
 .carousel-item {
     height: 100vh;
     min-height: 350px;
     background: no-repeat center center scroll;
-    filter: sepia(100%) contrast(150%); /* BUT HERE A SKETCH EFFECT WOULD BE BETTER */ 
+    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%) invert(100%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -484,7 +499,7 @@ footer .fa-github {
 }
 
 a.navbar-brand {
-    font-size: 1.45rem;
+    font-size: 2rem;
     font-weight: bold;
     position: relative;
     top: 0.2rem;
