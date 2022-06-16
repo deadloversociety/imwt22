@@ -582,6 +582,11 @@ a.navbar-brand {
     text-align: center;
 }
 
+span.PIN_1655411977159_embed_grid.PIN_1655411977159_c7 {
+    display: contents;
+    font-family: 'Newspaper';
+}
+
 /* SHOULD WE PUT THIS MODIFICATION HERE OR SHOULD WE MODIFY EACH IMAGE ON ITS OWN?
 img {
     filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
