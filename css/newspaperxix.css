@@ -71,22 +71,22 @@
 
 body {
     font-family: 'Newspaper';
-    background-color: #E0C9A6;
+    background-color: #E0C9A6 !important;
 }
 
 nav {
     font-family: 'Nameplate';
     font-size: 1.2em !important;
-    background-color: #e0c9a6cc;
+    background-color: #e0c9a6cc !important;
 }
 
 .navbar {
-    background-color: #E0C9A6;
+    background-color: #E0C9A6 !important;
     border-bottom: thick double black;
 }
 
 .nav {
-    background-color: #ab9b81;
+    background-color: #ab9b81 !important;
     border-bottom: thick double black;
 }
 
@@ -103,7 +103,7 @@ nav {
     height: 100vh;
     min-height: 350px;
     background: no-repeat center center scroll;
-    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%) invert(100%);
+    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -118,6 +118,7 @@ nav {
     transform: translate(-50%, -50%);
     color: white;
 }
+
 
 .buttonHero {
     background-color: #16161618;
@@ -168,7 +169,8 @@ a.btnLink:active {
 }
 
 /* ----------- */
-.textsection {
+
+.textsection:not(#teamsection) {
     column-count: 4;
     column-gap: 1.5em;
     column-rule: inset 0.1em;
@@ -178,12 +180,17 @@ a.btnLink:active {
     font-size: 1.2em;
     line-height: 100%;
 }
-/* IN ORDER NOT TO AFFECT THE #teamsection USE THIS (but you'll lose even the text-align, justify, etc.
-.textsection:not(#teamsection) */
 
-#disclaimer {
-    font-size: 1em;
+#teamsection {
+    margin: 1% 2% 1% 2%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.2em;
 }
+
+/*#disclaimer {
+    font-size: 1em;
+}*/
 
 /* ====== Hero image */
 body,
@@ -191,11 +198,11 @@ html {
     height: 100%;
 }
 
-/* The hero image */
+/* The hero image in the issue file*/
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.ilsuperuovo.it/wp-content/uploads/2019/06/gGAnw0h9TdQMfJYqztWBY0MSgdO-1.jpg");
-    /* MAYBE WE CAN PUT HERE THE FILTER? BUT THEN IT WOULD AFFECT ONLY THE HERO IMAGES */
+    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
 
     /* Set a specific height */
     height: 50%;
@@ -207,9 +214,10 @@ html {
     position: relative;
 }
 
+/* Documentation page image */
 #docimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
-    ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd"); /* maybe here even change the picture :P */
+    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
 }
 
 
@@ -217,12 +225,13 @@ html {
 /*#abstractMedea {
 }
 */
+
 #abstractMedea hr {
     display: none;
 }
 
 #abstractMedea h2::first-letter {
-    font-size: 2em;
+    font-size: 1em;
 }
 article h3::first-letter {
     font-size: 2em;
@@ -237,6 +246,7 @@ article h3::first-letter {
     vertical-align: middle;
 }
 
+/* WHERE IS THIS CLASS IN THE HMTLS????? */
 .image {
     display: flex;
     width: 100%;
@@ -401,8 +411,10 @@ article h3::first-letter {
     transition: .6s;
     z-index: 99;
     transform: translateY(-60px);
+    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
 }
 
+/* WHAT ARE THOSEEEE */
 .img img {
     width: 100%;
     box-shadow: 0 0 22px #3336;
@@ -490,7 +502,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 20px;
-    background-color: gray;
+    background-color: #7d6f5c;
 }
 
 footer .fa-github {
@@ -569,6 +581,12 @@ a.navbar-brand {
     display: block;
     text-align: center;
 }
+
+/* SHOULD WE PUT THIS MODIFICATION HERE OR SHOULD WE MODIFY EACH IMAGE ON ITS OWN?
+img {
+    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
+}
+*/
 
 /* THIS WHOLE PART IS TAKEN FROM BAUHAUS BUT COULD BE MODIFIED IF NECESSARY TO ADAPT IT
 /* Documentation 
