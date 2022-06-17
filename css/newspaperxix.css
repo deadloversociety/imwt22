@@ -8,10 +8,6 @@
     src: url("../fonts/newspaperxix/walbaum-fraktur.regular.ttf");
   }
 
-@font-face {
-    font-family: MenuTitles;
-    src: url("../fonts/newspaperxix/OldKlarheit-Regular.ttf");
-}
 
 /* Start main navbar */
 @media (min-width: 768px) {
@@ -66,7 +62,7 @@
 
 /* Secondary navbar */
 .sec-nav {
-    color: #333333;
+    color: #000000;
 }
 
 body {
@@ -97,6 +93,10 @@ nav {
     text-transform: uppercase;
 }
 
+a.navbar-brand:hover, a.nav-link:hover {
+    text-shadow: 2px 2px 5px rgba(55, 55, 55, 0.111);
+}
+
 
 /* ====== Home page carousel */
 .carousel-item {
@@ -121,9 +121,9 @@ nav {
 
 
 .buttonHero {
-    background-color: #16161618;
-    border: 1px solid whitesmoke;
-    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
     padding: 15px 32px;
     /* REVISE UNITS*/
     text-align: center;
@@ -140,17 +140,19 @@ nav {
 }
 
 .buttonHero h3 {
-    color: white;
+    color: black;
     text-decoration: none;
+    text-shadow: 2px 2px 10px black;
 }
 
 .buttonHero:hover {
-    background-color: #764d6e;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.121);
+    color: black;
     text-decoration: none;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*
 #didocar:hover {
     background-color: #79432c;
 }
@@ -158,6 +160,7 @@ nav {
 #gincar:hover {
     background-color: #a3ae8b;
 }
+*/
 
 a.btnLink,
 a.btnLink:link,
@@ -389,19 +392,17 @@ article h3::first-letter {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4em;
+    margin-top: 1em;
 }
 
 .profile-card {
     position: relative;
     width: 220px;
-    border-radius: 10px;
-    height: 300px;
-    background: #fff;
+    height: 272px;
     padding: 30px;
-    box-shadow: 0 0 22px #3336;
     transition: .6s;
     margin: 0 25px;
+    text-transform: uppercase;
 }
 
 .profile-card .img {
@@ -414,12 +415,13 @@ article h3::first-letter {
     filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
 }
 
-/* WHAT ARE THOSEEEE */
+/* The Team images */
 .img img {
     width: 100%;
     box-shadow: 0 0 22px #3336;
     transition: .6s;
-    border-radius: 10px;
+    border-radius: 100%;
+    border: solid black;
     margin-left: auto;
     margin-right: auto;
 }
@@ -439,10 +441,20 @@ article h3::first-letter {
     margin: 2px 0 9px 0;
 }
 
-.caption a {
+a {
+    color: black;
     text-decoration: none;
-    /* I DON'T WANT THE COLORED LINKS color: #0c52a1; */
 }
+
+a:hover {
+    color: #39332acc !important;
+    text-decoration: dashed;
+}
+
+.caption a {
+    text-shadow: 2px 2px 10px black;
+}
+
 
 /* ==== Footer Section, source: https://getbootstrap.com/docs/5.2/examples/footers/ ===== */
 
@@ -577,10 +589,9 @@ a.navbar-brand {
     }
 }
 
-.moodboard > a[data-pin-custom] {
-    display: contents;
+.moodboard {
+    display: block;
     text-align: center;
-    font-family: 'Newspaper';
 }
 
 /* SHOULD WE PUT THIS MODIFICATION HERE OR SHOULD WE MODIFY EACH IMAGE ON ITS OWN?
