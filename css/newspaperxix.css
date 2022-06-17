@@ -523,7 +523,8 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 20px;
-    background-color: #7d6f5c;
+    background-image: url("https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1910&q=80");
+    /*background-color: #7d6f5c;*/
 }
 
 footer .fa-github {
