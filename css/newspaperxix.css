@@ -578,12 +578,8 @@ a.navbar-brand {
 }
 
 .moodboard {
-    display: block;
-    text-align: center;
-}
-
-span.PIN_1655411977159_embed_grid.PIN_1655411977159_c7 {
     display: contents;
+    text-align: center;
     font-family: 'Newspaper';
 }
 
