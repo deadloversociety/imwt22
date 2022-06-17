@@ -577,7 +577,7 @@ a.navbar-brand {
     }
 }
 
-.moodboard {
+.moodboard > a[data-pin-custom] {
     display: contents;
     text-align: center;
     font-family: 'Newspaper';
