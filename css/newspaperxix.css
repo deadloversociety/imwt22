@@ -65,24 +65,32 @@
     color: #000000;
 }
 
+header {
+    background-image: url("https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1910&q=80");
+}
+
 body {
     font-family: 'Newspaper';
-    background-color: #E0C9A6 !important;
+    background-image: url("https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1910&q=80");
+    /*background-color: #E0C9A6 !important;*/
 }
 
 nav {
     font-family: 'Nameplate';
     font-size: 1.2em !important;
-    background-color: #e0c9a6cc !important;
+    background-image: url("https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1910&q=80");
+    /*background-color: #e0c9a6cc !important;*/
 }
 
 .navbar {
-    background-color: #E0C9A6 !important;
+    background-image: url("https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1910&q=80");
+    /*background-color: #E0C9A6 !important;*/
     border-bottom: thick double black;
 }
 
 .nav {
-    background-color: #ab9b81 !important;
+    background-image: url("https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1910&q=80");
+    /*background-color: #ab9b81 !important;*/
     border-bottom: thick double black;
 }
 
@@ -94,7 +102,8 @@ nav {
 }
 
 a.navbar-brand:hover, a.nav-link:hover {
-    text-shadow: 2px 2px 5px rgba(55, 55, 55, 0.111);
+    color: black;
+    text-shadow: 2px 2px 5px rgb(135, 124, 99);
 }
 
 
@@ -122,7 +131,7 @@ a.navbar-brand:hover, a.nav-link:hover {
 
 .buttonHero {
     background-color: transparent;
-    border: 1px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     color: black;
     padding: 15px 32px;
     /* REVISE UNITS*/
