@@ -231,11 +231,20 @@
     <!-- Text hiding/showing -->
     <div class="textsection">
         <article id="MedeaEur">
-            <h3>Euripides</h3>
+             <h3>Euripides</h3>
             <button class="buttonShowText" onclick="showOriginalEurpd()" type="button">Show the original Greek
                 text</button>
             <button class="buttonHideText" onclick="hideOriginalEurpd()" type="button">Hide the original Greek
                 text</button>
+                <button class="buttonCompText" onclick="compareEur()" type="button">Compare the texts</button>
+            <div class="indexcompare">
+                <p><b>Index</b></p>
+                <p><ol>
+                    <li onclick="showEur1()">Prologue</li>
+                    <li onclick="showEur2()">Medea's speech to the women of Corinth </li>
+                    <li onclick="showEur3()">Medea fights with Jason</li>
+                </ol></p>
+            </div>
             <ul id="list"></ul>
             <div class="metadata">
               <div class="row clearfix">
@@ -297,17 +306,17 @@
                                         </div>
                                         <div class="tab-pane myBorder myBorder-notop" id="sequences" role="tabpanel" aria-labelledby="sequences-tab">
                                             <ul></ul>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>	
                         </div>	
                     </div>
-		
-        <div class="col-md-9">
+                        <div class="col-md-9">
                             <div id="file"></div>
                         </div>
+                    </div>
         </article>
         <article id="MedeaApp">
             <h3>Apollonius Rhodius</h3>
