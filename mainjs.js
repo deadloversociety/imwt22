@@ -184,3 +184,40 @@ function stopShaking() {
   logo.classList.remove("shake");
   logo.src = "imgs/broken-heart (1).png";
 }
+
+  function showOriginalEurpd() {
+    var x = document.getElementById("EUoriginalText");
+    var y = document.getElementById("EUtextEn");
+    x.style.display = "block";
+    y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+  }
+  
+  function hideOriginalEurpd() {
+    var x = document.getElementById("EUoriginalText");
+    var y = document.getElementById("EUtextEn");
+    x.style.display = "none";
+    y.removeAttribute("class");
+  }
+  
+  function compareEur() {
+    var x = document.getElementById("EUoriginalText");
+    var y = document.getElementById("EUtextEn");
+    x.style.display = "block";
+    y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+    $('.indexcompare').css('display','block');
+  }
+  
+  function showEur1() {
+    $('.eur').css('display','none');
+    $('.prologue').css('display','block');
+  }
+  
+  function showEur2() {
+    $('.eur').css('display','none');
+    $('.Medeaspeech').css('display','block');
+  }
+  
+  function showEur3() {
+    $('.eur').css('display','none');
+    $('.MedeaVSJason').css('display','block');
+  }
