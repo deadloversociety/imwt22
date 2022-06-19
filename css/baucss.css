@@ -155,10 +155,10 @@ a.btnLink:active {
 
 /* ----------- */
 .textsection {
-    margin: 2% 10% 2% 10%;
+    margin: 2% 5% 2% 5%;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .onlybau {
