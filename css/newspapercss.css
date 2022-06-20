@@ -142,6 +142,7 @@ a.navbar-brand:hover, a.nav-link:hover {
     /* Safari */
     transition-duration: 0.4s;
     border-radius: 4px;
+    text-transform: uppercase;
 }
 
 .buttonHero h3 {

@@ -8,6 +8,10 @@ function swapTheme(csspath) {
   document.getElementById('currentlocalcss').setAttribute('href',csspath);
 }
 
+// To save historical theme while browsing on the website
+// Here there should be some function involving also SessionStorage (which in this case we feel it is better than LocalStorage)
+// I would use a switch loop to check the value of the attribute href of the element with id currentlocalcss
+
 
 // Only for Future: show card
 function showCap() {
