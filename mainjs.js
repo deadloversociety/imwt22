@@ -1,6 +1,13 @@
+// When clicking on Dido and Guinevevre issues
 function missingIssue() {
   alert("This issue is not available. Stay tuned to read the next articles of our magazine!");
 }
+
+// To change historical theme (click on the buttons of the second navbar -> change css)
+function swapTheme(csspath) {
+  document.getElementById('currentlocalcss').setAttribute('href',csspath);
+}
+
 
 // Only for Future: show card
 function showCap() {
