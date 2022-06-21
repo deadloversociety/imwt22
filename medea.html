@@ -280,16 +280,6 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-md-6">
-                                <div><button class="btn btn-outline-info bt-sm w-100" id="createcharmortal"
-                                        class="create">Add Mortal Characters</button></div>
-                                <div><button class="btn btn-outline-info bt-sm w-100" id="createcharimmortal"
-                                        class="create">Add Immortal Characters</button></div>
-                                <div><button class="btn btn-outline-info bt-sm w-100" id="createplaces"
-                                        class="create">Add Places</button></div>
-                                <div><button class="btn btn-outline-info bt-sm w-100" id="createsequences"
-                                        class="create">Add sequences</button></div>
-                            </div>
                         </div>
                         <div class="row clearfix mt-3">
                             <div class="col-md-12">
@@ -1655,86 +1645,6 @@
                 else
                     $('.sequence').removeClass('text-sequences')
             })
-
-            $('#createcharmortal').click(function () {
-                var s = window.getSelection().toString()
-                addToDoc(s, 'charmortal', 'span')
-                addToLocalStorage(s, 'charmortal')
-            })
-            $('#createcharimmortal').click(function () {
-                var s = window.getSelection().toString()
-                if (s.length > 3) {
-                    addToDoc(s, 'charimmortal', 'span')
-                    addToLocalStorage(s, 'charimmortal')
-                }
-            })
-            $('#createplaces').click(function () {
-                var s = window.getSelection().toString()
-                addToDoc(s, 'places', 'q')
-                addToLocalStorage(s, 'places')
-            })
-            $('#createsequences').change(function () {
-                var s = window.getSelection().toString()
-                addToDoc(s, 'sequence', 'q')
-                addToLocalStorage(s, 'sequence')
-            })
-        }
-
-        function addToLocalStorage(string, type) {
-            var ls = getFromLocalStorage()
-            if (ls[type].indexOf(string) == -1) ls[type].push(string)
-            localStorage.setItem('fvSentences', JSON.stringify(ls))
-        }
-
-        function getFromLocalStorage() {
-            var lsString = localStorage.getItem('fvSentences')
-            var ls = JSON.parse(lsString)
-            if (ls == undefined) {
-                ls = {
-                    aside: [],
-                    keyword: [],
-                    speech: [],
-                    quote: []
-                }
-            }
-            return ls
-        }
-
-        function addFromLocalStorage() {
-            var ls = getFromLocalStorage()
-            for (var i in ls) {
-                for (var k in ls[i]) {
-                    addToDoc(ls[i][k], i, 'span')
-                }
-            }
-        }
-
-        function addToDoc(string, type, tag) {
-            var replacement = `<${tag} class='${type}'>${string}</${tag}>`
-            if (isMoreThanOneWord(string)) {
-                var variations = new RegExp(string, 'mgi')
-                // g: global: replace multiple occurrence and not just the first
-                // i: ignore case: replace matching string regardless of the case 
-            } else {
-                var variations = findAllVariations(string)
-            }
-            // bad bad bad bad solution: complicated, fragile, computational intensive. 
-            // Can you think of something better?
-            var text = $('#file').html().replace(variations, replacement)
-            $('#file').html(text)
-            addIds()
-            filltabs()
-        }
-
-        function isMoreThanOneWord(s) {
-            return s.match(/\s/) // there is at least one whitespace character in the string
-        }
-
-        function findAllVariations(s) {
-            var desinences = "[s|es|ing|ed|d]?" // optional additional desinences
-
-            return new RegExp(`\\b${s}${desinences}\\b`, "gi")
-        }
 
 
 
