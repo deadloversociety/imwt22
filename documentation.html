@@ -12,7 +12,8 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap Icons-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">  <!-- only team section -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <!-- only team section -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- only team section -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -70,8 +71,7 @@
         <a class="nav-link sec-nav" onclick="swapTheme('css/newspapercss.css')">Quotidiani 1800</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link sec-nav"
-          onclick="swapTheme('css/baucss.css')">Bauhaus</a>
+        <a class="nav-link sec-nav" onclick="swapTheme('css/baucss.css')">Bauhaus</a>
       </li>
       <li class="nav-item">
         <a class="nav-link sec-nav" onclick="swapTheme('css/popcss.css')">Pop Art</a>
@@ -80,12 +80,10 @@
         <a class="nav-link sec-nav" href="#">Vogue</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link sec-nav"
-          onclick="swapTheme('css/futurecss.css')">Future</a>
+        <a class="nav-link sec-nav" onclick="swapTheme('css/futurecss.css')">Future</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active sec-nav"
-          onclick="swapTheme('css/maincss.css')">Default</a>
+        <a class="nav-link active sec-nav" onclick="swapTheme('css/maincss.css')">Default</a>
       </li>
     </ul>
     <hr class="onlybau"
@@ -97,27 +95,50 @@
     <h2>Documentation of the Project</h2>
     <div id="projintro">
       <h3>Project introduction</h3>
-      <p><i><span class="firstletter">D</span>ead Lovers Society</i> is a metadata-enriched and stylistically customizable magazine on tragic love stories. The project has been developed in the framework of the course “Information Modelling and Web Technologies”, held by Prof Vitali for the MA in “Digital Humanities and Digital Knowledge” in the a. y. 2021/2022.</p>
+      <p><i><span class="firstletter">D</span>ead Lovers Society</i> is a metadata-enriched and stylistically
+        customizable magazine on tragic love stories. The project has been developed in the framework of the course
+        “Information Modelling and Web Technologies”, held by Prof Vitali for the MA in “Digital Humanities and Digital
+        Knowledge” in the a. y. 2021/2022.</p>
 
-      <p>The topic of this digital-born magazine stems out from one of the most important masterpiece of Latin literature, Ovid’s <i>Heroides</i>: this digital environment is intended as an occasion to bring online the tragic love stories of many heroines of the past, from the classical antiquity to modern days.</p> 
-      
-      <p>Each story is told from at least three different points of view: the same narrative sequences may hence be rearranged or described from a different perspective. Conscious of the risk of relying exclusively on a translated text, we decided to add the possibility to read the document in the original language. The implied reader of this magazine are hence diversified, as its issue can be read with a different purpose: from the most naïve passion for reading to the interest in interlinguistic comparison.</p>
-      
+      <p>The topic of this digital-born magazine stems out from one of the most important masterpiece of Latin
+        literature, Ovid’s <i>Heroides</i>: this digital environment is intended as an occasion to bring online the
+        tragic love stories of many heroines of the past, from the classical antiquity to modern days.</p>
+
+      <p>Each story is told from at least three different points of view: the same narrative sequences may hence be
+        rearranged or described from a different perspective. Conscious of the risk of relying exclusively on a
+        translated text, we decided to add the possibility to read the document in the original language. The implied
+        reader of this magazine are hence diversified, as its issue can be read with a different purpose: from the most
+        naïve passion for reading to the interest in interlinguistic comparison.</p>
+
     </div>
     <div id="websitstruct">
       <h3>Website infrastructure</h3>
-      <p><span class="firstletter">T</span>he web-application mainly consists of a set of HTML pages, edited through CSS stylesheets and animated thanks to JavaScript scripts. Some parts of its (e.g. navbar, footer, heroimage etc) are rendered through predefined model taken from Bootstrap or other sources. Their provenance is usually indicated in a comment within the source-code. These assets have been slightly modified according to our needs and to respect the stylistic features of the historical teaming. These imported assets are the sole situations where the dimensions can be measured in absolute value (i.e. in pixel). The original contents of the web application are instead measured in em, which grants the overall responsivity of the site</p>
+      <p><span class="firstletter">T</span>he web-application mainly consists of a set of HTML pages, edited through CSS
+        stylesheets and animated thanks to JavaScript scripts. Some parts of its (e.g. navbar, footer, heroimage etc)
+        are rendered through predefined model taken from Bootstrap or other sources. Their provenance is usually
+        indicated in a comment within the source-code. These assets have been slightly modified according to our needs
+        and to respect the stylistic features of the historical teaming. These imported assets are the sole situations
+        where the dimensions can be measured in absolute value (i.e. in pixel). The original contents of the web
+        application are instead measured in em, which grants the overall responsivity of the site</p>
       <p> Up to now, the application consists of three main HTML pages:
         <ul>
-          <li>index.html: homepage of the website, containing the general information about the project and a carousel displaying all the issues of the magazine</li>
-          <li>medea.html: containing the first issue, dedicated to the Greek witch Medea. Here character is briefly presented by an abstract and her story is told by Euripides, Apollonius Rhodius and Ovid. Each text, which has been separatedly marked up and here uploaded through an Ajax function, can be read in English and compared (also paragraph to paragraph) with the original Greek and Latin source. Moreover, an ad hoc tab allow to surf through the metadata of the publication (see under). The other two issues about Dido and Guinevevre are not available yet.</li>
+          <li>index.html: homepage of the website, containing the general information about the project and a carousel
+            displaying all the issues of the magazine</li>
+          <li>medea.html: containing the first issue, dedicated to the Greek witch Medea. Here character is briefly
+            presented by an abstract and her story is told by Euripides, Apollonius Rhodius and Ovid. Each text, which
+            has been separatedly marked up and here uploaded through an Ajax function, can be read in English and
+            compared (also paragraph to paragraph) with the original Greek and Latin source. Moreover, an ad hoc tab
+            allow to surf through the metadata of the publication (see under). The other two issues about Dido and
+            Guinevevre are not available yet.</li>
           <li>documentation.html: currently displayed, contains the documentation of the project</li>
         </ul>
-      Each page starts with a double navbar: the first one is the sitemap, while the second one allows to change the different styles at any moment.</p>
+        Each page starts with a double navbar: the first one is the sitemap, while the second one allows to change the
+        different styles at any moment.</p>
     </div>
     <div id="metadatadoc">
       <h3>Metadata enrichment</h3>
-      <p>Marti? Quisque gravida vel lacus a accumsan. Vivamus sagittis rhoncus pellentesque. Quisque aliquet tortor eu nulla
+      <p>Marti? Quisque gravida vel lacus a accumsan. Vivamus sagittis rhoncus pellentesque. Quisque aliquet tortor eu
+        nulla
         tempus, in cursus elit dignissim. Donec eu accumsan nisi. Aliquam magna massa, efficitur facilisis ullamcorper
         eu,
         elementum eget lectus. Nam imperdiet dolor vel tempor interdum. Suspendisse sem mi, faucibus vitae porta sed,
@@ -126,63 +147,99 @@
     </div>
     <div id="histolayout">
       <h3>Historical theming</h3>
-                         <p><span class="firstletter">T</span>he website was at first projected in the style currently displayed as "2020s". It is based on nowadays trending features in typography both in font and in page layout and adopts a very minimalistic aesthetic to what concerns colors and image filters. On the basis of these stylesheet, other six different themes, in order to philologically reconstruct specific typographical tastes.</p>
+      <p><span class="firstletter">T</span>he website was at first projected in the style currently displayed as
+        "2020s". It is based on nowadays trending features in typography both in font and in page layout and adopts a
+        very minimalistic aesthetic to what concerns colors and image filters. On the basis of these stylesheet, other
+        six different themes, in order to philologically reconstruct specific typographical tastes.</p>
       <h4>Aldo Manuzio&apos;s print edition (<i>Aldine</i>)</h4>
       <p>Nam congue, ex sit amet vulputate accumsan, mi dolor mattis lorem, id ullamcorper sem arcu vitae sem. Sed
-        dignissim felis ut mi molestie, sed varius libero malesuada.</p>
-      <span class="moodboard">
-        <a data-pin-do="embedBoard" data-pin-lang="it" data-pin-board-width="900" data-pin-scale-height="120" data-pin-scale-width="115" href="https://www.pinterest.it/brokenhrtsclub/1500-1800/"></a>
-      </span>
+        dignissim felis ut mi molestie, sed varius libero malesuada.<br><br>
+        <a href="https://www.pinterest.it/brokenhrtsclub/1500-1800/"><i class="bi bi-pinterest"></i></a> Discover
+        our moodboard on Pinterest</p>
       <h4>XIX century&apos;s newspaper</h4>
-      <p><span class="firstletter">E</span>ven though there were some differences and variations, American newspapers from the beginning of the XIX century shared some layout characteristics: the front page bore, at the top, a nameplate with the newspaper's title, its place of publication and other information regarding the date, volume and number of the issue. Inside, there was the masthead, containing repeated information of the nameplate (such as the newspaper's title, place and date of publication and so on).
-      <br>For what concerns the content, there is less consistency: some newspapers filled the front page with advertisement and left only the subsequent page(s) to the actual news, while others did the opposite or mixed advertisement and news.
-      <br>After the introduction of the printing press machine (1814), newspapers became larger, the most important ones expanding to six or eight pages, each with eight to ten columns of texts (and the columns ran the full length of the page). Advertisements were difficult to distinguish from news articles, as they had little graphic display (and newspapers consisted primarily of text even by the late 1850s).
-      <br>Moreover, as seen from some original artifacts, we can see how the margins of the written section were the only ones of some extent, while those between different columns are very restricted and almost imperceptible if not for the vertical lines dividing them. Again, by studying some original artefacts (found in the Library of Congress archives) we could see that for what concerns the title, in the beginning of the XIX century Gothic or blackletter style fonts were the most used apart from a few exceptions (The Sun or The Tri-weekly Standard being some of them).
-      <br><br>
-      Bibliography:
-      <ul>
-        <li><i>American Newspapers, 1800-1860: An Introduction</i>, Illinois Library</li>
-        <!-- Mettiamo anche il link oppure no? https://www.library.illinois.edu/hpnl/tutorials/antebellum-newspapers-introduction/ -->
-        <li><i>The Early Nineteenth-Century Newspaper Boom</i> - The News Media and the Making of America, 1730-1865 (American Antiquarian Society)</li>
-        <!-- Eventuale link: https://americanantiquarian.org/earlyamericannewsmedia/exhibits/show/news-in-antebellum-america/the-newspaper-boom -->
-        <li><i>Chronicling America: Historic American Newspapers</i>, Library of Congress</li>
-      </ul></p>
-      <span class="moodboard">
-        <a data-pin-do="embedBoard" data-pin-lang="it" data-pin-board-width="900" data-pin-scale-height="120" data-pin-scale-width="115" href="https://www.pinterest.it/brokenhrtsclub/xix-century/"></a>
-      </span>
+      <p><span class="firstletter">E</span>ven though there were some differences and variations, American newspapers
+        from the beginning of the XIX century shared some layout characteristics: the front page bore, at the top, a
+        nameplate with the newspaper's title, its place of publication and other information regarding the date, volume
+        and number of the issue. Inside, there was the masthead, containing repeated information of the nameplate (such
+        as the newspaper's title, place and date of publication and so on).
+        <br>For what concerns the content, there is less consistency: some newspapers filled the front page with
+        advertisement and left only the subsequent page(s) to the actual news, while others did the opposite or mixed
+        advertisement and news.
+        <br>After the introduction of the printing press machine (1814), newspapers became larger, the most important
+        ones expanding to six or eight pages, each with eight to ten columns of texts (and the columns ran the full
+        length of the page). Advertisements were difficult to distinguish from news articles, as they had little graphic
+        display (and newspapers consisted primarily of text even by the late 1850s).
+        <br>Moreover, as seen from some original artifacts, we can see how the margins of the written section were the
+        only ones of some extent, while those between different columns are very restricted and almost imperceptible if
+        not for the vertical lines dividing them. Again, by studying some original artefacts (found in the Library of
+        Congress archives) we could see that for what concerns the title, in the beginning of the XIX century Gothic or
+        blackletter style fonts were the most used apart from a few exceptions (The Sun or The Tri-weekly Standard being
+        some of them).
+        <br><br>
+        Bibliography:
+        <ul>
+          <li><i>American Newspapers, 1800-1860: An Introduction</i>, Illinois Library</li>
+          <!-- Mettiamo anche il link oppure no? https://www.library.illinois.edu/hpnl/tutorials/antebellum-newspapers-introduction/ -->
+          <li><i>The Early Nineteenth-Century Newspaper Boom</i> - The News Media and the Making of America, 1730-1865
+            (American Antiquarian Society)</li>
+          <!-- Eventuale link: https://americanantiquarian.org/earlyamericannewsmedia/exhibits/show/news-in-antebellum-america/the-newspaper-boom -->
+          <li><i>Chronicling America: Historic American Newspapers</i>, Library of Congress</li>
+        </ul>
+        <a href="https://www.pinterest.it/brokenhrtsclub/xix-century/"><i class="bi bi-pinterest"></i></a> Discover our
+        moodboard on Pinterest</p>
       <h4>Bauhaus</h4>
-      <p><span class="firstletter">T</span>o epitomize a typographic style of the first half of the 20th century we decided to draw inspiration from the Bauhaus. Indeed, the design school paid attention not only to architecture and object design but devoted many effort also in the typographical domain. This impact resulted not only in the worldwide famous panel with writings laid in geometrical manner, but also in famous commercial products, as the cover of the "Penguin Classics", proposed by Jan Tschichold.<br>
-      In this project, the "Bauhaus" style is strictly based on real example of the Weimar school of design. As reference text, we used the original version of Gropius' manifesto <i>Idee und Aufbau des staatlichen Bauhaus</i>. Analyzing a digital facsmile available on Monoskop it was possible to infere the proportion of the different parts. The font is set to the default size (1em) and a drop cap is added as in the cover of the manifesto, while the margin has been calculated to be 5% of the entire width of the displayed page.<br>
-      To what concerns the choice of the colors and of paratextual elements, we decided to take inspiration directly from original artefacts of the period. Bauhaus' publication always included illustration and diagrams, quite always rendered in the bichromy of black and white: this feature suggested the introduction of a full grayscale filter on all the images present of the webapp. To avoid an excessive monotony of the page, we also combined this aspect with a color palette directly taken from import artists of Bauhaus' milieu: for this reason the entire style is dominated by primary colors directly taken from the original artifacts through color picker softwares. Moreover, the presence of ortogonal elements is respected thanks to the customization of the borders of the div elements (either on the four sides or only on two, in right angle).
-      <br><br>
-      Bibliography:
-      <ul>
-        <li>Gropius, Walter: <i>Idee und Aufbau des staatlichen Bauhaus</i>, Bauhausverlag, 1923</li> <!-- Mettiamo anche il link oppure no? https://monoskop.org/images/a/a7/Gropius_Walter_Idee_und_Aufbau_des_staatlichen_bauhauses_Weimar_1923.pdf -->
-        <li>Moriarty, Ana: <i>The Modern Letter - The Best of the Bauhaus Typography</i>, Widewalls, 2016</li>
-        <!-- Mettiamo anche il link oppure no? https://www.widewalls.ch/magazine/bauhaus-typography -->
-      </ul>
-      <a href="https://www.pinterest.it/brokenhrtsclub/first-half-xx/"><i class="bi bi-pinterest"></i></a> Discover our moodboard on Pinterest</p>
+      <p><span class="firstletter">T</span>o epitomize a typographic style of the first half of the 20th century we
+        decided to draw inspiration from the Bauhaus. Indeed, the design school paid attention not only to architecture
+        and object design but devoted many effort also in the typographical domain. This impact resulted not only in the
+        worldwide famous panel with writings laid in geometrical manner, but also in famous commercial products, as the
+        cover of the "Penguin Classics", proposed by Jan Tschichold.<br>
+        In this project, the "Bauhaus" style is strictly based on real example of the Weimar school of design. As
+        reference text, we used the original version of Gropius' manifesto <i>Idee und Aufbau des staatlichen
+          Bauhaus</i>. Analyzing a digital facsmile available on Monoskop it was possible to infere the proportion of
+        the different parts. The font is set to the default size (1em) and a drop cap is added as in the cover of the
+        manifesto, while the margin has been calculated to be 5% of the entire width of the displayed page.<br>
+        To what concerns the choice of the colors and of paratextual elements, we decided to take inspiration directly
+        from original artefacts of the period. Bauhaus' publication always included illustration and diagrams, quite
+        always rendered in the bichromy of black and white: this feature suggested the introduction of a full grayscale
+        filter on all the images present of the webapp. To avoid an excessive monotony of the page, we also combined
+        this aspect with a color palette directly taken from import artists of Bauhaus' milieu: for this reason the
+        entire style is dominated by primary colors directly taken from the original artifacts through color picker
+        softwares. Moreover, the presence of ortogonal elements is respected thanks to the customization of the borders
+        of the div elements (either on the four sides or only on two, in right angle).
+        <br><br>
+        Bibliography:
+        <ul>
+          <li>Gropius, Walter: <i>Idee und Aufbau des staatlichen Bauhaus</i>, Bauhausverlag, 1923</li>
+          <!-- Mettiamo anche il link oppure no? https://monoskop.org/images/a/a7/Gropius_Walter_Idee_und_Aufbau_des_staatlichen_bauhauses_Weimar_1923.pdf -->
+          <li>Moriarty, Ana: <i>The Modern Letter - The Best of the Bauhaus Typography</i>, Widewalls, 2016</li>
+          <!-- Mettiamo anche il link oppure no? https://www.widewalls.ch/magazine/bauhaus-typography -->
+        </ul>
+        <a href="https://www.pinterest.it/brokenhrtsclub/first-half-xx/"><i class="bi bi-pinterest"></i></a> Discover
+        our moodboard on Pinterest</p>
       <h4>Pop Art</h4>
       <p>Praesent quis blandit ligula. Praesent ipsum lectus, tempus non placerat sit amet, fringilla sit amet mi. Ut
-        aliquam viverra erat, sed cursus metus viverra in. Sed maximus rhoncus placerat.</p>
-      <span class="moodboard">
-        <a data-pin-do="embedBoard" data-pin-lang="it" data-pin-board-width="900" data-pin-scale-height="120" data-pin-scale-width="115" href="https://www.pinterest.it/brokenhrtsclub/second-half-xx/"></a>
-      </span>
+        aliquam viverra erat, sed cursus metus viverra in. Sed maximus rhoncus placerat.<br><br>
+        <a href="https://www.pinterest.it/brokenhrtsclub/second-half-xx/"><i class="bi bi-pinterest"></i></a> Discover
+        our moodboard on Pinterest</p>
       <h4>Vogue</h4>
       <p>In tincidunt dui in viverra semper. Nunc molestie pellentesque fringilla. Duis iaculis nibh nulla, ac semper
-        diam
-        ultrices eget. Nunc pretium semper congue. Vestibulum varius.</p>
-        <span class="moodboard">
-          <a data-pin-do="embedBoard" data-pin-lang="it" data-pin-board-width="900" data-pin-scale-height="120" data-pin-scale-width="115" href="https://www.pinterest.it/brokenhrtsclub/late-xx-beginning-xxi/"></a>
-        </span>
+        diam ultrices eget. Nunc pretium semper congue. Vestibulum varius.<br><br>
+        <a href="https://www.pinterest.it/brokenhrtsclub/late-xx-beginning-xxi/"><i class="bi bi-pinterest"></i></a>
+        Discover our moodboard on Pinterest</p>
       <h4>Future</h4>
-      <p><span class="firstletter">W</span>e define as "future" a style which is likely to be applied in the close future (approximately, 2030). For this reason, it was not possible to faithfully emulate an original document. We hence took inspiration from recent technological development such as "Google Infinite Scroll": in contradiction with the paradigm of little content in a broad space, we decided to mantain the layout structure used nowadays. To increase the breath of the text we set higher left and right margins.<br>
-      To what concerns typographic and color details we relied on the aesthetical canon of the vaporwave movement, which has been often used in science fiction content. The page is hence characterized by two different fonts: the first one is pixelled and used exclusively in the navbars; the second one is more readable and is hence applied to the textual content. All the color are instead taken from pre-existent color palette directly availble online (in particular Pinterest). Moreover, these nuances have been chosen also for the image filter, which wants to resemble some of the most trending effects used nowadays (in particular, memes). 
-      </p>
-      <span class="moodboard">
-        <a data-pin-do="embedBoard" data-pin-lang="it" data-pin-board-width="900" data-pin-scale-height="120"
-          data-pin-scale-width="115" href="https://www.pinterest.it/brokenhrtsclub/future/"></a>
-      </span>
+      <p><span class="firstletter">W</span>e define as "future" a style which is likely to be applied in the close
+        future (approximately, 2030). For this reason, it was not possible to faithfully emulate an original document.
+        We hence took inspiration from recent technological development such as "Google Infinite Scroll": in
+        contradiction with the paradigm of little content in a broad space, we decided to mantain the layout structure
+        used nowadays. To increase the breath of the text we set higher left and right margins.<br>
+        To what concerns typographic and color details we relied on the aesthetical canon of the vaporwave movement,
+        which has been often used in science fiction content. The page is hence characterized by two different fonts:
+        the first one is pixelled and used exclusively in the navbars; the second one is more readable and is hence
+        applied to the textual content. All the color are instead taken from pre-existent color palette directly
+        availble online (in particular Pinterest). Moreover, these nuances have been chosen also for the image filter,
+        which wants to resemble some of the most trending effects used nowadays (in particular, memes).<br><br>
+        <a href="https://www.pinterest.it/brokenhrtsclub/future/"><i class="bi bi-pinterest"></i></a> Discover our
+        moodboard on Pinterest</p>
     </div>
   </div>
   <footer class="py-3 my-4">

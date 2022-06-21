@@ -517,6 +517,8 @@ a.navbar-brand {
 
 .tab-pane {
     font-size: 1.15em;
+    width: 100%;
+    display: flex;
 }
 
 .tab-pane ul {
@@ -530,4 +532,9 @@ a.navbar-brand {
     margin-right: 1em;
     padding: 2% 0% 2% 2%;
     background: lavenderblush;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #4c008a !important;
+    font-weight: bold;
 }
