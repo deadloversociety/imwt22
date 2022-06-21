@@ -62,7 +62,7 @@ body {
 
 nav {
     font-family: 'Merriweather', serif;
-    font-size: 1em !important;
+    font-size: 1.2em !important;
 }
 
 .navbar,
@@ -143,11 +143,11 @@ a.btnLink:active {
     margin: 2% 10% 2% 10%;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #disclaimer {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 /* ====== Hero image */

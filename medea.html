@@ -22,84 +22,94 @@
     <link rel="stylesheet" href="css/maincss.css" id="currentlocalcss">
     <script src="mainjs.js"></script>
     <style>
+        .myborder {
+            border: solid rgb(220, 220, 220) 1px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
 
-		.myborder {
-			border: solid rgb(220,220,220) 1px;
-			padding: 10px;
-			margin-bottom: 15px; 
-		}
-		.myborder-notop {
-			border-top: none;
-		}
-		
-		.breath {
-			margin-top: 15px;
-		}
-		
-		.tab-pane {
-			min-height: 150px;
-		}
-		
-		.text-charmortal {
-			background-color: #ffddff;
-		}
-		
-		.text-charimmortal {
-			background-color: #ddffdd;
-		}
-		.text-places {
-			background-color: #ffffdd;
-		}
+        .myborder-notop {
+            border-top: none;
+        }
+
+        .breath {
+            margin-top: 15px;
+        }
+
+        .tab-pane {
+            min-height: 150px;
+        }
+
+        .text-charmortal {
+            background-color: #ffddff;
+        }
+
+        .text-charimmortal {
+            background-color: #ddffdd;
+        }
+
+        .text-places {
+            background-color: #ffffdd;
+        }
 
         .text-sequence {
-			background-color: #ffffdd;
-		}
-		
-		ul.minimal {
-			padding-inline-start: 0.5em; 
-		}
-		.list {
-			font-size: 80%;
-			line-height: 1.2; 
-			margin: 0; 
-			white-space: nowrap; 
-			overflow-x: hidden;
-			list-style-position:inside;  
-		}
-		.list a {
-			color: black;
-			margin: 0; 
-		}
-		.list-sequence:before {
-			content: "«";
-		}
-		.list-sequence:after {
-			content: "»";
-		}
-		
-		.animate {
-			animation-name: bgcolor ;
-			animation-duration: 0.75s ; 
-			animation-iteration-count: 3;
-			animation-fill-mode: backwards;
-		}
+            background-color: #ffffdd;
+        }
 
-		@keyframes bgcolor {
-			from { background-color: #ffffff;  }
-			to { background-color: #cccc00; }
-		}
-		
-		.small {
-			font-size: 80%;
-			line-height: 1.2; 
-			margin: 0; 
-		}
+        ul.minimal {
+            padding-inline-start: 0.5em;
+        }
 
-		.list::-webkit-scrollbar {
-			display: none; /* for Chrome, Safari, and Opera */	
-		}
+        .list {
+            font-size: 80%;
+            line-height: 1.2;
+            margin: 0;
+            white-space: nowrap;
+            overflow-x: hidden;
+            list-style-position: inside;
+        }
 
-	</style>
+        .list a {
+            color: black;
+            margin: 0;
+        }
+
+        .list-sequence:before {
+            content: "«";
+        }
+
+        .list-sequence:after {
+            content: "»";
+        }
+
+        .animate {
+            animation-name: bgcolor;
+            animation-duration: 0.75s;
+            animation-iteration-count: 3;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes bgcolor {
+            from {
+                background-color: #ffffff;
+            }
+
+            to {
+                background-color: #cccc00;
+            }
+        }
+
+        .small {
+            font-size: 80%;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .list::-webkit-scrollbar {
+            display: none;
+            /* for Chrome, Safari, and Opera */
+        }
+    </style>
 </head>
 
 <body>
@@ -150,8 +160,7 @@
                 <a class="nav-link sec-nav" onclick="swapTheme('css/newspapercss.css')">Quotidiani 1800</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link sec-nav"
-                    onclick="swapTheme('css/baucss.css')">Bauhaus</a>
+                <a class="nav-link sec-nav" onclick="swapTheme('css/baucss.css')">Bauhaus</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link sec-nav" onclick="swapTheme('css/popcss.css')">Pop Art</a>
@@ -160,12 +169,10 @@
                 <a class="nav-link sec-nav" href="#">Vogue</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link sec-nav"
-                    onclick="swapTheme('css/futurecss.css')">Future</a>
+                <a class="nav-link sec-nav" onclick="swapTheme('css/futurecss.css')">Future</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active sec-nav"
-                    onclick="swapTheme('css/maincss.css')">Default</a>
+                <a class="nav-link active sec-nav" onclick="swapTheme('css/maincss.css')">Default</a>
             </li>
         </ul>
         <hr class="onlybau"
@@ -231,146 +238,167 @@
     <!-- Text hiding/showing -->
     <div class="textsection">
         <article id="MedeaEur">
-             <h3>Euripides</h3>
+            <h3>Euripides</h3>
             <button class="buttonShowText" onclick="showOriginalEurpd()" type="button">Show the original Greek
                 text</button>
             <button class="buttonHideText" onclick="hideOriginalEurpd()" type="button">Hide the original Greek
                 text</button>
-                <button class="buttonCompText" onclick="compareEur()" type="button">Compare the texts</button>
+            <button class="buttonCompText" onclick="compareEur()" type="button">Compare the texts</button>
             <div class="indexcompare">
                 <p><b>Index</b></p>
-                <p><ol>
-                    <li onclick="showEur1()">Prologue</li>
-                    <li onclick="showEur2()">Medea's speech to the women of Corinth </li>
-                    <li onclick="showEur3()">Medea fights with Jason</li>
-                </ol></p>
+                <p>
+                    <ol>
+                        <li onclick="showEur1()">Prologue</li>
+                        <li onclick="showEur2()">Medea's speech to the women of Corinth </li>
+                        <li onclick="showEur3()">Medea fights with Jason</li>
+                    </ol>
+                </p>
             </div>
             <ul id="list"></ul>
             <div class="metadata">
-              <div class="row clearfix">
-                        <div class="col-md-3">
-                            <div class="row clearfix border p-2">
-                                <div class="col-md-12">
-                                    <ul id="list">
-                                    </ul>
-                                </div>
+                <div class="row clearfix">
+                    <div class="col-md-3">
+                        <div class="row clearfix border p-2">
+                            <div class="col-md-12">
+                                <ul id="list">
+                                </ul>
                             </div>
-                            <div class="row clearfix mt-4">
-                                <div class="col-md-12">
-                                    <form role="form">
-                                        <div class="checkbox"><label>
-                                            <input type="checkbox" id="showcharmortal" class="show">Mortal Characters</label></div>
-                                        <div class="checkbox"><label>
-                                            <input type="checkbox" id="showcharimmortal" class="show">Immortal Characters</label></div>
-                                        <div class="checkbox"><label>
-                                            <input type="checkbox" id="showplaces" class="show">Places</label></div>
-                                        <div class="checkbox"><label>
-                                            <input type="checkbox" id="showsequences" class="show">Sequences</label></div>
-                                    </form>
-                                </div>
-                                <div class="col-md-6">
-                                    <div><button class="btn btn-outline-info bt-sm w-100" id="createcharmortal" class="create">Add Mortal Characters</button></div>
-                                    <div><button class="btn btn-outline-info bt-sm w-100" id="createcharimmortal" class="create">Add Immortal Characters</button></div>
-                                    <div><button class="btn btn-outline-info bt-sm w-100" id="createplaces" class="create">Add Places</button></div>
-                                    <div><button class="btn btn-outline-info bt-sm w-100" id="createsequences" class="create">Add sequences</button></div>
                         </div>
+                        <div class="row clearfix mt-4">
+                            <div class="col-md-12">
+                                <form role="form">
+                                    <div class="checkbox"><label>
+                                            <input type="checkbox" id="showcharmortal" class="show">Mortal
+                                            Characters</label></div>
+                                    <div class="checkbox"><label>
+                                            <input type="checkbox" id="showcharimmortal" class="show">Immortal
+                                            Characters</label></div>
+                                    <div class="checkbox"><label>
+                                            <input type="checkbox" id="showplaces" class="show">Places</label></div>
+                                    <div class="checkbox"><label>
+                                            <input type="checkbox" id="showsequences" class="show">Sequences</label>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="row clearfix mt-3">
-                                <div class="col-md-12">
-                                    <ul class="nav nav-tabs" id="sentenceTab" role="tablist">
-                                      <li class="nav-item">
-                                        <a class="nav-link active" id="mortalcharacters-tab" data-toggle="tab" href="#charmortal" role="tab" aria-controls="view" aria-selected="true">Mortal characters</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" id="immortalcharacters-tab" data-toggle="tab" href="#charimmortal" role="tab" aria-controls="home" aria-selected="false">Immortal Characters</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" id="places-tab" data-toggle="tab" href="#places" role="tab" aria-controls="home" aria-selected="false">Places</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" id="sequences-tab" data-toggle="tab" href="#sequences" role="tab" aria-controls="home" aria-selected="false">Sequences</a>
-                                      </li>
-                                    </ul>
+                            <div class="col-md-6">
+                                <div><button class="btn btn-outline-info bt-sm w-100" id="createcharmortal"
+                                        class="create">Add Mortal Characters</button></div>
+                                <div><button class="btn btn-outline-info bt-sm w-100" id="createcharimmortal"
+                                        class="create">Add Immortal Characters</button></div>
+                                <div><button class="btn btn-outline-info bt-sm w-100" id="createplaces"
+                                        class="create">Add Places</button></div>
+                                <div><button class="btn btn-outline-info bt-sm w-100" id="createsequences"
+                                        class="create">Add sequences</button></div>
+                            </div>
+                        </div>
+                        <div class="row clearfix mt-3">
+                            <div class="col-md-12">
+                                <ul class="nav nav-tabs" id="sentenceTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="mortalcharacters-tab" data-toggle="tab"
+                                            href="#charmortal" role="tab" aria-controls="view"
+                                            aria-selected="true">Mortal characters</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="immortalcharacters-tab" data-toggle="tab"
+                                            href="#charimmortal" role="tab" aria-controls="home"
+                                            aria-selected="false">Immortal Characters</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="places-tab" data-toggle="tab" href="#places" role="tab"
+                                            aria-controls="home" aria-selected="false">Places</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="sequences-tab" data-toggle="tab" href="#sequences"
+                                            role="tab" aria-controls="home" aria-selected="false">Sequences</a>
+                                    </li>
+                                </ul>
 
-            
-                                    <!-- Tab panes -->
-                                    <div class="tab-content" id="sentenceContent">
-                                        <div class="tab-pane active myBorder myBorder-notop" id="charmortal" role="tabpanel" aria-labelledby="mortalcharacters-tab">
-                                            <ul></ul>
-                                        </div>
-                                        <div class="tab-pane myBorder myBorder-notop" id="charimmortal" role="tabpanel" aria-labelledby="immortalcharacters-tab">
-                                            <ul></ul>
-                                        </div>
-                                        <div class="tab-pane myBorder myBorder-notop" id="places" role="tabpanel" aria-labelledby="places-tab">
-                                            <ul></ul>
-                                        </div>
-                                        <div class="tab-pane myBorder myBorder-notop" id="sequences" role="tabpanel" aria-labelledby="sequences-tab">
-                                            <ul></ul>
-                                        </div>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content" id="sentenceContent">
+                                    <div class="tab-pane active myBorder myBorder-notop" id="charmortal" role="tabpanel"
+                                        aria-labelledby="mortalcharacters-tab">
+                                        <ul></ul>
+                                    </div>
+                                    <div class="tab-pane myBorder myBorder-notop" id="charimmortal" role="tabpanel"
+                                        aria-labelledby="immortalcharacters-tab">
+                                        <ul></ul>
+                                    </div>
+                                    <div class="tab-pane myBorder myBorder-notop" id="places" role="tabpanel"
+                                        aria-labelledby="places-tab">
+                                        <ul></ul>
+                                    </div>
+                                    <div class="tab-pane myBorder myBorder-notop" id="sequences" role="tabpanel"
+                                        aria-labelledby="sequences-tab">
+                                        <ul></ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>	
-                        </div>	
-                    </div>
-                        <div class="col-md-9">
-                            <div id="file"></div>
                         </div>
-                    </div>
-        </article>
-        <article id="MedeaApp">
-            <h3>Apollonius Rhodius</h3>
-            <button class="buttonShowText" onclick="showOriginalApRod()" type="button">Show the original Greek
-                text</button>
-            <button class="buttonHideText" onclick="hideOriginalApRod()" type="button">Hide the original Greek
-                text</button>
-            <div class="metadata">
-                <p>Add metadata</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at maximus dui. Praesent commodo lorem
-                    non est euismod, tempus ultrices eros euismod. Vestibulum ante ipsum primis in faucibus orci luctus
-                    et ultrices posuere cubilia curae; Quisque fringilla ligula velit, sit amet laoreet magna finibus
-                    eu. Integer faucibus, quam nec pellentesque tristique, massa neque suscipit arcu, in cursus urna dui
-                    id dui. Phasellus iaculis magna vel vestibulum tempus. Nulla vel metus turpis. Etiam vitae velit nec
-                    ipsum pellentesque egestas. Aenean luctus pharetra quam, id malesuada augue porta nec. Quisque in
-                    purus dapibus, tincidunt elit non, egestas nulla. </p>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div id="ARtextEn">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ex at dui
-                            fermentum maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Ut aliquet eros in justo blandit sagittis. Sed euismod commodo
-                            mollis. Nullam eleifend lacinia tellus. Proin aliquam dolor quam, nec varius sapien
-                            ullamcorper eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                            ac turpis egestas. Praesent eu gravida erat. Aenean purus risus, tincidunt eu ultricies ut,
-                            convallis nec turpis.
-                        </p>
-                    </div>
-                    <div id="ARoriginalText" class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ex at dui
-                            fermentum maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Ut aliquet eros in justo blandit sagittis. Sed euismod commodo
-                            mollis. Nullam eleifend lacinia tellus. Proin aliquam dolor quam, nec varius sapien
-                            ullamcorper eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                            ac turpis egestas. Praesent eu gravida erat. Aenean purus risus, tincidunt eu ultricies ut,
-                            convallis nec turpis.
-                        </p>
                     </div>
                 </div>
             </div>
-        </article>
-        <article id="MedeaOvi">
-            <h3>Ovid, <i>Metamorphoses</i>, VII, 1-424</h3>
-            <button class="buttonShowText" onclick="showOriginalOvid()" type="button">Show the original Latin
-                text</button>
-            <button class="buttonHideText" onclick="hideOriginalOvid()" type="button">Hide the original Latin
-                text</button>
-            <button class="buttonCompText" onclick="compareOvid()" type="button">Compare the texts</button>
-            <div class="indexcompare"> <!-- SOLO IN OVIDIO!!!!! Aggiorna in tutti e tre!-->
-                <p><b>Index</b></p>
-                <p><ol>
+            <div class="col-md-9">
+                <div id="file"></div>
+            </div>
+    </div>
+    </article>
+    <article id="MedeaApp">
+        <h3>Apollonius Rhodius</h3>
+        <button class="buttonShowText" onclick="showOriginalApRod()" type="button">Show the original Greek
+            text</button>
+        <button class="buttonHideText" onclick="hideOriginalApRod()" type="button">Hide the original Greek
+            text</button>
+        <div class="metadata">
+            <p>Add metadata</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at maximus dui. Praesent commodo lorem
+                non est euismod, tempus ultrices eros euismod. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Quisque fringilla ligula velit, sit amet laoreet magna finibus
+                eu. Integer faucibus, quam nec pellentesque tristique, massa neque suscipit arcu, in cursus urna dui
+                id dui. Phasellus iaculis magna vel vestibulum tempus. Nulla vel metus turpis. Etiam vitae velit nec
+                ipsum pellentesque egestas. Aenean luctus pharetra quam, id malesuada augue porta nec. Quisque in
+                purus dapibus, tincidunt elit non, egestas nulla. </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="ARtextEn">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ex at dui
+                        fermentum maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                        fames ac turpis egestas. Ut aliquet eros in justo blandit sagittis. Sed euismod commodo
+                        mollis. Nullam eleifend lacinia tellus. Proin aliquam dolor quam, nec varius sapien
+                        ullamcorper eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        ac turpis egestas. Praesent eu gravida erat. Aenean purus risus, tincidunt eu ultricies ut,
+                        convallis nec turpis.
+                    </p>
+                </div>
+                <div id="ARoriginalText" class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ex at dui
+                        fermentum maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                        fames ac turpis egestas. Ut aliquet eros in justo blandit sagittis. Sed euismod commodo
+                        mollis. Nullam eleifend lacinia tellus. Proin aliquam dolor quam, nec varius sapien
+                        ullamcorper eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        ac turpis egestas. Praesent eu gravida erat. Aenean purus risus, tincidunt eu ultricies ut,
+                        convallis nec turpis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article id="MedeaOvi">
+        <h3>Ovid, <i>Metamorphoses</i>, VII, 1-424</h3>
+        <button class="buttonShowText" onclick="showOriginalOvid()" type="button">Show the original Latin
+            text</button>
+        <button class="buttonHideText" onclick="hideOriginalOvid()" type="button">Hide the original Latin
+            text</button>
+        <button class="buttonCompText" onclick="compareOvid()" type="button">Compare the texts</button>
+        <div class="indexcompare">
+            <!-- SOLO IN OVIDIO!!!!! Aggiorna in tutti e tre!-->
+            <p><b>Index</b></p>
+            <p>
+                <ol>
                     <li onclick="showOvid1()">Medea agonises over her love for Jason</li>
                     <li onclick="showOvid2()">Jason promises to marry Medea</li>
                     <li onclick="showOvid3()">Jason wins the Golden Fleece</li>
@@ -380,22 +408,23 @@
                     <li onclick="showOvid7()">Medea’s destruction of Pelias</li>
                     <li onclick="showOvid8()">Medea flees and reaches Athens</li>
                     <li onclick="showOvid9()">Medea attempts Theseus’s life, then vanishes</li>
-                </ol></p>
-            </div>
-            <div class="metadata">
-                <p>Add metadata</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at maximus dui. Praesent commodo lorem
-                    non est euismod, tempus ultrices eros euismod. Vestibulum ante ipsum primis in faucibus orci luctus
-                    et ultrices posuere cubilia curae; Quisque fringilla ligula velit, sit amet laoreet magna finibus
-                    eu. Integer faucibus, quam nec pellentesque tristique, massa neque suscipit arcu, in cursus urna dui
-                    id dui. Phasellus iaculis magna vel vestibulum tempus. Nulla vel metus turpis. Etiam vitae velit nec
-                    ipsum pellentesque egestas. Aenean luctus pharetra quam, id malesuada augue porta nec. Quisque in
-                    purus dapibus, tincidunt elit non, egestas nulla.</p>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div id="OVtextEn">
-                        <!-- Insert the content here!>
+                </ol>
+            </p>
+        </div>
+        <div class="metadata">
+            <p>Add metadata</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at maximus dui. Praesent commodo lorem
+                non est euismod, tempus ultrices eros euismod. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Quisque fringilla ligula velit, sit amet laoreet magna finibus
+                eu. Integer faucibus, quam nec pellentesque tristique, massa neque suscipit arcu, in cursus urna dui
+                id dui. Phasellus iaculis magna vel vestibulum tempus. Nulla vel metus turpis. Etiam vitae velit nec
+                ipsum pellentesque egestas. Aenean luctus pharetra quam, id malesuada augue porta nec. Quisque in
+                purus dapibus, tincidunt elit non, egestas nulla.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="OVtextEn">
+                    <!-- Insert the content here!>
                         <div class="ovid MetVII1_73">
                             <p>And now the Argonauts were ploughing through the sea in their ship, built in Thessalian
                                 Pagasae.
@@ -1072,9 +1101,9 @@
                                     escaped death, in a dark mist, raised by her incantations.
                             </p>
                         </div> -->
-                    </div>
-                    <div id="OVoriginalText" class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">  
-                        <!-- Insert the content here!
+                </div>
+                <div id="OVoriginalText" class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                    <!-- Insert the content here!
                         <div class="ovid MetVII1_73">
                             <p>
                                 Iamque fretum Minyae Pagasaea puppe secabant,<br>
@@ -1535,10 +1564,10 @@
                                 Effugit illa necem nebulis per carmina motis.<br>
                             </p>
                         </div> -->
-                    </div> 
                 </div>
             </div>
-        </article>
+        </div>
+    </article>
     </div>
     <!-- Footer -->
     <footer class="py-3 my-4">
@@ -1563,213 +1592,224 @@
         dls.addEventListener("mouseover", startShaking);
         dls.addEventListener("mouseout", abortShaking);
     </script>
-        	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script>
-		String.prototype.tpl = function(o) { 
-			var r = this ; 
-			for (var i in o) { 
-				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
-			} 
-			return r 
-		}
-		
-		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
-		
-		$(document).ready(main);
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script>
+        String.prototype.tpl = function (o) {
+            var r = this;
+            for (var i in o) {
+                r = r.replace(new RegExp("\\$" + i, 'g'), o[i])
+            }
+            return r
+        }
 
-		function main() {
-			$.ajax({
-				method: 'GET',
-				url: 'https://deadloversociety.github.io/imwt22/dls.json',
-				success: function(d) {
-					for (var i=0; i<d.length; i++) {
-						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
-					}	
-				},
-				error: function() {
-					alert('No document to show')
-				}
-			});
-			
-			
-			$('#showcharmortal').click(function() {
-				if (this.checked) 
-					$('.charmortal').addClass('text-charmortal')
-				else
-					$('.charmortal').removeClass('text-charmortal')
-			})
-			$('#showcharimmortal').click(function() {
-				if (this.checked) 
-					$('.charimmortal').addClass('text-charimmortal')
-				else
-					$('.charimmortal').removeClass('text-charimmortal')
-			})
-			$('#showplaces').change(function() {
-				if (this.checked) 
-					$('.places').addClass('text-places')
-				else
-					$('.places').removeClass('text-places')
-			})
-            $('#showsequence').change(function() {
-				if (this.checked) 
-					$('.sequence').addClass('text-sequences')
-				else
-					$('.sequence').removeClass('text-sequences')
-			})
-            		
-			$('#createcharmortal').click(function() {
-				var s = window.getSelection().toString()
-				addToDoc(s,'charmortal','span')
-				addToLocalStorage(s,'charmortal')
-			})
-			$('#createcharimmortal').click(function() {
-				var s = window.getSelection().toString()
-				if (s.length > 3) {
-					addToDoc(s,'charimmortal','span')
-					addToLocalStorage(s,'charimmortal')
-				}
-			})
-			$('#createplaces').click(function() {
-				var s = window.getSelection().toString()
-				addToDoc(s,'places','q')
-				addToLocalStorage(s,'places')
-			})
-			$('#createsequences').change(function() {
-				var s = window.getSelection().toString()
-				addToDoc(s,'sequence','q')
-				addToLocalStorage(s,'sequence')
-			})
-		}
+        var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
 
-		function addToLocalStorage(string, type) {
-			var ls = getFromLocalStorage()
-			if (ls[type].indexOf(string)==-1) ls[type].push(string)
-			localStorage.setItem('fvSentences',JSON.stringify(ls))		
-		}
+        $(document).ready(main);
 
-		function getFromLocalStorage() {
-			var lsString = localStorage.getItem('fvSentences') 
-			var ls = JSON.parse(lsString)
-			if (ls==undefined)  {
-				ls = {
-					aside: [],
-					keyword: [],
-					speech: [],
-					quote: []
-				}
-			}
-			return ls
-		}
-		
-		function addFromLocalStorage() {
-			var ls = getFromLocalStorage()
-			for (var i in ls) {
-				for (var k in ls[i]) {
-					addToDoc(ls[i][k], i , 'span')
-				}
-			}
-		}
-		
-		function addToDoc(string,type,tag) {
-			var replacement = `<${tag} class='${type}'>${string}</${tag}>`
-			if (isMoreThanOneWord(string)) {
-				var variations = new RegExp(string, 'mgi')  
-					// g: global: replace multiple occurrence and not just the first
-					// i: ignore case: replace matching string regardless of the case 
-			} else {
-				var variations = findAllVariations(string)
-			}
-			// bad bad bad bad solution: complicated, fragile, computational intensive. 
-			// Can you think of something better?
-			var text = $('#file').html().replace(variations,replacement)
-			$('#file').html(text)
-			addIds()
-			filltabs()
-		}
-		
-		function isMoreThanOneWord(s) {
-			return s.match(/\s/)   // there is at least one whitespace character in the string
-		}
-
-		function findAllVariations(s) {
-			var desinences = "[s|es|ing|ed|d]?" // optional additional desinences
-			
-			return new RegExp(`\\b${s}${desinences}\\b`,"gi")   
-		}
+        function main() {
+            $.ajax({
+                method: 'GET',
+                url: 'https://deadloversociety.github.io/imwt22/dls.json',
+                success: function (d) {
+                    for (var i = 0; i < d.length; i++) {
+                        $('#list').append(listItemTpl.tpl({
+                            url: d[i].url,
+                            label: d[i].label
+                        }))
+                    }
+                },
+                error: function () {
+                    alert('No document to show')
+                }
+            });
 
 
-		
-		function load(file) {
-			$.ajax({
-				method: 'GET',
-				url: file,
-				success: function(d) {
-					$('#file').html(d)
-					$('.show').prop("checked", false)
-					addIds()
-					filltabs()
-					$('#title').html($('#file h1'))
-				},
-				error: function() {
-					alert('Could not load file '+file)
-				}
-			});
-		}
-		
-		function addIds() {
-			addId('.charmortal','charmortal')
-			addId('.charimmortal', 'charimmortal')
-			addId('.places', 'places')
+            $('#showcharmortal').click(function () {
+                if (this.checked)
+                    $('.charmortal').addClass('text-charmortal')
+                else
+                    $('.charmortal').removeClass('text-charmortal')
+            })
+            $('#showcharimmortal').click(function () {
+                if (this.checked)
+                    $('.charimmortal').addClass('text-charimmortal')
+                else
+                    $('.charimmortal').removeClass('text-charimmortal')
+            })
+            $('#showplaces').change(function () {
+                if (this.checked)
+                    $('.places').addClass('text-places')
+                else
+                    $('.places').removeClass('text-places')
+            })
+            $('#showsequence').change(function () {
+                if (this.checked)
+                    $('.sequence').addClass('text-sequences')
+                else
+                    $('.sequence').removeClass('text-sequences')
+            })
+
+            $('#createcharmortal').click(function () {
+                var s = window.getSelection().toString()
+                addToDoc(s, 'charmortal', 'span')
+                addToLocalStorage(s, 'charmortal')
+            })
+            $('#createcharimmortal').click(function () {
+                var s = window.getSelection().toString()
+                if (s.length > 3) {
+                    addToDoc(s, 'charimmortal', 'span')
+                    addToLocalStorage(s, 'charimmortal')
+                }
+            })
+            $('#createplaces').click(function () {
+                var s = window.getSelection().toString()
+                addToDoc(s, 'places', 'q')
+                addToLocalStorage(s, 'places')
+            })
+            $('#createsequences').change(function () {
+                var s = window.getSelection().toString()
+                addToDoc(s, 'sequence', 'q')
+                addToLocalStorage(s, 'sequence')
+            })
+        }
+
+        function addToLocalStorage(string, type) {
+            var ls = getFromLocalStorage()
+            if (ls[type].indexOf(string) == -1) ls[type].push(string)
+            localStorage.setItem('fvSentences', JSON.stringify(ls))
+        }
+
+        function getFromLocalStorage() {
+            var lsString = localStorage.getItem('fvSentences')
+            var ls = JSON.parse(lsString)
+            if (ls == undefined) {
+                ls = {
+                    aside: [],
+                    keyword: [],
+                    speech: [],
+                    quote: []
+                }
+            }
+            return ls
+        }
+
+        function addFromLocalStorage() {
+            var ls = getFromLocalStorage()
+            for (var i in ls) {
+                for (var k in ls[i]) {
+                    addToDoc(ls[i][k], i, 'span')
+                }
+            }
+        }
+
+        function addToDoc(string, type, tag) {
+            var replacement = `<${tag} class='${type}'>${string}</${tag}>`
+            if (isMoreThanOneWord(string)) {
+                var variations = new RegExp(string, 'mgi')
+                // g: global: replace multiple occurrence and not just the first
+                // i: ignore case: replace matching string regardless of the case 
+            } else {
+                var variations = findAllVariations(string)
+            }
+            // bad bad bad bad solution: complicated, fragile, computational intensive. 
+            // Can you think of something better?
+            var text = $('#file').html().replace(variations, replacement)
+            $('#file').html(text)
+            addIds()
+            filltabs()
+        }
+
+        function isMoreThanOneWord(s) {
+            return s.match(/\s/) // there is at least one whitespace character in the string
+        }
+
+        function findAllVariations(s) {
+            var desinences = "[s|es|ing|ed|d]?" // optional additional desinences
+
+            return new RegExp(`\\b${s}${desinences}\\b`, "gi")
+        }
+
+
+
+        function load(file) {
+            $.ajax({
+                method: 'GET',
+                url: file,
+                success: function (d) {
+                    $('#file').html(d)
+                    $('.show').prop("checked", false)
+                    addIds()
+                    filltabs()
+                    $('#title').html($('#file h1'))
+                },
+                error: function () {
+                    alert('Could not load file ' + file)
+                }
+            });
+        }
+
+        function addIds() {
+            addId('.charmortal', 'charmortal')
+            addId('.charimmortal', 'charimmortal')
+            addId('.places', 'places')
             addId('.sequence', 'sequence')
-		}
-		
-		function addId(what, prefix) {
-			var id = '0'
-			var elements = $(what); 
-			for (var i=0; i<elements.length; i++) {
-				elements[i].id = prefix + "-" + id++
-			}
-		}
-		function filltabs(){
-			filltab("#file .charmortal","list-charmortal","#charmortal")
-			filltab("#file .charimmortal","list-charimmortal","#charimmortal")
-			filltab("#file .places","list-places","#places")
-            filltab("#file .sequence","list-sequences","#sequences")
-		}
-		
-		function filltab(what,style,where) {
-			var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
-			var elements = $(what); 
-			$(where+' ul').empty(); 
-			for (var i=0; i<elements.length; i++) {
-				$(where+' ul').append(list.tpl({
-					style:style, 
-					place: '#'+elements[i].id,
-					content: elements[i].innerHTML
-				}) )
-			}
-		}
+        }
 
-		function goto(id) {
-			var t = $(id)[0].offsetTop;
-			$('body').animate({ scrollTop: t }, 200);
-			$(id).addClass('animate');
-			setTimeout(function(){
-				$(id).removeClass('animate');
-			},5000);
-		}
+        function addId(what, prefix) {
+            var id = '0'
+            var elements = $(what);
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].id = prefix + "-" + id++
+            }
+        }
+
+        function filltabs() {
+            filltab("#file .charmortal", "list-charmortal", "#charmortal")
+            filltab("#file .charimmortal", "list-charimmortal", "#charimmortal")
+            filltab("#file .places", "list-places", "#places")
+            filltab("#file .sequence", "list-sequences", "#sequences")
+        }
+
+        function filltab(what, style, where) {
+            var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+            var elements = $(what);
+            $(where + ' ul').empty();
+            for (var i = 0; i < elements.length; i++) {
+                $(where + ' ul').append(list.tpl({
+                    style: style,
+                    place: '#' + elements[i].id,
+                    content: elements[i].innerHTML
+                }))
+            }
+        }
+
+        function goto(id) {
+            var t = $(id)[0].offsetTop;
+            $('body').animate({
+                scrollTop: t
+            }, 200);
+            $(id).addClass('animate');
+            setTimeout(function () {
+                $(id).removeClass('animate');
+            }, 5000);
+        }
+
         function showNotes() {
-  var x = document.getElementById("Notes");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-		
-	</script>
+            var x = document.getElementById("Notes");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
