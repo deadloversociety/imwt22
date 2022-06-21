@@ -65,9 +65,9 @@
     color: #000000;
 }
 
-/* header {
-    background-image: url("https://as1.ftcdn.net/v2/jpg/02/87/57/36/1000_F_287573632_WI3Rh7yDc7tB1Gv7O1CTZ6VJLGUBVGKs.jpg");
-} */
+header {
+    background-image: url("https://unblast.com/wp-content/uploads/2020/11/Halftone-Dot-Textures-7.jpg");
+}
 
 body {
     font-family: 'DigitalStrip';
@@ -94,7 +94,6 @@ nav {
     font-family: 'DigitalStrip';
     font-size: 1em;
     font-weight: 200;
-    /*text-transform: uppercase;*/
 }
 
 a.nav-link {
@@ -103,7 +102,6 @@ a.nav-link {
 
 a.navbar-brand:hover, a.nav-link:hover {
     color: black;
-    /*text-shadow: 2px 2px 5px rgb(135, 124, 99);*/
 }
 
 
@@ -111,7 +109,8 @@ a.navbar-brand:hover, a.nav-link:hover {
 .carousel-item {
     height: 100vh;
     min-height: 350px;
-    filter: brightness(200%) contrast(200%);
+    background: no-repeat center center scroll;
+    filter: brightness(150%) contrast(200%) opacity(70%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -202,24 +201,32 @@ a.btnLink:active {
     transform: rotate(0.5deg);
 }
 
+.textsection > h3, h2 {
+    font-family: 'Badaboom';
+    font-size: 2.5em;
+    color: red;
+    -webkit-text-stroke: 2px black;}
+
+
 .textsection#disclaimer {
     font-size: 1em;
     padding-left: 0.6em;
     padding-right: 0.6em;
     border: 0.1em solid black;
-    background-color: whitesmoke;
+    background-color: #FEE300;
     border-width: 0.3em 0.4em 0.3em 0.5em;
     border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
     transform: rotate(-0.5deg);
 }
 
-/* ====== Hero image */
+/* ===== ISSUE PAGE ===== */
+
+/* Hero image */
 body,
 html {
     height: 100%;
 }
 
-/* The hero image in the issue file*/
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.ilsuperuovo.it/wp-content/uploads/2019/06/gGAnw0h9TdQMfJYqztWBY0MSgdO-1.jpg");
@@ -235,12 +242,6 @@ html {
     position: relative;
 }
 
-/* Documentation page image */
-#docimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd"); /* maybe here even change the picture :P */
-    filter: brightness(200%) contrast(200%);
-}
-
 #abstractMedea hr {
     display: none;
 }
@@ -252,7 +253,7 @@ article h3::first-letter {
     font-size: 2em;
 }
 
-/* ====== Menu to choose the author */
+/* Menu to choose the author */
 .container {
     position: relative;
     width: 80%;
@@ -260,7 +261,7 @@ article h3::first-letter {
     vertical-align: middle;
 }
 
-/* WHERE IS THIS CLASS IN THE HMTLS????? */
+/* ??? WHERE IS THIS CLASS IN THE HMTLS ??? */
 .image {
     display: flex;
     width: 100%;
@@ -285,9 +286,9 @@ article h3::first-letter {
     background-color: #8d7588;
 }
 
-.card:hover .overlay {
+/* .card:hover .overlay {
     opacity: 1;
-}
+} */
 
 /* THIS WHOLE PART IS TAKEN FROM BAUHAUS BUT COULD BE MODIFIED IF NECESSARY TO ADAPT IT */
 #overEu {
@@ -396,8 +397,13 @@ article h3::first-letter {
     margin: 0px;
 }
 
-/* ==== Team Section: https://www.foolishdeveloper.com/2021/10/our-team-section-design.html ===== */
+/* ===== DOCUMENTATION ===== */
+#docimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd"); /* maybe here even change the picture :P */
+    filter: brightness(200%) contrast(200%);
+}
 
+/* ==== THE TEAM SECTION (MAIN HTML) ===== */
 .main {
     width: 100%;
     display: flex;
@@ -423,7 +429,7 @@ article h3::first-letter {
     transition: .6s;
     z-index: 99;
     transform: translateY(-60px);
-    filter: brightness(200%) contrast(200%);
+    filter: brightness(150%) contrast(200%) opacity(70%);
 }
 
 /* The Team images */
@@ -458,17 +464,11 @@ a {
 }
 
 a:hover {
-    color: #39332acc !important;
-    text-decoration: dashed;
-}
-
-.caption a {
+    color: black;
     text-shadow: 2px 2px 10px black;
 }
 
-
-/* ==== Footer Section, source: https://getbootstrap.com/docs/5.2/examples/footers/ ===== */
-
+/* ===== FOOTER ===== */
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -556,6 +556,7 @@ a.navbar-brand {
     width: 2rem;
 }
 
+/* ===== ANIMATION LOGO ===== */
 .shake {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.8s;
