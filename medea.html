@@ -1591,135 +1591,210 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script>
-        String.prototype.tpl = function (o) {
-            var r = this;
-            for (var i in o) {
-                r = r.replace(new RegExp("\\$" + i, 'g'), o[i])
-            }
-            return r
-        }
+	<script>
+		String.prototype.tpl = function(o) { 
+			var r = this ; 
+			for (var i in o) { 
+				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
+			} 
+			return r 
+		}
+		
+		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
+		
+		$(document).ready(main);
 
-        var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
+		function main() {
+			$.ajax({
+				method: 'GET',
+				url: 'https://deadloversociety.github.io/imwt22/dls.json',
+				success: function(d) {
+					for (var i=0; i<d.length; i++) {
+						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
+					}	
+				},
+				error: function() {
+					alert('No document to show')
+				}
+			});
+			
+			
+			$('#showcharmortal').click(function() {
+				if (this.checked) 
+					$('.charmortal').addClass('text-charmortal')
+				else
+					$('.charmortal').removeClass('text-charmortal')
+			})
+			$('#showcharimmortal').click(function() {
+				if (this.checked) 
+					$('.charimmortal').addClass('text-charimmortal')
+				else
+					$('.charimmortal').removeClass('text-charimmortal')
+			})
+			$('#showplaces').change(function() {
+				if (this.checked) 
+					$('.places').addClass('text-places')
+				else
+					$('.places').removeClass('text-places')
+			})
+            $('#showsequence').change(function() {
+				if (this.checked) 
+					$('.sequence').addClass('text-sequences')
+				else
+					$('.sequence').removeClass('text-sequences')
+			})
+            		
+			$('#createcharmortal').click(function() {
+				var s = window.getSelection().toString()
+				addToDoc(s,'charmortal','span')
+				addToLocalStorage(s,'charmortal')
+			})
+			$('#createcharimmortal').click(function() {
+				var s = window.getSelection().toString()
+				if (s.length > 3) {
+					addToDoc(s,'charimmortal','span')
+					addToLocalStorage(s,'charimmortal')
+				}
+			})
+			$('#createplaces').click(function() {
+				var s = window.getSelection().toString()
+				addToDoc(s,'places','q')
+				addToLocalStorage(s,'places')
+			})
+			$('#createsequences').change(function() {
+				var s = window.getSelection().toString()
+				addToDoc(s,'sequence','q')
+				addToLocalStorage(s,'sequence')
+			})
+		}
 
-        $(document).ready(main);
+		function addToLocalStorage(string, type) {
+			var ls = getFromLocalStorage()
+			if (ls[type].indexOf(string)==-1) ls[type].push(string)
+			localStorage.setItem('fvSentences',JSON.stringify(ls))		
+		}
 
-        function main() {
-            $.ajax({
-                method: 'GET',
-                url: 'https://deadloversociety.github.io/imwt22/dls.json',
-                success: function (d) {
-                    for (var i = 0; i < d.length; i++) {
-                        $('#list').append(listItemTpl.tpl({
-                            url: d[i].url,
-                            label: d[i].label
-                        }))
-                    }
-                },
-                error: function () {
-                    alert('No document to show')
-                }
-            });
+		function getFromLocalStorage() {
+			var lsString = localStorage.getItem('fvSentences') 
+			var ls = JSON.parse(lsString)
+			if (ls==undefined)  {
+				ls = {
+					aside: [],
+					keyword: [],
+					speech: [],
+					quote: []
+				}
+			}
+			return ls
+		}
+		
+		function addFromLocalStorage() {
+			var ls = getFromLocalStorage()
+			for (var i in ls) {
+				for (var k in ls[i]) {
+					addToDoc(ls[i][k], i , 'span')
+				}
+			}
+		}
+		
+		function addToDoc(string,type,tag) {
+			var replacement = `<${tag} class='${type}'>${string}</${tag}>`
+			if (isMoreThanOneWord(string)) {
+				var variations = new RegExp(string, 'mgi')  
+					// g: global: replace multiple occurrence and not just the first
+					// i: ignore case: replace matching string regardless of the case 
+			} else {
+				var variations = findAllVariations(string)
+			}
+			// bad bad bad bad solution: complicated, fragile, computational intensive. 
+			// Can you think of something better?
+			var text = $('#file').html().replace(variations,replacement)
+			$('#file').html(text)
+			addIds()
+			filltabs()
+		}
+		
+		function isMoreThanOneWord(s) {
+			return s.match(/\s/)   // there is at least one whitespace character in the string
+		}
+
+		function findAllVariations(s) {
+			var desinences = "[s|es|ing|ed|d]?" // optional additional desinences
+			
+			return new RegExp(`\\b${s}${desinences}\\b`,"gi")   
+		}
 
 
-            $('#showcharmortal').click(function () {
-                if (this.checked)
-                    $('.charmortal').addClass('text-charmortal')
-                else
-                    $('.charmortal').removeClass('text-charmortal')
-            })
-            $('#showcharimmortal').click(function () {
-                if (this.checked)
-                    $('.charimmortal').addClass('text-charimmortal')
-                else
-                    $('.charimmortal').removeClass('text-charimmortal')
-            })
-            $('#showplaces').change(function () {
-                if (this.checked)
-                    $('.places').addClass('text-places')
-                else
-                    $('.places').removeClass('text-places')
-            })
-            $('#showsequence').change(function () {
-                if (this.checked)
-                    $('.sequence').addClass('text-sequences')
-                else
-                    $('.sequence').removeClass('text-sequences')
-            })
-
-
-
-        function load(file) {
-            $.ajax({
-                method: 'GET',
-                url: file,
-                success: function (d) {
-                    $('#file').html(d)
-                    $('.show').prop("checked", false)
-                    addIds()
-                    filltabs()
-                   
-                },
-                error: function () {
-                    alert('Could not load file ' + file)
-                }
-            });
-        }
-
-        function addIds() {
-            addId('.charmortal', 'charmortal')
-            addId('.charimmortal', 'charimmortal')
-            addId('.places', 'places')
+		
+		function load(file) {
+			$.ajax({
+				method: 'GET',
+				url: file,
+				success: function(d) {
+					$('#file').html(d)
+					$('.show').prop("checked", false)
+					addIds()
+					filltabs()
+					$('#title').html($('#file h1'))
+				},
+				error: function() {
+					alert('Could not load file '+file)
+				}
+			});
+		}
+		
+		function addIds() {
+			addId('.charmortal','charmortal')
+			addId('.charimmortal', 'charimmortal')
+			addId('.places', 'places')
             addId('.sequence', 'sequence')
-        }
+		}
+		
+		function addId(what, prefix) {
+			var id = '0'
+			var elements = $(what); 
+			for (var i=0; i<elements.length; i++) {
+				elements[i].id = prefix + "-" + id++
+			}
+		}
+		function filltabs(){
+			filltab("#file .charmortal","list-charmortal","#charmortal")
+			filltab("#file .charimmortal","list-charimmortal","#charimmortal")
+			filltab("#file .places","list-places","#places")
+            filltab("#file .sequence","list-sequences","#sequences")
+		}
+		
+		function filltab(what,style,where) {
+			var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+			var elements = $(what); 
+			$(where+' ul').empty(); 
+			for (var i=0; i<elements.length; i++) {
+				$(where+' ul').append(list.tpl({
+					style:style, 
+					place: '#'+elements[i].id,
+					content: elements[i].innerHTML
+				}) )
+			}
+		}
 
-        function addId(what, prefix) {
-            var id = '0'
-            var elements = $(what);
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].id = prefix + "-" + id++
-            }
-        }
-
-        function filltabs() {
-            filltab("#file .charmortal", "list-charmortal", "#charmortal")
-            filltab("#file .charimmortal", "list-charimmortal", "#charimmortal")
-            filltab("#file .places", "list-places", "#places")
-            filltab("#file .sequence", "list-sequences", "#sequences")
-        }
-
-        function filltab(what, style, where) {
-            var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
-            var elements = $(what);
-            $(where + ' ul').empty();
-            for (var i = 0; i < elements.length; i++) {
-                $(where + ' ul').append(list.tpl({
-                    style: style,
-                    place: '#' + elements[i].id,
-                    content: elements[i].innerHTML
-                }))
-            }
-        }
-
-        function goto(id) {
-            var t = $(id)[0].offsetTop;
-            $('body').animate({
-                scrollTop: t
-            }, 200);
-            $(id).addClass('animate');
-            setTimeout(function () {
-                $(id).removeClass('animate');
-            }, 5000);
-        }
-
+		function goto(id) {
+			var t = $(id)[0].offsetTop;
+			$('body').animate({ scrollTop: t }, 200);
+			$(id).addClass('animate');
+			setTimeout(function(){
+				$(id).removeClass('animate');
+			},5000);
+		}
         function showNotes() {
-            var x = document.getElementById("Notes");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
+  var x = document.getElementById("Notes");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+		
+	</script>
 </body>
 
 </html>
