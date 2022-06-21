@@ -401,6 +401,14 @@ html {
     color: #0c52a1;
 }
 
+.profile-card:hover {
+    background: #fff;
+    box-shadow:0 0 22px #3336;
+}
+.caption:hover {
+    opacity:1;
+}
+
 /* ==== Footer Section, source: https://getbootstrap.com/docs/5.2/examples/footers/ ===== */
 
 .bd-placeholder-img {

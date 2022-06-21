@@ -13,16 +13,6 @@ function swapTheme(csspath) {
 // I would use a switch loop to check the value of the attribute href of the element with id currentlocalcss
 
 
-// Only for Future: show card
-function showCap() {
-  var css = document.getElementById("currentlocalcss");
-  if (css.href === "css/futurecss.css") { /* WHY NOT WORKING */
-    $('.profile-card').css('background','#fff');
-    $('.profile-card').css('box-shadow','0 0 22px #3336');
-    $('.caption').css('opacity','1');
-  }
-}
-
 function showEur() {
   var x = document.getElementById("MedeaEur");
   var y = document.getElementById("MedeaApp");
