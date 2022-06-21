@@ -154,7 +154,11 @@
         <!-- Cambia nomi: cuori con stili diversi? Anno preciso? -->
         <ul class="nav justify-content-center navbar-menu">
             <li class="nav-item">
+<<<<<<< HEAD
                 <a class="nav-link active sec-nav onclick=" swapTheme('css/aldinecss.css')" href="#">Aldine</a>
+=======
+                <a class="nav-link active sec-nav" onclick="swapTheme('css/aldinecss.css')">Aldine</a>
+>>>>>>> bb8c0e369342ecf9a1119c9e8f2f74855348481e
             </li>
             <li class="nav-item">
                 <a class="nav-link sec-nav" onclick="swapTheme('css/newspapercss.css')">Quotidiani 1800</a>
@@ -182,7 +186,7 @@
     </div>
     <div class="textsection" id="abstractMedea">
         <h2>Medea</h2>
-        <p>Medea is certainly one of the most interesting characters of Ancient Greek Literature. Her magical powers and
+    <p><span class="firstletter">M</span>edea is certainly one of the most interesting characters of Ancient Greek Literature. Her magical powers and
             the terrible act of
             filicide have made her an interesting subject for many writers and artists, creating on one side a wild
             woman, justified by her own beliefs and culture in the terrible acts that she is pushed to, and on the
@@ -238,6 +242,7 @@
     <!-- Text hiding/showing -->
     <div>
         <article id="MedeaEur">
+<<<<<<< HEAD
             <div class="container">
                 <div class="row">
                     <div class="col-4">
@@ -332,10 +337,90 @@
                             <div class="row">
                                 <div id="OVtextEn" class="col-md-9">
                                     <div id="file"></div>
+=======
+            <h3>Euripides</h3>
+            <button class="buttonShowText" onclick="showOriginalEurpd()" type="button">Show the original Greek
+                text</button>
+            <button class="buttonHideText" onclick="hideOriginalEurpd()" type="button">Hide the original Greek
+                text</button>
+            <button class="buttonCompText" onclick="compareEur()" type="button">Compare the texts</button>
+            <div class="indexcompare">
+                <p><b>Index</b></p>
+                <p>
+                    <ol>
+                        <li onclick="showEur1()">Prologue</li>
+                        <li onclick="showEur2()">Medea's speech to the women of Corinth </li>
+                        <li onclick="showEur3()">Medea fights with Jason</li>
+                    </ol>
+                </p>
+            </div>
+            <div class="metadata">
+
+                <ul id="list"></ul>
+
+                    <!-- Main component for a primary marketing message or call to action -->
+                    <div class="row clearfix">
+                        <div class="col-md-3">
+                            <div class="row clearfix border p-2">
+                            </div>
+                            <div class="row clearfix mt-4">
+                                <div class="col-md-12">
+                                    <form role="form">
+                                        <div class="checkbox"><label>
+                                            <input type="checkbox" id="showcharmortal" class="show">Mortal Characters</label></div>
+                                        <div class="checkbox"><label>
+                                            <input type="checkbox" id="showcharimmortal" class="show">Immortal Characters</label></div>
+                                        <div class="checkbox"><label>
+                                            <input type="checkbox" id="showplaces" class="show">Places</label></div>
+                                        <div class="checkbox"><label>
+                                            <input type="checkbox" id="showsequences" class="show">Sequences</label></div>
+                                    </form>
+				    </div>
+                            </div>
+                            <div class="row clearfix mt-3">
+                                <div class="col-md-12">
+                                    <ul class="nav nav-tabs" id="sentenceTab" role="tablist">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" id="mortalcharacters-tab" data-toggle="tab" href="#charmortal" role="tab" aria-controls="view" aria-selected="true">Mortal characters</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" id="immortalcharacters-tab" data-toggle="tab" href="#charimmortal" role="tab" aria-controls="home" aria-selected="false">Immortal Characters</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" id="places-tab" data-toggle="tab" href="#places" role="tab" aria-controls="home" aria-selected="false">Places</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" id="sequences-tab" data-toggle="tab" href="#sequences" role="tab" aria-controls="home" aria-selected="false">Sequences</a>
+                                      </li>
+                                    </ul>
+
+            
+                                    <!-- Tab panes -->
+                                    <div class="tab-content" id="sentenceContent">
+                                        <div class="tab-pane active myBorder myBorder-notop" id="charmortal" role="tabpanel" aria-labelledby="mortalcharacters-tab">
+                                            <ul></ul>
+                                        </div>
+                                        <div class="tab-pane myBorder myBorder-notop" id="charimmortal" role="tabpanel" aria-labelledby="immortalcharacters-tab">
+                                            <ul></ul>
+                                        </div>
+                                        <div class="tab-pane myBorder myBorder-notop" id="places" role="tabpanel" aria-labelledby="places-tab">
+                                            <ul></ul>
+                                        </div>
+                                        <div class="tab-pane myBorder myBorder-notop" id="sequences" role="tabpanel" aria-labelledby="sequences-tab">
+                                            <ul></ul>
+                                        </div>
+                                    </div>
+>>>>>>> bb8c0e369342ecf9a1119c9e8f2f74855348481e
                                 </div>
                             </div>
+                        </div>	
+                        </div>	
+                    </div>
+                        <div class="col-md-9">
+                            <div id="file"></div>
                         </div>
                     </div>
+<<<<<<< HEAD
                 </div>
             </div>
         </article>
@@ -379,6 +464,48 @@
                             convallis nec turpis.
                         </p>
                     </div>
+=======
+    </article>
+    <article id="MedeaApp">
+        <h3>Apollonius Rhodius</h3>
+        <button class="buttonShowText" onclick="showOriginalApRod()" type="button">Show the original Greek
+            text</button>
+        <button class="buttonHideText" onclick="hideOriginalApRod()" type="button">Hide the original Greek
+            text</button>
+        <div class="metadata">
+            <p>Add metadata</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at maximus dui. Praesent commodo lorem
+                non est euismod, tempus ultrices eros euismod. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Quisque fringilla ligula velit, sit amet laoreet magna finibus
+                eu. Integer faucibus, quam nec pellentesque tristique, massa neque suscipit arcu, in cursus urna dui
+                id dui. Phasellus iaculis magna vel vestibulum tempus. Nulla vel metus turpis. Etiam vitae velit nec
+                ipsum pellentesque egestas. Aenean luctus pharetra quam, id malesuada augue porta nec. Quisque in
+                purus dapibus, tincidunt elit non, egestas nulla. </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="ARtextEn">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ex at dui
+                        fermentum maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                        fames ac turpis egestas. Ut aliquet eros in justo blandit sagittis. Sed euismod commodo
+                        mollis. Nullam eleifend lacinia tellus. Proin aliquam dolor quam, nec varius sapien
+                        ullamcorper eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        ac turpis egestas. Praesent eu gravida erat. Aenean purus risus, tincidunt eu ultricies ut,
+                        convallis nec turpis.
+                    </p>
+                </div>
+                <div id="ARoriginalText" class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper ex at dui
+                        fermentum maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                        fames ac turpis egestas. Ut aliquet eros in justo blandit sagittis. Sed euismod commodo
+                        mollis. Nullam eleifend lacinia tellus. Proin aliquam dolor quam, nec varius sapien
+                        ullamcorper eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        ac turpis egestas. Praesent eu gravida erat. Aenean purus risus, tincidunt eu ultricies ut,
+                        convallis nec turpis.
+                    </p>
+>>>>>>> bb8c0e369342ecf9a1119c9e8f2f74855348481e
                 </div>
             </div>
         </article>
@@ -488,37 +615,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <script>
-        String.prototype.tpl = function (o) {
-            var r = this;
-            for (var i in o) {
-                r = r.replace(new RegExp("\\$" + i, 'g'), o[i])
-            }
-            return r
-        }
+	<script>
+		String.prototype.tpl = function(o) { 
+			var r = this ; 
+			for (var i in o) { 
+				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
+			} 
+			return r 
+		}
+		
+		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
+		
+		$(document).ready(main);
 
-        var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
-
-        $(document).ready(main);
-
-        function main() {
-            $.ajax({
-                method: 'GET',
-                url: 'https://deadloversociety.github.io/imwt22/dls.json',
-                success: function (d) {
-                    for (var i = 0; i < d.length; i++) {
-                        $('#list').append(listItemTpl.tpl({
-                            url: d[i].url,
-                            label: d[i].label
-                        }))
-                    }
-                },
-                error: function () {
-                    alert('No document to show')
-                }
-            });
-
-
+<<<<<<< HEAD
             $('#showcharmortal').click(function () {
                 if (this.checked)
                     $('.charmortal').addClass('text-charmortal')
@@ -619,6 +729,110 @@
             }
         }
     </script>
+=======
+		function main() {
+			$.ajax({
+				method: 'GET',
+				url:'https://deadloversociety.github.io/imwt22/dls.json',
+				success: function(d) {
+					for (var i=0; i<d.length; i++) {
+						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
+					}	
+				},
+				error: function() {
+					alert('No document to show')
+				}
+			});
+			
+			
+			$('#showcharmortal').click(function() {
+				if (this.checked) 
+					$('.charmortal').addClass('text-charmortal')
+				else
+					$('.charmortal').removeClass('text-charmortal')
+			})
+			$('#showcharimmortal').click(function() {
+				if (this.checked) 
+					$('.charimmortal').addClass('text-charimmortal')
+				else
+					$('.charimmortal').removeClass('text-charimmortal')
+			})
+			$('#showplaces').change(function() {
+				if (this.checked) 
+					$('.places)').addClass('text-places')
+				else
+					$('.places').removeClass('text-places')
+			})
+		$('#showsequences').change(function() {
+				if (this.checked) 
+					$('.sequence)').addClass('text-sequences')
+				else
+					$('.sequence').removeClass('text-sequences')
+			})
+		}
+		
+		function load(file) {
+			$.ajax({
+				method: 'GET',
+				url: file,
+				success: function(d) {
+					$('#file').html(d)
+					$('#title').html($('#file h1'))
+					$('.show').prop("checked", false)
+					addIds()
+					filltabs()
+				},
+				error: function() {
+					alert('Could not load file '+file)
+				}
+			});
+		}
+		
+		function addIds() {
+			addId('.charmortal','charmortal')
+			addId('.charimmortal', 'charimmortal')
+			addId('.places', 'places')
+			addId('.sequence', 'sequences')
+		}
+		
+		function addId(what, prefix) {
+			var id = '0'
+			var elements = $(what); 
+			for (var i=0; i<elements.length; i++) {
+				elements[i].id = prefix + "-" + id++
+			}
+		}
+		function filltabs(){
+			filltab("#file .charmortal","list-charmortal","#charmortal")
+			filltab("#file .charimmortal","list-charimmortal","#charimmortal")
+			filltab("#file .places","list-place","#places")
+			filltab("#file .sequence","list-sequences","#sequences")
+		}
+		
+		function filltab(what,style,where) {
+			var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+			var elements = $(what); 
+			$(where+' ul').empty(); 
+			for (var i=0; i<elements.length; i++) {
+				$(where+' ul').append(list.tpl({
+					style:style, 
+					place: '#'+elements[i].id,
+					content: elements[i].innerHTML
+				}) )
+			}
+		}
+		
+		function goto(id) {
+			var t = $(id)[0].offsetTop;
+			$('body').animate({ scrollTop: t }, 200);
+			$(id).addClass('animate');
+			setTimeout(function(){
+				$(id).removeClass('animate');
+			},5000);
+		}
+		
+	</script>
+>>>>>>> bb8c0e369342ecf9a1119c9e8f2f74855348481e
 </body>
 
 </html>
