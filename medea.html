@@ -1592,7 +1592,7 @@
 		function main() {
 			$.ajax({
 				method: 'GET',
-				url: https://deadloversociety.github.io/imwt22/dls.json',
+				url:'https://deadloversociety.github.io/imwt22/dls.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
 						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
