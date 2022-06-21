@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Griffo;
-    src: url(".../fonts/aldine/GriffoClassico.ttf");
+    font-family: Griffo Classico;
+    src: url('../fonts/aldine/GriffoClassico.ttf');
   }
 
 /* Start main navbar */
