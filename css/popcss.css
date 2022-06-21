@@ -254,12 +254,7 @@ article h3::first-letter {
 }
 
 /* Menu to choose the author */
-.container {
-    position: relative;
-    width: 80%;
-    text-align: center;
-    vertical-align: middle;
-}
+
 
 /* ??? WHERE IS THIS CLASS IN THE HMTLS ??? */
 .image {

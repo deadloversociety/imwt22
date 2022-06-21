@@ -7,7 +7,7 @@
     src: url("../fonts/future/orbitron/orbitron-light-webfont.woff");
   }
 /* Start main navbar */
-body {
+body, #sentenceTab {
     font-family: 'Future', serif;
     background-color: #ffd8f0 !important;
 }
@@ -167,7 +167,7 @@ a.btnLink:active {
 }
 
 /* ----------- */
-.textsection {
+.textsection, #sentenceTab {
     margin: 2% 15% 2% 15%;
     text-align: justify;
     text-justify: inter-word;
@@ -206,12 +206,6 @@ html {
 }
 
 /* ====== Menu to choose the author */
-.container {
-    position: relative;
-    width: 80%;
-    text-align: center;
-    vertical-align: middle;
-}
 
 .image {
     display: flex;

@@ -60,6 +60,11 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+a:any-link {
+    text-decoration: none;
+    color: purple;
+}
+
 nav {
     font-family: 'Merriweather', serif;
     font-size: 1.2em !important;
@@ -70,6 +75,9 @@ nav {
     background-color: #f8f9fa !important;
 }
 
+.navbar a:any-link, .nav a:any-link {
+    color: black;
+}
 /* ====== Home page carousel */
 .carousel-item {
     height: 100vh;
@@ -177,12 +185,7 @@ html {
 }
 
 /* ====== Menu to choose the author */
-.container {
-    position: relative;
-    width: 80%;
-    text-align: center;
-    vertical-align: middle;
-}
+
 
 .image {
     display: flex;
@@ -500,7 +503,7 @@ a.navbar-brand {
     }
 }
 
-.moodboard {
-    display: block;
-    text-align: center;
+.bi {
+    color: red !important; 
+    font-size: 1.5em;
 }
