@@ -54,6 +54,71 @@ function showOvd() {
 
 // TESTO A FRONTE
 
+// Euripide
+
+function showOriginalEurpd() {
+  var x = document.getElementById("EUoriginalText");
+  var y = document.getElementById("EUtextEn");
+  var z = document.getElementById("indexEur");
+  x.style.display = "block";
+  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+  z.style.display = "none";
+}
+
+function hideOriginalEurpd() {
+  var x = document.getElementById("EUoriginalText");
+  var y = document.getElementById("EUtextEn");
+  var z = document.getElementById("indexEur");
+  x.style.display = "none";
+  y.removeAttribute("class");
+  z.style.display = "none";
+}
+
+// Euripide, confronto par to par 
+
+function compareEur() {
+    var x = document.getElementById("EUoriginalText");
+    var y = document.getElementById("EUtextEn");
+    x.style.display = "block";
+    y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+    $('.indexcompare').css('display','block');
+  }
+  
+  function showEur1() {
+    $('.eur').css('display','none');
+    $('.prologue').css('display','block');
+  }
+  
+  function showEur2() {
+    $('.eur').css('display','none');
+    $('.Medeaspeech').css('display','block');
+  }
+  
+  function showEur3() {
+    $('.eur').css('display','none');
+    $('.MedeaVSJason').css('display','block');
+  }
+
+// App. Rodio
+
+function showOriginalApRod() {
+  var x = document.getElementById("ARoriginalText");
+  var y = document.getElementById("ARtextEn");
+  x.style.display = "block";
+  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+}
+
+function hideOriginalApRod() {
+  var x = document.getElementById("ARoriginalText");
+  var y = document.getElementById("ARtextEn");
+  x.style.display = "none";
+  y.removeAttribute("class");
+}
+
+// App. Rodio, confronto par to par
+
+// Ovid
+
 function showOriginalOvid() {
   var x = document.getElementById("OVoriginalText");
   var y = document.getElementById("OVtextEn");
@@ -73,35 +138,7 @@ function hideOriginalOvid() {
   $('.indexcompare').css('display','none');
 }
 
-function showOriginalApRod() {
-  var x = document.getElementById("ARoriginalText");
-  var y = document.getElementById("ARtextEn");
-  x.style.display = "block";
-  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-}
-
-function hideOriginalApRod() {
-  var x = document.getElementById("ARoriginalText");
-  var y = document.getElementById("ARtextEn");
-  x.style.display = "none";
-  y.removeAttribute("class");
-}
-
-function showOriginalEurpd() {
-  var x = document.getElementById("EUoriginalText");
-  var y = document.getElementById("EUtextEn");
-  x.style.display = "block";
-  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-}
-
-function hideOriginalEurpd() {
-  var x = document.getElementById("EUoriginalText");
-  var y = document.getElementById("EUtextEn");
-  x.style.display = "none";
-  y.removeAttribute("class");
-}
-
-// Comparison Ovid
+// Ovid, confronto par to par 
 function compareOvid() {
   var x = document.getElementById("OVoriginalText");
   var y = document.getElementById("OVtextEn");
@@ -110,52 +147,53 @@ function compareOvid() {
   $('.indexcompare').css('display','block');
 }
 
-function showOvid1() {
-  $('.ovid').css('display','none');
-  $('.MetVII1_73').css('display','block');
-}
+  function showOvid1() {
+    $('.ovid').css('display','none');
+    $('.MetVII1_73').css('display','block');
+  }
 
-function showOvid2() {
-  $('.ovid').css('display','none');
-  $('.MetVII74_99').css('display','block');
-}
+  function showOvid2() {
+    $('.ovid').css('display','none');
+    $('.MetVII74_99').css('display','block');
+  }
 
-function showOvid3() {
-  $('.ovid').css('display','none');
-  $('.MetVII100_158').css('display','block');
-}
+  function showOvid3() {
+    $('.ovid').css('display','none');
+    $('.MetVII100_158').css('display','block');
+  }
 
-function showOvid4() {
-  $('.ovid').css('display','none');
-  $('.MetVII159_178').css('display','block');
-}
+  function showOvid4() {
+    $('.ovid').css('display','none');
+    $('.MetVII159_178').css('display','block');
+  }
 
-function showOvid5() {
-  $('.ovid').css('display','none');
-  $('.MetVII179_233').css('display','block');
-}
+  function showOvid5() {
+    $('.ovid').css('display','none');
+    $('.MetVII179_233').css('display','block');
+  }
 
-function showOvid6() {
-  $('.ovid').css('display','none');
-  $('.MetVII234_293').css('display','block');
-}
+  function showOvid6() {
+    $('.ovid').css('display','none');
+    $('.MetVII234_293').css('display','block');
+  }
 
-function showOvid7() {
-  $('.ovid').css('display','none');
-  $('.MetVII294_349').css('display','block');
-}
+  function showOvid7() {
+    $('.ovid').css('display','none');
+    $('.MetVII294_349').css('display','block');
+  }
 
-function showOvid8() {
-  $('.ovid').css('display','none');
-  $('.MetVII350_403').css('display','block');
-}
+  function showOvid8() {
+    $('.ovid').css('display','none');
+    $('.MetVII350_403').css('display','block');
+  }
 
-function showOvid9() {
-  $('.ovid').css('display','none');
-  $('.MetVII404_424').css('display','block');
-}
+  function showOvid9() {
+    $('.ovid').css('display','none');
+    $('.MetVII404_424').css('display','block');
+  }
 
 // LOGO ANIMATION 
+
 var dls = undefined;
 var logo = undefined;
 var dead = undefined;
@@ -185,40 +223,3 @@ function stopShaking() {
   logo.classList.remove("shake");
   logo.src = "imgs/broken-heart (1).png";
 }
-
-  function showOriginalEurpd() {
-    var x = document.getElementById("EUoriginalText");
-    var y = document.getElementById("EUtextEn");
-    x.style.display = "block";
-    y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-  }
-  
-  function hideOriginalEurpd() {
-    var x = document.getElementById("EUoriginalText");
-    var y = document.getElementById("EUtextEn");
-    x.style.display = "none";
-    y.removeAttribute("class");
-  }
-  
-  function compareEur() {
-    var x = document.getElementById("EUoriginalText");
-    var y = document.getElementById("EUtextEn");
-    x.style.display = "block";
-    y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-    $('.indexcompare').css('display','block');
-  }
-  
-  function showEur1() {
-    $('.eur').css('display','none');
-    $('.prologue').css('display','block');
-  }
-  
-  function showEur2() {
-    $('.eur').css('display','none');
-    $('.Medeaspeech').css('display','block');
-  }
-  
-  function showEur3() {
-    $('.eur').css('display','none');
-    $('.MedeaVSJason').css('display','block');
-  }

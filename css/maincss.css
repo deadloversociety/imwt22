@@ -507,3 +507,10 @@ a.navbar-brand {
     color: red !important; 
     font-size: 1.5em;
 }
+
+#Notes {
+    margin-top: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.8em;
+}
