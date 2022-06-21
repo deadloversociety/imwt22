@@ -450,7 +450,6 @@ footer {
     width: 100%;
     padding: 20px;
     background-color:#71706e;
-    display:flex;
 }
 
 footer .fa-github {
