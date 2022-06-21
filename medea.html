@@ -270,25 +270,19 @@
                             </div>
                             <div class="row clearfix mt-3">
                                 <div class="col-md-12">
-                                    <ul class="nav nav-tabs" id="sentenceTab" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="mortalcharacters-tab" data-toggle="tab"
-                                                href="#charmortal" role="tab" aria-controls="view"
-                                                aria-selected="true">Mortal characters</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="immortalcharacters-tab" data-toggle="tab"
-                                                href="#charimmortal" role="tab" aria-controls="home"
-                                                aria-selected="false">Immortal Characters</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="places-tab" data-toggle="tab" href="#places"
-                                                role="tab" aria-controls="home" aria-selected="false">Places</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="sequences-tab" data-toggle="tab" href="#sequences"
-                                                role="tab" aria-controls="home" aria-selected="false">Sequences</a>
-                                        </li>
+                                               <ul class="nav nav-tabs" id="sentenceTab" role="tablist">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" id="mortalcharacters-tab" data-toggle="tab" href="#charmortal" role="tab" aria-controls="view" aria-selected="true">Mortal characters</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" id="immortalcharacters-tab" data-toggle="tab" href="#charimmortal" role="tab" aria-controls="home" aria-selected="false">Immortal Characters</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link " id="places-tab" data-toggle="tab" href="#places" role="tab" aria-controls="home" aria-selected="false">Places</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" id="sequences-tab" data-toggle="tab" href="#sequences" role="tab" aria-controls="home" aria-selected="false">Sequences</a>
+                                      </li>
                                     </ul>
 
 
@@ -517,11 +511,11 @@
 				else
 					$('.charmortal').removeClass('text-charmortal')
 			})
-			$('#charimmortal').click(function() {
+			$('#showcharimmortal').click(function() {
 				if (this.checked) 
-					$('.charimmortal').addClass('text-charmortal')
+					$('.charimmortal').addClass('text-charimmortal')
 				else
-					$('.charimmortal').removeClass('text-charmortal')
+					$('.charimmortal').removeClass('text-charimmortal')
 			})
 			$('#showplaces').change(function() {
 				if (this.checked) 
@@ -529,7 +523,7 @@
 				else
 					$('.places').removeClass('text-places')
 			})
-			$('#showsequencess').change(function() {
+			$('#showsequences').change(function() {
 				if (this.checked) 
 					$('.sequence').addClass('text-sequence')
 				else
@@ -558,8 +552,8 @@
 			addId('.charmortal','charmortal')
 			addId('.charimmortal', 'charimmortal')
 			addId('.places', 'places')
+			addId('.sequences', 'sequences')
 		}
-		
 		function addId(what, prefix) {
 			var id = '0'
 			var elements = $(what); 
@@ -567,11 +561,12 @@
 				elements[i].id = prefix + "-" + id++
 			}
 		}
-		function filltabs(){
+	
+			function filltabs(){
 			filltab("#file .charmortal","list-charmortal","#charmortal")
 			filltab("#file .charimmortal","list-charimmortal","#charimmortal")
 			filltab("#file .places","list-places","#places")
-			filltab("#file .sequence","list-sequences","#sequences")
+            filltab("#file .sequence","list-sequences","#sequences")
 		}
 		
 		function filltab(what,style,where) {
