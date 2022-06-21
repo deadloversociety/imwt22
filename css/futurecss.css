@@ -27,7 +27,7 @@ body {
 
 nav, .nav {
     font-family: 'Pixel', serif;
-    font-size: 1.2em !important;
+    font-size: 1.3em !important;
 }
 
 nav {
@@ -405,6 +405,7 @@ html {
     background: #fff;
     box-shadow:0 0 22px #3336;
 }
+
 .caption:hover {
     opacity:1;
 }
