@@ -514,3 +514,20 @@ a.navbar-brand {
     text-justify: inter-word;
     font-size: 0.8em;
 }
+
+.tab-pane {
+    font-size: 1.15em;
+}
+
+.tab-pane ul {
+    margin-top: 1em;
+    list-style: none;
+    font-style: italic;
+}
+
+.seqinmeta li{
+    margin-bottom: 2em;
+    margin-right: 1em;
+    padding: 2% 0% 2% 2%;
+    background: lavenderblush;
+}
