@@ -640,8 +640,13 @@ img {
     background: #f9f7de;
 }
 
- .nav-link.active {
-    background-color:#f9f7de;
+#sentenceTab {
+    background-color: rgb(42, 45, 110) !important;
+    font-size: 1.1em;
+}
+
+#sentenceTab .nav-link.active {
+    background-color:#ada641;
     font-weight: bold;
 }
 
