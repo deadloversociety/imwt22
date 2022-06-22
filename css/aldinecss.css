@@ -572,5 +572,8 @@ a:hover:any-link  {
     color:#888173;
 }
 
-
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #4c008a !important;
+    font-weight: bold;
+}
 
