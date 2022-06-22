@@ -1,6 +1,6 @@
 @font-face {
     font-family: Griffo Classico;
-    src: url('../fonts/aldine/GriffoClassico.ttf');
+    src: url("../fonts/aldine/GriffoClassico.ttf");
   }
 
 /* Start main navbar */
@@ -183,7 +183,6 @@ html {
     ;
 }
 
-/* ====== Menu to choose the author */
 
 .image {
     display: flex;
@@ -232,11 +231,11 @@ html {
 }
 
 .metadata {
-    background-color:#f1f1f1;
+    background-color: #f3f2f1;
     padding: 2%;
     margin-top: 2em;
     margin-bottom: 2em;
-    width:50%;
+    border: #292926 solid 0.2em;
 }
 
 .indexcompare {
@@ -294,18 +293,6 @@ html {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.showNotes {
-    border-radius: 0.2em;
-    margin-top: 1em;
-    margin-left: 1em;
-    padding: 0.5em;
-    background-color: #c29969;
-    border: none;
-}
-
-.showNotes:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
 
 #OVoriginalText, 
 #ARoriginalText,
@@ -444,6 +431,7 @@ footer {
     width: 100%;
     padding: 20px;
     background-color:#71706e;
+    display:flex;
 }
 
 footer .fa-github {
@@ -563,6 +551,7 @@ a.navbar-brand {
     margin-bottom: -5px;
   
   }
+  
   .showNotes {
     border-radius: 0.2em;
     margin-top: 1em;
@@ -576,10 +565,17 @@ a.navbar-brand {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-a {
-    color: #a69390
+a:any-link{
+    color: #6f5e4e;
 }
-  
+
+a:hover:any-link  {
+    color:#888173;
+}
+
+.navbar a:any-link, .nav a:any-link {
+    color: black;
+}
 
 
 
