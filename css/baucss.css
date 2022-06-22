@@ -8,9 +8,23 @@ body {
     font-family: 'Bauhaus', sans-serif !important;
     background-color: #f9f7de !important;
 }
+
 nav {
     font-size: 1.2em !important;
     background-color: #f1edbb !important;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: rgb(181, 76, 76);
+}
+
+.navbar a:any-link, .nav a:any-link {
+    color: white;
+}
+
+.dropdown-menu a:any-link {
+    color: black;
 }
 
 .navbar {
@@ -593,4 +607,44 @@ img {
     padding-left: 0.5em;
     padding-bottom: 0px;
     margin-top: 1em;
+}
+
+.bi {
+    color: rgb(181, 76, 76); 
+    font-size: 1.5em;
+}
+
+#Notes {
+    margin-top: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.8em;
+}
+
+.tab-pane {
+    font-size: 1.15em;
+    width: 100%;
+    display: flex;
+}
+
+.tab-pane ul {
+    margin-top: 1em;
+    list-style: none;
+    font-style: italic;
+}
+
+.seqinmeta li{
+    margin-bottom: 2em;
+    margin-right: 1em;
+    padding: 2% 0% 2% 2%;
+    background: #f9f7de;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: rgb(181, 76, 76);
+    font-weight: bold;
+}
+
+.nav-pills .nav-item{
+    font-size: 1.1em;
 }

@@ -2,14 +2,25 @@
     font-family: Pixel;
     src: url("../fonts/future/VCR_OSD_MONO_1.001.ttf");
   }
-  @font-face {
+
+@font-face {
     font-family: Future;
     src: url("../fonts/future/orbitron/orbitron-light-webfont.woff");
   }
+
 /* Start main navbar */
-body, #sentenceTab {
+body {
     font-family: 'Future', serif;
     background-color: #ffd8f0 !important;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: #300350;
+}
+
+.navbar a:any-link, .nav a:any-link {
+    color: black;
 }
 
 .textsection h2, h3, h4 {
@@ -167,7 +178,7 @@ a.btnLink:active {
 }
 
 /* ----------- */
-.textsection, #sentenceTab {
+.textsection {
     margin: 2% 15% 2% 15%;
     text-align: justify;
     text-justify: inter-word;
@@ -540,3 +551,53 @@ a.navbar-brand {
 img {
     filter: contrast(1.01) hue-rotate(-81deg) saturate(1.33) sepia(0.45) ;
 } 
+
+.bi {
+    color: #4c008a; 
+    font-size: 1.5em;
+}
+
+#Notes {
+    margin-top: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.8em;
+}
+
+#list li {
+    font-weight: bold;
+}
+
+#sentenceTab {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1em !important;
+    color: #585757;
+    font-family: 'Future', serif;
+    background-color: #DAC0DE !important;
+}
+
+.tab-pane {
+    font-size: 1.15em;
+    width: 100%;
+    display: flex;
+}
+
+.tab-pane ul {
+    margin-top: 1em;
+    list-style: none;
+    font-style: italic;
+}
+
+.seqinmeta li{
+    margin-bottom: 2em;
+    margin-right: 1em;
+    font-size: 0.7em;
+    padding: 2% 2% 2% 2%;
+    background: #d6e8e8;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #8b87a2 !important;
+    font-weight: bold;
+}

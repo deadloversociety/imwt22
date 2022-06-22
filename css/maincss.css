@@ -65,6 +65,10 @@ a:any-link {
     color: purple;
 }
 
+.navbar a:any-link, .nav a:any-link {
+    color: black;
+}
+
 nav {
     font-family: 'Merriweather', serif;
     font-size: 1.2em !important;
@@ -75,9 +79,7 @@ nav {
     background-color: #f8f9fa !important;
 }
 
-.navbar a:any-link, .nav a:any-link {
-    color: black;
-}
+
 /* ====== Home page carousel */
 .carousel-item {
     height: 100vh;
