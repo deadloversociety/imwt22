@@ -640,11 +640,8 @@ img {
     background: #f9f7de;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    background-color: rgb(181, 76, 76);
+ .nav-link.active {
+    background-color:#f9f7de;
     font-weight: bold;
 }
 
-.nav-pills .nav-item{
-    font-size: 1.1em;
-}
