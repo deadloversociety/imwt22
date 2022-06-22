@@ -585,8 +585,6 @@ a:hover:any-link  {
     text-align: justify;
     text-justify: inter-word;
     font-size: 1em !important;
-    color: #585757;
-    background-color: #c29969  !important;
 }
 
 .tab-pane {
