@@ -572,32 +572,5 @@ a:hover:any-link  {
     color:#888173;
 }
 
-.navbar a:any-link, .nav a:any-link {
-    color: black;
-}
-
-
-#list li {
-    font-weight: bold;
-}
-
-#sentenceTab {
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 1em !important;
-}
-
-.tab-pane {
-    font-size: 1.15em;
-    width: 100%;
-    display: flex;
-}
-
-.tab-pane ul {
-    margin-top: 1em;
-    list-style: none;
-    font-style: italic;
-}
-
 
 
