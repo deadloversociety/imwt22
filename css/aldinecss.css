@@ -431,7 +431,6 @@ footer {
     width: 100%;
     padding: 20px;
     background-color:#71706e;
-    display:flex;
 }
 
 footer .fa-github {
@@ -578,7 +577,29 @@ a:hover:any-link  {
 }
 
 
+#list li {
+    font-weight: bold;
+}
 
+#sentenceTab {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1em !important;
+    color: #585757;
+    background-color: #c29969  !important;
+}
+
+.tab-pane {
+    font-size: 1.15em;
+    width: 100%;
+    display: flex;
+}
+
+.tab-pane ul {
+    margin-top: 1em;
+    list-style: none;
+    font-style: italic;
+}
 
 
 
