@@ -411,7 +411,7 @@ html {
     box-shadow:0 0 22px #3336;
 }
 
-.caption:hover {
+.profile-card:hover > .caption {
     opacity:1;
 }
 
