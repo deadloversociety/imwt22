@@ -100,21 +100,51 @@ function compareEur() {
 
 // App. Rodio
 
-function showOriginalApRod() {
-  var x = document.getElementById("ARoriginalText");
-  var y = document.getElementById("ARtextEn");
-  x.style.display = "block";
-  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-}
+  function showOriginalApRod() {
+    var x = document.getElementById("ARoriginalText");
+    var y = document.getElementById("ARtextEn");
+    x.style.display = "block";
+    y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+  }
+  
+  function hideOriginalApRod() {
+    var x = document.getElementById("EARoriginalText");
+    var y = document.getElementById("ARtextEn");
+    x.style.display = "none";
+    y.removeAttribute("class");
+  }
+  
+  function compareAp() {
+    var x = document.getElementById("EUoriginalText");
+    var y = document.getElementById("EUtextEn");
+    x.style.display = "block";
+    y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+    $('.indexcompare').css('display','block');
+  }
 
-function hideOriginalApRod() {
-  var x = document.getElementById("ARoriginalText");
-  var y = document.getElementById("ARtextEn");
-  x.style.display = "none";
-  y.removeAttribute("class");
-}
+  function showAp1() {
+    $('.app').css('display','none');
+    $('.Medeasmonologue').css('display','block');
+  }
+  
+  function showAp2() {
+    $('.app').css('display','none');
+    $('.Medeamoves').css('display','block');
+  }
+  
+  function showAp3() {
+    $('.app').css('display','none');
+    $('.Chalciope').css('display','block');
+  }
+  function showAp4() {
+    $('.app').css('display','none');
+    $('.Medeasthoughts').css('display','block');
+  }
+  function showAp5() {
+    $('.app').css('display','none');
+    $('.Medeasherb').css('display','block');
+  }
 
-// App. Rodio, confronto par to par
 
 // Ovid
 
