@@ -180,9 +180,6 @@ a.btnLink:active {
 /* ----------- */
 
 .textsection {
-    /*column-count: 4;
-    column-gap: 1.5em;
-    column-rule: inset 0.1em;*/
     margin: 2% 10% 2% 10%;
     text-align: justify;
     text-justify: inter-word;
@@ -253,9 +250,6 @@ article h3::first-letter {
     font-size: 2em;
 }
 
-/* Menu to choose the author */
-
-
 /* ??? WHERE IS THIS CLASS IN THE HMTLS ??? */
 .image {
     display: flex;
@@ -281,11 +275,11 @@ article h3::first-letter {
     background-color: #8d7588;
 }
 
-/* .card:hover .overlay {
+.card:hover .overlay {
     opacity: 1;
-} */
+}
 
-/* THIS WHOLE PART IS TAKEN FROM BAUHAUS BUT COULD BE MODIFIED IF NECESSARY TO ADAPT IT */
+/* MODIFIED IF NECESSARY TO ADAPT IT */
 #overEu {
     background-color: #ada641;
 }
@@ -320,6 +314,8 @@ article h3::first-letter {
     padding: 2%;
     margin-top: 2em;
     margin-bottom: 2em;
+    position: sticky;
+    top: 1em;
 }
 
 .indexcompare {
@@ -427,7 +423,7 @@ article h3::first-letter {
     filter: brightness(150%) contrast(200%) opacity(70%);
 }
 
-/* The Team images */
+/* Team images */
 .img img {
     width: 100%;
     box-shadow: 0 0 22px #3336;
@@ -605,52 +601,3 @@ a.navbar-brand {
         transform: translate(1px, -2px) rotate(-1deg);
     }
 }
-
-.moodboard {
-    display: block;
-    text-align: center;
-}
-
-/* SHOULD WE PUT THIS MODIFICATION HERE OR SHOULD WE MODIFY EACH IMAGE ON ITS OWN?
-img {
-    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
-}
-*/
-
-/* THIS WHOLE PART IS TAKEN FROM BAUHAUS BUT COULD BE MODIFIED IF NECESSARY TO ADAPT IT
-/* Documentation 
-#documentation h2::first-letter {
-    font-size: 2em;
-}
-
-#projintro {
-    border-left: 0.2em solid black;
-    border-bottom: 0.2em solid black;
-    padding-left: 0.5em;
-    padding-bottom: 0px;
-}
-
-#websitstruct {
-    border-left: 0.2em solid rgb(42, 45, 110);
-    border-bottom: 0.2em solid rgb(42, 45, 110);
-    padding-left: 0.5em;
-    padding-bottom: 0px;
-    margin-top: 1em;
-}
-
-#metadatadoc {
-    border-left: 0.2em solid rgb(181, 76, 76);
-    border-bottom: 0.2em solid rgb(181, 76, 76);
-    padding-left: 0.5em;
-    padding-bottom: 0px;
-    margin-top: 1em;
-}
-
-#histolayout {
-    border-left: 0.2em solid #ada641;
-    border-bottom: 0.2em solid #ada641;
-    padding-left: 0.5em;
-    padding-bottom: 0px;
-    margin-top: 1em;
-}
- END BAUHAUS SECTION */
