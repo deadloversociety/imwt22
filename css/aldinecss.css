@@ -232,6 +232,7 @@ html {
 
 .metadata {
     background-color: #f3f2f1;
+    position: sticky;
     padding: 2%;
     margin-top: 2em;
     margin-bottom: 2em;
