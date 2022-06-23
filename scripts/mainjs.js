@@ -261,7 +261,7 @@ function stopShaking() {
 
 function audioPlay() {
   var myAudio = document.getElementById("myAudio");
-  myAudio.volume = 0.2; 
+  myAudio.volume = 0.1; 
   myAudio.play();
 }
 
