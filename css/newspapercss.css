@@ -130,7 +130,7 @@ a:hover:not(.nav-link) {
     height: 100vh;
     min-height: 350px;
     background: no-repeat center center scroll;
-    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
+    filter: brightness(190%) grayscale(100%) opacity(50%) contrast(200%) sepia(25%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -224,7 +224,7 @@ html {
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.ilsuperuovo.it/wp-content/uploads/2019/06/gGAnw0h9TdQMfJYqztWBY0MSgdO-1.jpg");
-    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
+    filter: brightness(400%) grayscale(100%) opacity(50%) contrast(200%) sepia(25%);
 
     /* Set a specific height */
     height: 50%;
@@ -398,7 +398,7 @@ article h3::first-letter {
 /* ===== DOCUMENTATION ===== */
 #docimg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd"); /* maybe here even change the picture :P */
-    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
+    filter: brightness(190%) grayscale(100%) opacity(50%) contrast(200%) sepia(25%);
 }
 
 
@@ -429,7 +429,7 @@ article h3::first-letter {
     transition: .6s;
     z-index: 99;
     transform: translateY(-60px);
-    filter: brightness(200%) grayscale(100%) opacity(50%) contrast(200%);
+    filter: brightness(190%) grayscale(100%) opacity(50%) contrast(200%) sepia(2%);
 }
 
 /* Team images */
