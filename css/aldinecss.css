@@ -579,3 +579,7 @@ a:hover:any-link  {
     font-weight: bold;
 }
 
+
+a:sec-nav:hover {
+    color:#888173;
+}
