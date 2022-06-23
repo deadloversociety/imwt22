@@ -189,7 +189,7 @@ a.btnLink:active {
     text-decoration: none;
 }
 
-/* ----------- */
+/* TEXT SECTIONS */
 
 .textsection:not(#teamsection) {
     column-count: 4;
@@ -212,6 +212,13 @@ a.btnLink:active {
     font-size: 1.1em;
 }
 
+.onlyXIX {
+    height: 2px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: black;
+    display: block !important;
+}
 
 /* ===== ISSUE PAGE ===== */
 /* Hero image */
@@ -220,7 +227,6 @@ html {
     height: 100%;
 }
 
-/* The hero image in the issue file*/
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.ilsuperuovo.it/wp-content/uploads/2019/06/gGAnw0h9TdQMfJYqztWBY0MSgdO-1.jpg");
