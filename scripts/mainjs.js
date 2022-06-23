@@ -5,6 +5,10 @@ function missingIssue() {
 
 // To change historical theme (click on the buttons of the second navbar -> change css)
 function swapTheme(csspath) {
+  // avoiding music to continue
+  var myAudio = document.getElementById("myAudio");
+  myAudio.pause();
+  // core function
   document.getElementById('currentlocalcss').setAttribute('href',csspath);
 }
 
@@ -252,3 +256,33 @@ function stopShaking() {
   logo.classList.remove("shake");
   logo.src = "imgs/broken-heart (1).png";
 }
+
+// Music in future
+
+function audioPlay() {
+  var myAudio = document.getElementById("myAudio");
+  myAudio.volume = 0.2; 
+  myAudio.play();
+}
+
+function audioPause() {
+  var myAudio = document.getElementById("myAudio");
+  myAudio.volume = 0.2; 
+  myAudio.pause();
+} 
+
+/*
+
+  var myAudio = document.getElementById("myAudio");
+  myAudio.volume = 0.2; 
+  let isPlaying = false;
+  if (isPlaying === false) {
+    myAudio.play();
+    isPlaying = !isPlaying;
+  } 
+  else if (isPlaying === true) {
+    myAudio.pause();
+    isPlaying = !isPlaying;
+    alert("e sticazzi")
+  }
+};*/

@@ -608,18 +608,22 @@ img {
     font-weight: bold;
 }
 
-.float{
+.float {
 	position:fixed;
 	width:60px;
 	height:60px;
 	bottom:40px;
-	right:40px;
+	right:20px;
 	background-color: #afe9ff;
-	color:#FFF;
+	color: rgb(2, 2, 112);
 	border-radius:50px;
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
     z-index: 100;
+}
+
+.float a:any-link {
+    color: rgb(2, 2, 112);
 }
 
 .float:hover {

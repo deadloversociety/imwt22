@@ -583,3 +583,7 @@ a:hover:any-link  {
 a:sec-nav:hover {
     color:#888173;
 }
+
+.float{
+    display: none;
+}

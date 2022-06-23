@@ -618,3 +618,7 @@ a.navbar-brand {
         column-rule: inset 0.1em;
     }
 }
+
+.float{
+    display: none;
+}
