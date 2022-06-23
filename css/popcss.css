@@ -104,8 +104,18 @@ a.navbar-brand:hover, a.nav-link:hover {
     color: black;
 }
 
+/* ===== LINKS ===== */
+a {
+    color: black;
+    text-decoration: none;
+}
 
-/* ====== Home page carousel */
+a:hover {
+    color: black;
+    text-shadow: 2px 2px 10px black;
+}
+
+/* ===== HOME PAGE CAROUSEL ===== */
 .carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -447,16 +457,6 @@ article h3::first-letter {
 .caption p {
     font-size: 15px;
     margin: 2px 0 9px 0;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;
-    text-shadow: 2px 2px 10px black;
 }
 
 /* ===== FOOTER ===== */
