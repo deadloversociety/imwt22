@@ -542,3 +542,7 @@ a.navbar-brand {
     background-color: #4c008a !important;
     font-weight: bold;
 }
+
+.float{
+    display: none;
+}
