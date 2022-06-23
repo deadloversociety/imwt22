@@ -65,7 +65,7 @@ a:any-link {
     color: purple;
 }
 
-.navbar a:any-link, .nav a:any-link {
+.navbar a:any-link, .nav a:any-link, .nav a:hover, .navbar a:hover {
     color: black;
 }
 

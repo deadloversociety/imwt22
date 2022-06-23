@@ -11,7 +11,7 @@
 /* Start main navbar */
 body {
     font-family: 'Future', serif;
-    background-color: #ffd8f0 !important;
+    background-image: linear-gradient(to right, #bfb9ff,#ffcfea);
 }
 
 a:any-link {
@@ -19,12 +19,12 @@ a:any-link {
     color: #300350;
 }
 
-.navbar a:any-link, .nav a:any-link {
-    color: black;
+.navbar a:any-link, .nav a:any-link, .nav a:hover, .navbar a:hover {
+    color: whitesmoke !important;
 }
 
 .textsection h2, h3, h4 {
-    color: #300350;
+    color: #94167F;
 }
 
 .textsection, article {
@@ -41,16 +41,12 @@ nav, .nav {
     font-size: 1.3em !important;
 }
 
-nav {
-    background-color: #f1edbb !important;
-}
-
 .navbar {
-    background-color: #f9ac53 !important;
+    background-color: #7948A2 !important;
 }
 
 .nav {
-    background-color: #f62e97 !important;
+    background-color: #BE8CE5;
 }
 
 @media (min-width: 768px) {
@@ -177,13 +173,23 @@ a.btnLink:active {
     text-decoration: none;
 }
 
-/* ----------- */
+/* ----------- 585757;*/
 .textsection {
     margin: 2% 15% 2% 15%;
     text-align: justify;
     text-justify: inter-word;
     font-size: 1.2em;
-    color: #585757;
+    color: #300350;
+}
+
+.onlyfuture {
+    display: block !important;
+    height: 2px; 
+    width: 99%; 
+    margin:0 auto;
+    line-height:2px;
+    background-color: #feffbe; 
+    border:0 none;
 }
 
 #disclaimer {
