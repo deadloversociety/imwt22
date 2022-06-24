@@ -529,7 +529,7 @@ a.navbar-brand {
     background-color: #ffe7dd;
 }
 
-#abstractMedea h2::first-letter {
+#abstractMedea:first-letter {
 
     float: left;
   
