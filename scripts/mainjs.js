@@ -81,7 +81,7 @@ function hideOriginalEurpd() {
 
 function compareEur() {
   var x = document.getElementById("EUoriginalText");
-  var y = document.getElementById("OVtextEn");
+  var y = document.getElementById("EUtextEn");
   x.style.display = "block";
   y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
   $('.indexcompare').css('display','block');
@@ -124,8 +124,8 @@ function hideOriginalApRod() {
 
 
 function compareAp() {
-  var x = document.getElementById("APoriginalText");
-  var y = document.getElementById("APtextEn");
+  var x = document.getElementById("ARoriginalText");
+  var y = document.getElementById("ARtextEn");
   x.style.display = "block";
   y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
   $('.indexcompare').css('display','block');
