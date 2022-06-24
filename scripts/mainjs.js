@@ -108,14 +108,14 @@ function compareEur() {
   var y = document.getElementById("ARtextEn");
   x.style.display = "block";
   y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-  $('.app').css('display','block');
+  $('.ap').css('display','block');
   $('.indexcompare').css('display','none');
 }
 
 function hideOriginalApRod() {
   var x = document.getElementById("ARoriginalText");
   var y = document.getElementById("ARtextEn");
-  $('.app').css('display','block');
+  $('.ap').css('display','block');
   $('.indexcompare').css('display','none');
   x.style.display = "none";
   y.removeAttribute("class");
@@ -133,28 +133,28 @@ function compareAp() {
 
 
   function showAp1() {
-    $('.app').css('display','none');
-    $('.app Medeasmonologue').css('display','block');
+    $('.ap').css('display','none');
+    $('.ap Medeastalk').css('display','block');
   }
 
   function showAp2() {
-    $('.app').css('display','none');
-    $('.app Medeamoves').css('display','block');
+    $('.ap').css('display','none');
+    $('.Medeamoves').css('display','block');
   }
 
   function showAp3() {
-    $('.app').css('display','none');
-    $('.app Chalciope').css('display','block');
+    $('.ap').css('display','none');
+    $('.Chalciope').css('display','block');
   }
 
   function showAp4() {
-    $('.app').css('display','none');
-    $('.app Medeasthoughts').css('display','block');
+    $('.ap').css('display','none');
+    $('.Medeasthoughts').css('display','block');
   }
 
   function showAp5() {
-    $('.app').css('display','none');
-    $('.app Medeasherb').css('display','block');
+    $('.ap').css('display','none');
+    $('.Medeasherb').css('display','block');
   }
 
 // Ovid
