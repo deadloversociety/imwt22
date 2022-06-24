@@ -59,35 +59,33 @@ function showOvd() {
 
 // Euripide
 
-
 function showOriginalEurpd() {
   var x = document.getElementById("EUoriginalText");
   var y = document.getElementById("EUtextEn");
   x.style.display = "block";
   y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-  $('.ovid').css('display','block');
+  $('.eur').css('display','block');
   $('.indexcompare').css('display','none');
 }
 
 function hideOriginalEurpd() {
   var x = document.getElementById("EUoriginalText");
   var y = document.getElementById("EUtextEn");
-  $('.ovid').css('display','block');
+  $('.eur').css('display','block');
   $('.indexcompare').css('display','none');
   x.style.display = "none";
   y.removeAttribute("class");
   $('.indexcompare').css('display','none');
 }
 
-// Ovid, confronto par to par 
+
 function compareEur() {
   var x = document.getElementById("EUoriginalText");
-  var y = document.getElementById("EUtextEn");
+  var y = document.getElementById("OVtextEn");
   x.style.display = "block";
   y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
   $('.indexcompare').css('display','block');
 }
-  
   function showEur1() {
     $('.eur').css('display','none');
     $('.prologue').css('display','block');
@@ -106,26 +104,33 @@ function compareEur() {
 // App. Rodio
 
   function showOriginalApRod() {
-    var x = document.getElementById("ARoriginalText");
-    var y = document.getElementById("ARtextEn");
-    x.style.display = "block";
-    y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-  }
-  
-  function hideOriginalApRod() {
-    var x = document.getElementById("ARoriginalText");
-    var y = document.getElementById("ARtextEn");
-    x.style.display = "none";
-    y.removeAttribute("class");
-  }
-  
-  function compareAp() {
-    var x = document.getElementById("ARoriginalText");
-    var y = document.getElementById("ARtextEn");
-    x.style.display = "block";
-    y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-    $('.indexcompareap').css('display','block');
-  }
+  var x = document.getElementById("ARoriginalText");
+  var y = document.getElementById("ARtextEn");
+  x.style.display = "block";
+  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+  $('.app').css('display','block');
+  $('.indexcompare').css('display','none');
+}
+
+function hideOriginalApRod() {
+  var x = document.getElementById("ARoriginalText");
+  var y = document.getElementById("ARtextEn");
+  $('.app').css('display','block');
+  $('.indexcompare').css('display','none');
+  x.style.display = "none";
+  y.removeAttribute("class");
+  $('.indexcompare').css('display','none');
+}
+
+
+function compareAp() {
+  var x = document.getElementById("APoriginalText");
+  var y = document.getElementById("APtextEn");
+  x.style.display = "block";
+  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+  $('.indexcompare').css('display','block');
+}
+
 
   function showAp1() {
     $('.ap').css('display','none');
