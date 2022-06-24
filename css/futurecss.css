@@ -23,6 +23,9 @@ a:any-link {
     color: whitesmoke !important;
 }
 
+.dropdown-menu a:any-link {
+    color: black !important;
+}
 .textsection h2, h3, h4 {
     color: #94167F;
 }
