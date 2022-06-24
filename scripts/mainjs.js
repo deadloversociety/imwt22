@@ -109,7 +109,7 @@ function compareEur() {
   x.style.display = "block";
   y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
   $('.ap').css('display','block');
-  $('.indexcompare').css('display','none');
+  $('.indexcompareap').css('display','none');
 }
 
 function hideOriginalApRod() {
@@ -119,7 +119,7 @@ function hideOriginalApRod() {
   $('.indexcompare').css('display','none');
   x.style.display = "none";
   y.removeAttribute("class");
-  $('.indexcompare').css('display','none');
+  $('.indexcompareap').css('display','none');
 }
 
 
