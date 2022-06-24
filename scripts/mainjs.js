@@ -59,33 +59,34 @@ function showOvd() {
 
 // Euripide
 
+
 function showOriginalEurpd() {
   var x = document.getElementById("EUoriginalText");
   var y = document.getElementById("EUtextEn");
-  var z = document.getElementById("indexEur");
   x.style.display = "block";
   y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-  z.style.display = "none";
+  $('.ovid').css('display','block');
+  $('.indexcompare').css('display','none');
 }
 
 function hideOriginalEurpd() {
   var x = document.getElementById("EUoriginalText");
   var y = document.getElementById("EUtextEn");
-  var z = document.getElementById("indexEur");
+  $('.ovid').css('display','block');
+  $('.indexcompare').css('display','none');
   x.style.display = "none";
   y.removeAttribute("class");
-  z.style.display = "none";
+  $('.indexcompare').css('display','none');
 }
 
-// Euripide, confronto par to par 
-
-function compareEur() {
-    var x = document.getElementById("EUoriginalText");
-    var y = document.getElementById("EUtextEn");
-    x.style.display = "block";
-    y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-    $('.indexcompare').css('display','block');
-  }
+// Ovid, confronto par to par 
+function compareOvid() {
+  var x = document.getElementById("EUoriginalText");
+  var y = document.getElementById("EUtextEn");
+  x.style.display = "block";
+  y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
+  $('.indexcompare').css('display','block');
+}
   
   function showEur1() {
     $('.eur').css('display','none');
