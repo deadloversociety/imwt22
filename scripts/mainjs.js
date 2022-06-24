@@ -260,30 +260,15 @@ function stopShaking() {
 
 // Music in future
 
-function audioPlay() {
+function togglePlay() {
   var myAudio = document.getElementById("myAudio");
+  var element
   myAudio.volume = 0.1; 
-  myAudio.play();
-}
-
-function audioPause() {
-  var myAudio = document.getElementById("myAudio");
-  myAudio.volume = 0.2; 
-  myAudio.pause();
-} 
-
-/*
-
-  var myAudio = document.getElementById("myAudio");
-  myAudio.volume = 0.2; 
-  let isPlaying = false;
-  if (isPlaying === false) {
-    myAudio.play();
-    isPlaying = !isPlaying;
-  } 
-  else if (isPlaying === true) {
+  if (myAudio.duration > 0 && !myAudio.paused) {
     myAudio.pause();
-    isPlaying = !isPlaying;
-    alert("e sticazzi")
-  }
-};*/
+    $('.float').css('animation','none');
+  } else {
+  myAudio.play();
+  $('.float').css('animation','pulse 1.5s infinite');
+}
+}

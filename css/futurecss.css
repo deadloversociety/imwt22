@@ -608,6 +608,8 @@ img {
     font-weight: bold;
 }
 
+/* Audio button*/
+
 .float {
 	position:fixed;
 	width:60px;
@@ -620,9 +622,15 @@ img {
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
     z-index: 100;
+    transform: scale(1);
+	
 }
 
-.float a:any-link {
+.float a:any-link,.float a:hover  {
+    color: rgb(2, 2, 112);
+}
+
+.float:hover a:any-link  {
     color: rgb(2, 2, 112);
 }
 
@@ -632,4 +640,21 @@ img {
 
 .my-float{
 	margin-top:14px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1.05);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
