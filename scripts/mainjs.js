@@ -80,7 +80,7 @@ function hideOriginalEurpd() {
 }
 
 // Ovid, confronto par to par 
-function compareOvid() {
+function compareEur() {
   var x = document.getElementById("EUoriginalText");
   var y = document.getElementById("EUtextEn");
   x.style.display = "block";
