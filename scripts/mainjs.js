@@ -128,25 +128,25 @@ function compareEur() {
   }
 
   function showAp1() {
-    $('.app').css('display','none');
+    $('.ap').css('display','none');
     $('.Medeasmonologue').css('display','block');
   }
   
   function showAp2() {
-    $('.app').css('display','none');
+    $('.ap').css('display','none');
     $('.Medeamoves').css('display','block');
   }
   
   function showAp3() {
-    $('.app').css('display','none');
+    $('.ap').css('display','none');
     $('.Chalciope').css('display','block');
   }
   function showAp4() {
-    $('.app').css('display','none');
+    $('.ap').css('display','none');
     $('.Medeasthoughts').css('display','block');
   }
   function showAp5() {
-    $('.app').css('display','none');
+    $('.ap').css('display','none');
     $('.Medeasherb').css('display','block');
   }
 
