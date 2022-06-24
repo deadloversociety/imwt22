@@ -529,7 +529,8 @@ a.navbar-brand {
     background-color: #ffe7dd;
 }
 
-#abstractMedea p:first-letter {
+
+.textsection::first-letter {
 
     float: left;
   
@@ -552,8 +553,7 @@ a.navbar-brand {
     margin-bottom: -5px;
   
   }
-
-.textsection::first-letter {
+.aldina::first-letter {
 
     float: left;
   
