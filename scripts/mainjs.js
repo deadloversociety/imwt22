@@ -134,7 +134,7 @@ function compareAp() {
 
   function showAp1() {
     $('.ap').css('display','none');
-    $('.ap Medeastalk').css('display','block');
+    $('.ap Medeasmonologue').css('display','block');
   }
 
   function showAp2() {
