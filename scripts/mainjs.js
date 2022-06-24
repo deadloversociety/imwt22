@@ -128,7 +128,7 @@ function compareAp() {
   var y = document.getElementById("ARtextEn");
   x.style.display = "block";
   y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-  $('.indexcompare').css('display','block');
+  $('.indexcompareap').css('display','block');
 }
 
 
