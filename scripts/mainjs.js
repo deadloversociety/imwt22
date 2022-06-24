@@ -108,14 +108,14 @@ function compareEur() {
   var y = document.getElementById("ARtextEn");
   x.style.display = "block";
   y.classList.add("col-sm-6", "col-md-5", "col-lg-6"); 
-  $('.apr').css('display','block');
+  $('.ap').css('display','block');
   $('.indexcompare').css('display','none');
 }
 
 function hideOriginalApRod() {
   var x = document.getElementById("ARoriginalText");
   var y = document.getElementById("ARtextEn");
-  $('.apr').css('display','block');
+  $('.ap').css('display','block');
   $('.indexcompare').css('display','none');
   x.style.display = "none";
   y.removeAttribute("class");
@@ -133,27 +133,27 @@ function compareAp() {
 
 
   function showAp1() {
-    $('.apr').css('display','none');
+    $('.ap').css('display','none');
     $('.Medeasmonologue').css('display','block');
   }
 
   function showAp2() {
-    $('.apr').css('display','none');
+    $('.ap').css('display','none');
     $('.Medeamoves').css('display','block');
   }
 
   function showAp3() {
-    $('.apr').css('display','none');
+    $('.ap').css('display','none');
     $('.Chalciope').css('display','block');
   }
 
   function showAp4() {
-    $('.apr').css('display','none');
+    $('.ap').css('display','none');
     $('.Medeasthoughts').css('display','block');
   }
 
   function showAp5() {
-    $('.apr').css('display','none');
+    $('.ap').css('display','none');
     $('.Medeasherb').css('display','block');
   }
 
