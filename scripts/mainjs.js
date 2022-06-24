@@ -134,27 +134,28 @@ function compareAp() {
 
   function showAp1() {
     $('.app').css('display','none');
-    $('.Medeasmonologue').css('display','block');
-  }
-  
-  function showAp2() {
-    $('.app').css('display','none');
-    $('.Medeamoves').css('display','block');
-  }
-  
-  function showAp3() {
-    $('.app').css('display','none');
-    $('.Chalciope').css('display','block');
-  }
-  function showAp4() {
-    $('.app').css('display','none');
-    $('.Medeasthoughts').css('display','block');
-  }
-  function showAp5() {
-    $('.app').css('display','none');
-    $('.Medeasherb').css('display','block');
+    $('.app Medeasmonologue').css('display','block');
   }
 
+  function showAp2() {
+    $('.app').css('display','none');
+    $('.app Medeamoves').css('display','block');
+  }
+
+  function showAp3() {
+    $('.app').css('display','none');
+    $('.app Chalciope').css('display','block');
+  }
+
+  function showAp4() {
+    $('.app').css('display','none');
+    $('.app Medeasthoughts').css('display','block');
+  }
+
+  function showAp5() {
+    $('.app').css('display','none');
+    $('.app Medeasherb').css('display','block');
+  }
 
 // Ovid
 
