@@ -246,14 +246,11 @@
     </div>
     <!-- Text hiding/showing -->
     <div>
-        <article id="MedeaEur">
-                   
-                      
 
+        <!-- ignore for now -->
+        <article id="MedeaEur">
         </article>
-        <article id="MedeaApp">
-                 
-                   
+        <article id="MedeaApp">        
         </article>
         <article id="MedeaOvi">
             <h3>Ovid, <i>Metamorphoses</i>, VII, 1-424</h3>
@@ -329,9 +326,12 @@
                 <div></div>
 
         </article>
-	       <div class="container">
+        <!-- ============== -->
+
+        <article>
+	        <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col">
                         <div class="metadata text-right">
                             <h5>Select the text:</h5>
                                 <ul id="list" style="list-style: none;">
@@ -408,13 +408,13 @@
                             </div>
                         </div>
                     </div>
-		         <div class="container">
-                        <div class="row mt-4">
-                            <div id="file"></div>
-                            <!-- The content will be added here -->
-                        </div>
+		            <div class="col-8 mt-4"> <!-- originale: 411: <div class="container">, row mt-4 -->
+                        <div id="file"></div>
+                        <!-- The content will be added here -->
                     </div>
                 </div>
+            </div>
+        </article>
     </div>
     <!-- Footer -->
     <footer class="py-3 my-4">
