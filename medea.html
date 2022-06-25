@@ -74,7 +74,7 @@
                 <a class="nav-link sec-nav" onclick="swapTheme('css/newspapercss.css')">Quotidiani 1800</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link sec-nav" onclick="swapTheme('css/baucss.css')">Bauhaus</a>
+                <a class="nav-link sec-nav" onclick="switchTheme('css/baucss.css')">Bauhaus</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link sec-nav" onclick="swapTheme('css/popcss.css')">Pop Art</a>
@@ -102,14 +102,14 @@
 
     <div class="textsection" id="abstractMedea">
         <h2>Medea</h2>
-	    <div class="aldina">
-        <p>Medea is certainly one of the most interesting characters of Ancient Greek
-            Literature. Her magical powers and
-            the terrible act of
-            filicide have made her an interesting subject for many writers and artists, creating on one side a wild
-            woman, justified by her own beliefs and culture in the terrible acts that she is pushed to, and on the
-            other a scorned lover who did everything in her power to help a man who never rewarded her.</p>
-	    </div>
+        <div class="aldina">
+            <p>Medea is certainly one of the most interesting characters of Ancient Greek
+                Literature. Her magical powers and
+                the terrible act of
+                filicide have made her an interesting subject for many writers and artists, creating on one side a wild
+                woman, justified by her own beliefs and culture in the terrible acts that she is pushed to, and on the
+                other a scorned lover who did everything in her power to help a man who never rewarded her.</p>
+        </div>
         <p>Her story is linked many times with the Argonauts' one, and so does Ovid in his <q>Metamorphoses</q>:
             everything begins with a blooming and forbidden romance between Medea and Jason, the hero who came to her
             kingdom to steal its most valued possession, the notorious golden veil. Instead, Apollonius Rhodium
@@ -167,7 +167,8 @@
             <p>Euripides was a tragedian of classical Athens. This abstract is incomplete</p>
         </div>
         <div class="textsection" id="MedeaApp">
-            <p>Apollonius Rhodius was an ancient Greek author, best known for the Argonautica, an epic poem about Jason and the Argonauts and their quest for the Golden Fleece. This abstract is incomplete</p>
+            <p>Apollonius Rhodius was an ancient Greek author, best known for the Argonautica, an epic poem about Jason
+                and the Argonauts and their quest for the Golden Fleece. This abstract is incomplete</p>
         </div>
         <div class="textsection" id="MedeaOvi">
             <p>Ovid was a Roman poet who lived during the reign of Augustus. This abstract is incomplete</p>
@@ -176,13 +177,13 @@
     </div>
     <div>
         <article>
-	        <div class="container">
+            <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-4">
                         <div class="metadata text-right">
                             <h5>Select the text:</h5>
-                                <ul id="list" style="list-style: none;">
-                                </ul>
+                            <ul id="list" style="list-style: none;">
+                            </ul>
                             </p>
                             <div class="row mt-4">
                                 <h5>Select the metadata:</h5>
@@ -196,9 +197,10 @@
                                                 <input type="checkbox" id="showcharimmortal" class="show"> Immortal
                                                 Characters</label></div>
                                         <div class="checkbox"><label>
-                                                <input type="checkbox" id="showplaces" class="show"> Places and cities</label>
+                                                <input type="checkbox" id="showplaces" class="show"> Places and
+                                                cities</label>
                                         </div>
-                                   
+
                                     </form>
                                 </div>
                             </div>
@@ -220,35 +222,36 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link " id="places-tab" data-toggle="tab" href="#places"
-                                                role="tab" aria-controls="home" aria-selected="false">Places and cities</a>
+                                                role="tab" aria-controls="home" aria-selected="false">Places and
+                                                cities</a>
                                         </li>
-                                    
+
                                     </ul>
 
 
                                     <!-- Tab panes -->
                                     <div class="tab-content mt-1 auto" id="sentenceContent">
-                                            <div class="tab-pane active myBorder myBorder-notop" id="charmortal"
-                                                role="tabpanel" aria-labelledby="mortalcharacters-tab">
-                                                <ul></ul>
-                                            </div>
-                                            <div class="tab-pane myBorder myBorder-notop" id="charimmortal" role="tabpanel"
-                                                aria-labelledby="immortalcharacters-tab">
-                                                <ul></ul>
-                                            </div>
-                                            <div class="tab-pane myBorder myBorder-notop" id="places" role="tabpanel"
-                                                aria-labelledby="places-tab">
-                                                <ul></ul>
-                                            </div>
-                                          
-                                                <ul class="seqinmeta"></ul>
-                                            </div>
+                                        <div class="tab-pane active myBorder myBorder-notop" id="charmortal"
+                                            role="tabpanel" aria-labelledby="mortalcharacters-tab">
+                                            <ul></ul>
+                                        </div>
+                                        <div class="tab-pane myBorder myBorder-notop" id="charimmortal" role="tabpanel"
+                                            aria-labelledby="immortalcharacters-tab">
+                                            <ul></ul>
+                                        </div>
+                                        <div class="tab-pane myBorder myBorder-notop" id="places" role="tabpanel"
+                                            aria-labelledby="places-tab">
+                                            <ul></ul>
+                                        </div>
+
+                                        <ul class="seqinmeta"></ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-		            <div class="col-8 mt-4"> <!-- originale: 411: <div class="container">, row mt-4 -->
+
+                    <div class="col-8 mt-4">
                         <div id="file"></div>
                         <!-- The content will be added here -->
                     </div>
@@ -280,132 +283,142 @@
         dls.addEventListener("mouseover", startShaking);
         dls.addEventListener("mouseout", abortShaking);
     </script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <script>
-		String.prototype.tpl = function(o) { 
-			var r = this ; 
-			for (var i in o) { 
-				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
-			} 
-			return r 
-		}
-		
-		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
-		
-		$(document).ready(main);
+        String.prototype.tpl = function (o) {
+            var r = this;
+            for (var i in o) {
+                r = r.replace(new RegExp("\\$" + i, 'g'), o[i])
+            }
+            return r
+        }
 
-		function main() {
-			$.ajax({
-				method: 'GET',
-				url: 'https://deadloversociety.github.io/imwt22/dls.json',
-				success: function(d) {
-					for (var i=0; i<d.length; i++) {
-						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
-					}	
-				},
-				error: function() {
-					alert('No document to show')
-				}
-			});
-			
-			
-			$('#showcharmortal').click(function() {
-				if (this.checked) 
-					$('.charmortal').addClass('text-charmortal')
-				else
-					$('.charmortal').removeClass('text-charmortal')
-			})
-			$('#showcharimmortal').click(function() {
-				if (this.checked) 
-					$('.charimmortal').addClass('text-charimmortal')
-				else
-					$('.charimmortal').removeClass('text-charimmortal')
-			})
-			$('#showplaces').change(function() {
-				if (this.checked) 
-					$('.places').addClass('text-places')
-				else
-					$('.places').removeClass('text-places')
-			})
+        var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
 
-            		
-		}
+        $(document).ready(main);
+
+        function main() {
+            $.ajax({
+                method: 'GET',
+                url: 'https://deadloversociety.github.io/imwt22/dls.json',
+                success: function (d) {
+                    for (var i = 0; i < d.length; i++) {
+                        $('#list').append(listItemTpl.tpl({
+                            url: d[i].url,
+                            label: d[i].label
+                        }))
+                    }
+                },
+                error: function () {
+                    alert('No document to show')
+                }
+            });
 
 
+            $('#showcharmortal').click(function () {
+                if (this.checked)
+                    $('.charmortal').addClass('text-charmortal')
+                else
+                    $('.charmortal').removeClass('text-charmortal')
+            })
+            $('#showcharimmortal').click(function () {
+                if (this.checked)
+                    $('.charimmortal').addClass('text-charimmortal')
+                else
+                    $('.charimmortal').removeClass('text-charimmortal')
+            })
+            $('#showplaces').change(function () {
+                if (this.checked)
+                    $('.places').addClass('text-places')
+                else
+                    $('.places').removeClass('text-places')
+            })
 
-		
-		function load(file) {
-			$.ajax({
-				method: 'GET',
-				url: file,
-				success: function(d) {
-					$('#file').html(d)
-					$('.show').prop("checked", false)
-					addIds()
-					filltabs()
-					$('#title').html($('#file h1'))
-				},
-				error: function() {
-					alert('Could not load file '+file)
-				}
-			});
-		}
-		
-		function addIds() {
-			addId('.charmortal','charmortal')
-			addId('.charimmortal','charimmortal')
-			addId('.places','places')
-    
-		}
-		
-		function addId(what, prefix) {
-			var id = '0'
-			var elements = $(what); 
-			for (var i=0; i<elements.length; i++) {
-				elements[i].id = prefix + "-" + id++
-			}
-		}
-		function filltabs(){
-			filltab("#file .charmortal","list-charmortal","#charmortal")
-			filltab("#file .charimmortal","list-charimmortal","#charimmortal")
-			filltab("#file .places","list-places","#places")
- 
-		}
-		
-		function filltab(what,style,where) {
-			var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
-			var elements = $(what); 
-			$(where+' ul').empty(); 
-			for (var i=0; i<elements.length; i++) {
-				$(where+' ul').append(list.tpl({
-					style:style, 
-					place: '#'+elements[i].id,
-					content: elements[i].innerHTML
-				}) )
-			}
-		}
 
-		function goto(id) {
-			var t = $(id)[0].offsetTop;
-			$('body').animate({ scrollTop: t }, 200);
-			$(id).addClass('animate');
-			setTimeout(function(){
-				$(id).removeClass('animate');
-			},5000);
-		}
-        
+        }
+
+
+
+
+        function load(file) {
+            $.ajax({
+                method: 'GET',
+                url: file,
+                success: function (d) {
+                    $('#file').html(d)
+                    $('.show').prop("checked", false)
+                    addIds()
+                    filltabs()
+                    $('#title').html($('#file h1'))
+                },
+                error: function () {
+                    alert('Could not load file ' + file)
+                }
+            });
+        }
+
+        function addIds() {
+            addId('.charmortal', 'charmortal')
+            addId('.charimmortal', 'charimmortal')
+            addId('.places', 'places')
+
+        }
+
+        function addId(what, prefix) {
+            var id = '0'
+            var elements = $(what);
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].id = prefix + "-" + id++
+            }
+        }
+
+        function filltabs() {
+            filltab("#file .charmortal", "list-charmortal", "#charmortal")
+            filltab("#file .charimmortal", "list-charimmortal", "#charimmortal")
+            filltab("#file .places", "list-places", "#places")
+
+        }
+
+        function filltab(what, style, where) {
+            var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+            var elements = $(what);
+            $(where + ' ul').empty();
+            for (var i = 0; i < elements.length; i++) {
+                $(where + ' ul').append(list.tpl({
+                    style: style,
+                    place: '#' + elements[i].id,
+                    content: elements[i].innerHTML
+                }))
+            }
+        }
+
+        function goto(id) {
+            var t = $(id)[0].offsetTop;
+            $('body').animate({
+                scrollTop: t
+            }, 200);
+            $(id).addClass('animate');
+            setTimeout(function () {
+                $(id).removeClass('animate');
+            }, 5000);
+        }
+
         function showNotes() {
-  var x = document.getElementById("Notes");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-		
-	</script>
+            var x = document.getElementById("Notes");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
