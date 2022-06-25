@@ -198,10 +198,7 @@
                                         <div class="checkbox"><label>
                                                 <input type="checkbox" id="showplaces" class="show"> Places and cities</label>
                                         </div>
-                                        <div class="checkbox"><label>
-                                                <input type="checkbox" id="showsequences" class="show">
-                                                Sequences</label>
-                                        </div>
+                                   
                                     </form>
                                 </div>
                             </div>
@@ -225,10 +222,7 @@
                                             <a class="nav-link " id="places-tab" data-toggle="tab" href="#places"
                                                 role="tab" aria-controls="home" aria-selected="false">Places and cities</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="sequences-tab" data-toggle="tab" href="#sequences"
-                                                role="tab" aria-controls="home" aria-selected="false">Sequences</a>
-                                        </li>
+                                    
                                     </ul>
 
 
@@ -246,8 +240,7 @@
                                                 aria-labelledby="places-tab">
                                                 <ul></ul>
                                             </div>
-                                            <div class="tab-pane myBorder myBorder-notop" id="sequences" role="tabpanel"
-                                                aria-labelledby="sequences-tab">
+                                          
                                                 <ul class="seqinmeta"></ul>
                                             </div>
                                     </div>
@@ -336,12 +329,7 @@
 				else
 					$('.places').removeClass('text-places')
 			})
-            $('#showsequence').change(function() {
-				if (this.checked) 
-					$('.sequence').addClass('text-sequences')
-				else
-					$('.sequence').removeClass('text-sequences')
-			})
+
             		
 		}
 
@@ -369,7 +357,7 @@
 			addId('.charmortal','charmortal')
 			addId('.charimmortal','charimmortal')
 			addId('.places','places')
-            addId('.sequence','sequence')
+    
 		}
 		
 		function addId(what, prefix) {
@@ -383,7 +371,7 @@
 			filltab("#file .charmortal","list-charmortal","#charmortal")
 			filltab("#file .charimmortal","list-charimmortal","#charimmortal")
 			filltab("#file .places","list-places","#places")
-            filltab("#file .sequence","list-sequences","#sequences")
+ 
 		}
 		
 		function filltab(what,style,where) {
