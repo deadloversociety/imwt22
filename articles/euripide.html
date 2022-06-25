@@ -1,7 +1,7 @@
 <html>
 
 <body>
-    <h3>Euripides!!!</h3>
+    <h3>Euripides</h3>
     <button class="buttonShowText" onclick="showOriginalEurpd()" type="button">Show the original
         Greek text</button>
     <button class="buttonHideText" onclick="hideOriginalEurpd()" type="button">Hide the original
@@ -17,16 +17,17 @@
             </ol>
         </p>
     </div>
-    <div class="container">
+    <div class="container mt-2">
         <div class="row">
             <div id="EUtextEn">
                 <div class="eur prologue">
                     <p>NURSE</p>
                     <p><q>Would God no <span class="places"></span> e'er had winged the seas<br>
                             To <span class="places" about="Colchis">Colchis</span> through the blue <span class="places"
-                                about="Symplegades">Sympl&#234;gades:</span><a href="#N1">[1]</a><br>
-                            No shaft of riven pine in <span class="places" about="Pleion">P&#234;lion <a
-                                    href="#N2">[2]</a>'s</span> glen<br>
+                                about="Symplegades">Sympl&#234;gades:</span><span data-toggle="modal"
+                                data-target="#note1">[1]</span><br>
+                            No shaft of riven pine in <span class="places" about="Pleion">P&#234;lion <span
+                                    data-toggle="modal" data-target="#note2">[2]</span>'s</span> glen<br>
                             Shaped that first oar-blade in the hands of men<br>
                             Valiant, who won, to save King <span class="charmortal" about="Pelias">Pelias'</span>
                             vow,<br>
@@ -35,8 +36,8 @@
                             With love of <span class="charmortal" about="Jason">Jason</span>, to the encastled
                             shore<br>
                             Had sailed of old I&#244;lcos: never wrought<br>
-                            The daughters of King <span class="charmortal" about="Pelias">Pelias<a
-                                    href="#3">[3]</a></span>, knowing not,<br>
+                            The daughters of King <span class="charmortal" about="Pelias">Pelias<span
+                                    data-toggle="modal" data-target="#note3">[3]</span></span>, knowing not,<br>
                             To spill their father's life: nor fled in fear,<br>
                             Hunted for that fierce sin, to <span class="places" about="Corinth">Corinth</span>
                             here<br>
@@ -52,9 +53,11 @@
                             forsake<br>
                             My mistress and his own two sons, to make<br>
                             His couch in a king's chamber. He must wed:<br>
-                            Wed<a href="#N4">[4]</a> with this <span class="charmortal" about="Creon">Creon</span>'s
+                            Wed<span data-toggle="modal" data-target="#note4">[4]</span> with this <span
+                                class="charmortal" about="Creon">Creon</span>'s
                             child, who now is head<br>
-                            And chief of <span class="places" about="Corinth">Corinth</span><a href="#N5">[5]</a>.
+                            And chief of <span class="places" about="Corinth">Corinth</span><span data-toggle="modal"
+                                data-target="#note5">[5]</span>.
                             Wherefore sore betrayed<br>
                             <span class="charmortal" about="Medea">Medea</span> calleth up the oath they
                             made,<br>
@@ -83,7 +86,7 @@
                             And dread her! Will she creep alone to die<br>
                             Bleeding in that old room, where still is laid<br>
                             Lord <span class="charmortal" about="Jason">Jason</span>'s bed? She hath for that a
-                            blade<a href="#N6">[6]</a><br>
+                            blade<span data-toggle="modal" data-target="#note6">[6]</span><br>
                             Made keen. Or slay the bridegroom and the king,<br>
                             And win herself God knows what direr thing?<br>
                             'Tis a fell spirit. Few, I ween, shall stir<br>
@@ -94,8 +97,8 @@
                 </div>
                 <div class="eur Medeaspeech">
                     <p><span class="charmortal" about="Medea">MEDEA</span></p>
-                    <p><q>Women of <span class="places" about="Corinth">Corinth</span>, I am come to show<a
-                                href="#N7">[7]</a><br>
+                    <p><q>Women of <span class="places" about="Corinth">Corinth</span>, I am come to show<span
+                                data-toggle="modal" data-target="#note7">[7]</span><br>
                             My face, lest ye despise me. For I know<br>
                             Some heads stand high and fail not, even at night<br>
                             Alone&#8213;far less like this, in all men's sight:<br>
@@ -116,7 +119,8 @@
                             <span class="sequence" about="MedeaAgonizes">
                                 The man I loved, hath proved most evil.&#8213;Oh,<br>
                                 Of all things upon earth that bleed and grow,<br>
-                                A herb most bruised is woman<a href="#N8">[8]</a>. We must pay<br>
+                                A herb most bruised is woman<span data-toggle="modal" data-target="#note8">[8]</span>.
+                                We must pay<br>
                                 Our store of gold, hoarded for that one day,<br>
                                 To buy us some man's love; and lo, they bring<br>
                                 A master of our flesh! There comes the sting<br>
@@ -181,7 +185,8 @@
                                 Let thine own Greeks be witness, every one<br>
                                 That sailed on <span class="places" about="Argus">Argo</span>&#8213;saved thee,
                                 sent alone<br>
-                                To yoke with yokes the bulls of fiery breath<a href="#N9">[9]</a>,<br>
+                                To yoke with yokes the bulls of fiery breath<span data-toggle="modal"
+                                    data-target="#note9">[9]</span>,<br>
                                 And sow that Acre of the <span class="charimmortal" about="LordsofDeath">Lords
                                     of Death</span>;<br>
                                 And mine own ancient <span class="charimmortal" about="Serpent">Serpent</span>,
@@ -228,10 +233,12 @@
                             To take me in, who spilled their father's blood. . . .<br>
                             Aye, so my whole life stands! There were at home<br>
                             Who loved me well: to them I am become<br>
-                            A curse. And the first friends who sheltered me<a href="#N10">[10]</a>,<br>
+                            A curse. And the first friends who sheltered me<span data-toggle="modal"
+                                data-target="#note10">[10]</span>,<br>
                             Whom most I should have spared, to pleasure thee<br>
                             I have turned to foes. Oh, therefore hast thou laid<br>
-                            My crown upon me, blest of many a maid<a href="#N11">[11]</a><br>
+                            My crown upon me, blest of many a maid<span data-toggle="modal"
+                                data-target="#note11">[11]</span><br>
                             In <span class="places" about="Hellas">Hellas</span>, now I have won what all did
                             crave,<br>
                             Thee, the world-wondered lover and the brave;<br>
@@ -422,7 +429,6 @@
             </div>
         </div>
     </div>
-    <!-- </div> -->
 
     <button class="showNotes" onclick="showNotes()">Notes</button>
 
@@ -477,6 +483,242 @@
         <p id="N11">[11]: Blest of many a maid in Hellas.]—Jason was, of course, the great romantic hero of his
             time. Cf. his own words, l. 1340, p. 74. </p>
     </div>
+
+    <span>  <!-- NOTES -->
+    <!-- Modal, note 1 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [1]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>To Colchis through the blue Symplêgades.]—The Symplêgades ("Clashing") or Kuaneai ("Dark
+                        blue") were two rocks in the sea which used to clash together and crush anything that was between them.
+                        They stood above the north end of the Bosphorus and formed the Gate (l. 1264, p. 70) to the Axeinos
+                        Pontos, or "Stranger-less Sea," where all Greeks were murdered. At the farthest eastern end of that sea
+                        was the land of Colchis.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal, note 2 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [2]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>P&#234;lion.]—The great mountain in Thessaly. I&#212;lcos, a little kingdom between
+                        PP&#234;lionlion and the sea, ruled originally by Aeson, Jason's father, then by the usurping Pĕlias.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal, note 3 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [3]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Daughters of Pĕlias.]—See Introduction, p. vii.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal, note 4 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [4]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Wed.]—Medea was not legally married to Jason, and could not be, though in common parlance he
+                        is sometimes called her husband. Intermarriage between the subjects of two separate states was not
+                        possible in antiquity without a special treaty. And naturally there was no such treaty with Colchis.
+                        This is, I think, the view of the play, and corresponds to the normal Athenian conceptions of society.
+                        In the original legend it is likely enough that Medea belongs to "matriarchal" times before the
+                        institution of marriage.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal, note 5 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [5]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Head of Corinth.]—A peculiar word afterwards used to translate the Roman dictator. Creon is,
+                        however, apparently descended from the ancient king Sisyphus.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal, note 6 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [6]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>She hath a blade made keen, &c.]—These lines (40, 41) are repeated in a different context
+                        later on, p. 23, ll. 379, 380. The sword which to the Nurse suggested suicide was really meant for
+                        murder. There is a similar and equally dramatic repetition of the lines about the crown and wreath (786,
+                        949, pp. 46, 54), and of those about the various characters popularly attributed to Medea (ll. 304, 808,
+                        pp. 18, 46).</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal, note 7 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [7]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Women of Corinth, I am come, &c.]—These opening lines are a well-known crux interpretum. It
+                        is interesting to note, (1) that the Roman poet Ennius (ca. 200 B.C.) who translated the Medea, did not
+                        understand them in the least; while, on the other hand, the earliest Greek commentators seem not to have
+                        noticed that there was any difficulty in them worth commenting upon. That implies that while the acting
+                        tradition was alive and unbroken, the lines were easily understood; but when once the tradition failed,
+                        the meaning was lost. (The first commentator who deals with the passage is Irenaeus, a scholar of the
+                        Augustan time.)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal, note 8 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [8]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A herb most bruised is woman.]—This fine statement of the wrongs of women in Athens
+                        doubtless contains a great deal of the poet's own mind; but from the dramatic point of view it is
+                        justified in several ways. (1) Medea is seeking for a common ground on which to appeal to the Corinthian
+                        women. (2) She herself is now in the position of all others in which a woman is most hardly treated as
+                        compared with a man. (3) Besides this, one can see that, being a person of great powers and vehement
+                        will, she feels keenly her lack of outlet. If she had men's work to do, she could be a hero: debarred
+                        from proper action (from τὸ πράσσειν, Hip. 1019) she is bound to make mischief. Cf. p. 24, ll. 408, 409.
+                        "Things most vain, &c."
+            
+                        There is a slight anachronism in applying the Attic [Pg 85]system of doweries to primitive times.
+                        Medea's contemporaries either lived in a "matriarchal" system without any marriage, or else were bought
+                        by their husbands for so many cows.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal, note 9 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [9]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bulls of fiery breath.]—Among the tasks set him by Aiêtês, Jason had to yoke two
+                        fire-breathing bulls, and plough with them a certain Field of Ares, sow the field with dragon's teeth,
+                        and reap a harvest of earth-born or giant warriors which sprang from the seed. When all this was done,
+                        there remained the ancient serpent coiled round the tree where the Golden Fleece was hanging.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal, note 10 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [10]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>The first friends who sheltered me.]—i.e. the kindred of Pelias.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal, note 11 -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Note [11]</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Blest of many a maid in Hellas.]—Jason was, of course, the great romantic hero of his
+                        time. Cf. his own words, l. 1340, p. 74.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </span>
 </body>
 
 </html>
