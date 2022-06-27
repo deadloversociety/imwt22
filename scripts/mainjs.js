@@ -5,16 +5,39 @@ function missingIssue() {
 
 // To change historical theme (click on the buttons of the second navbar -> change css)
 function swapTheme(csspath) {
-  // avoiding music to continue
-  var myAudio = document.getElementById("myAudio");
-  myAudio.pause();
-  // core function
   document.getElementById('currentlocalcss').setAttribute('href',csspath);
+  // When changing the css (= the historical theme) I also set a key-value in sessionStorage
+  sessionStorage.setItem('href',csspath);
 }
 
 // To save historical theme while browsing on the website
-// Here there should be some function involving also SessionStorage (which in this case we feel it is better than LocalStorage)
-// I would use a switch loop to check the value of the attribute href of the element with id currentlocalcss
+  // 1. When I change the html (e.g. <a class="..." href="medea.html)></a>") I need to see what is the css I am starting from and KEEP IT
+$(document).ready(function(){
+  // 2. I save this starting css in a variable
+  var start_style = sessionStorage.getItem('href');
+  // I check if the start_style has a certain value and I change the href accordingly 
+  switch (start_style) {
+    case 'css/aldinecss.css':
+      document.getElementById('currentlocalcss').setAttribute('href','css/aldinecss.css');
+      break;
+    case 'css/newspapercss.css':
+      document.getElementById('currentlocalcss').setAttribute('href','css/newspapercss.css');
+      break;
+    case 'css/baucss.css':
+      document.getElementById('currentlocalcss').setAttribute('href','css/baucss.css');
+      break;
+    case 'css/popcss.css':
+      document.getElementById('currentlocalcss').setAttribute('href','css/popcss.css');
+      break;
+    // ===== Here there is Vogue missing =====
+    case 'css/todaycss.css':
+      document.getElementById('currentlocalcss').setAttribute('href','css/todaycss.css');
+      break;
+    case 'css/futurecss.css':
+      document.getElementById('currentlocalcss').setAttribute('href','css/futurecss.css');
+      break;
+  }
+})
 
 function showEur() {
   var x = document.getElementById("MedeaEur");
