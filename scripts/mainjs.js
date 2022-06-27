@@ -8,6 +8,10 @@ function swapTheme(csspath) {
   document.getElementById('currentlocalcss').setAttribute('href',csspath);
   // When changing the css (= the historical theme) I also set a key-value in sessionStorage
   sessionStorage.setItem('href',csspath);
+  // Stop audio when switching from future
+  var myAudio = document.getElementById("myAudio");
+  myAudio.pause();
+
 }
 
 // To save historical theme while browsing on the website
