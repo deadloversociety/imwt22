@@ -382,7 +382,7 @@
         }
 
         function filltab(what, style, where) {
-            var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+            var list = `<li class="list $style"><a href="#" onclick="scroll_to('$place')">$content</a></li>`
             var elements = $(what);
             $(where + ' ul').empty();
             for (var i = 0; i < elements.length; i++) {
@@ -393,17 +393,15 @@
                 }))
             }
         }
+         function goto(id) {
+			var t = $(id)[0].offsetTop;
+			$('body').animate({scrollTop: t}, 2000);
+			$(id).addClass('animate');
+			setTimeout(function(){
+				$(id).removeClass('animate');
+			},5000);
+		}
 
-        function goto(id) {
-            var t = $(id)[0].offsetTop;
-            $('body').animate({
-                scrollTop: t
-            }, 200);
-            $(id).addClass('animate');
-            setTimeout(function () {
-                $(id).removeClass('animate');
-            }, 5000);
-        }
 
         function showNotes() {
             var x = document.getElementById("Notes");
