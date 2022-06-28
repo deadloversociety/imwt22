@@ -317,6 +317,8 @@ html {
 
 /* ==== Team Section: https://www.foolishdeveloper.com/2021/10/our-team-section-design.html ===== */
 
+/* Si può togliere
+
 .main {
     width: 100%;
     display: flex;
@@ -327,14 +329,15 @@ html {
 
 .profile-card {
     position: relative;
-    width: 220px;
+
     border-radius: 10px;
-    height: 300px;
+    height: 18.75em;
     background: #fff;
-    padding: 30px;
+    padding: 1.875em;
     box-shadow: 0 0 22px #3336;
     transition: .6s;
     margin: 0 25px;
+    margin-top: 4em;
 }
 
 .profile-card .img {
@@ -373,7 +376,8 @@ html {
 .caption a {
     text-decoration: none;
     color: #000000;
-}
+} 
+*/
 
 /* ==== Footer Section, source: https://getbootstrap.com/docs/5.2/examples/footers/ ===== */
 

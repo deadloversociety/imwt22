@@ -415,13 +415,30 @@ html {
     color: #0c52a1;
 }
 
-.profile-card:hover {
-    background: #fff;
-    box-shadow:0 0 22px #3336;
+/* this is ok!!! */ 
+
+.team-profile-card {
+    background: rgba(0, 0, 0, 0) !important;
+    box-shadow: 0 0 0 0 !important;
+
 }
 
-.profile-card:hover > .caption {
+.team-profile-card img {
+    transition: .6s;
+}
+.team-caption {
+    opacity: 0;
+}
+
+.team-profile-card:hover {
+    background: #fff !important;
+    box-shadow:0 0 22px #3336;
+    transition: .6s;
+}
+
+.team-profile-card:hover > .team-caption {
     opacity:1;
+    transition: .6s;
 }
 
 /* ==== Footer Section, source: https://getbootstrap.com/docs/5.2/examples/footers/ ===== */
