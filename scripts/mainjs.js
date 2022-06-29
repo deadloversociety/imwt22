@@ -33,7 +33,9 @@ $(document).ready(function(){
     case 'css/popcss.css':
       document.getElementById('currentlocalcss').setAttribute('href','css/popcss.css');
       break;
-    // ===== Here there is Vogue missing =====
+    case 'css/voguecss.css':
+      document.getElementById('currentlocalcss').setAttribute('href','css/voguecss.css');
+      break;
     case 'css/todaycss.css':
       document.getElementById('currentlocalcss').setAttribute('href','css/todaycss.css');
       break;
@@ -42,6 +44,9 @@ $(document).ready(function(){
       break;
   }
 })
+
+
+
 
 function showEur() {
   var x = document.getElementById("MedeaEur");
