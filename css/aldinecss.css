@@ -313,66 +313,6 @@ html {
     margin: 0px;
 }
 
-/* ==== Team Section: https://www.foolishdeveloper.com/2021/10/our-team-section-design.html ===== */
-
-.main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4em;
-}
-
-.profile-card {
-    position: relative;
-    width: 220px;
-    border-radius: 10px;
-    height: 300px;
-    background: #fff;
-    padding: 30px;
-    box-shadow: 0 0 22px #f1f1f1;
-    transition: .6s;
-    margin: 0 25px;
-}
-
-.profile-card .img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: .6s;
-    z-index: 99;
-    transform: translateY(-60px);
-    filter: sepia(100%); -webkit-filter: sepia(100%);
-}
-
-.img img {
-    width: 100%;
-    box-shadow: 0 0 22px #3336;
-    transition: .6s;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.caption {
-    text-align: center;
-    transform: translateY(-80px);
-    transition: .6s;
-}
-
-.caption h3 {
-    font-size: 21px;
-}
-
-.caption p {
-    font-size: 15px;
-    margin: 2px 0 9px 0;
-}
-
-.caption a {
-    text-decoration: none;
-    color: #0c52a1;
-}
 
 /* ==== Footer Section, source: https://getbootstrap.com/docs/5.2/examples/footers/ ===== */
 
