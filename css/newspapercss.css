@@ -102,6 +102,24 @@ a.nav-link:hover {
     text-shadow: 2px 2px 5px rgb(135, 124, 99);
 }
 
+/* goTop button */
+#topBtn {
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:20px;
+	background-color: rgba(245, 245, 245, 0.912);
+	color: rgb(0, 0, 0);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #3336;
+    z-index: 100;
+    transform: scale(1);
+    cursor: pointer;
+    padding: 1%;
+}
+
 /* ===== DROPDOWN MENU ===== */
 .dropdown-menu {
     background-image: url("https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1910&q=80");

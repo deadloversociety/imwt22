@@ -45,7 +45,33 @@ $(document).ready(function(){
   }
 })
 
+// By clicking on the topBtn button you go back top  
+function goTop(){
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera  
+}
 
+// When the document is ready I can check the style: if we are in the future I can change the value of the display attribute of the #menuBtn element to block and make the other display attribute of #topBtn set to none
+$(document).ready(function(){
+  if (sessionStorage.getItem('href')=='css/futurecss.css') {
+    $('#menuBtn').css({'display':'block'});
+    $('#topBtn').css({'display':'none'});
+  }
+})
+
+// By hovering over the menuBtn this button disappears and the other two appear (one on top of the other)
+function expandMenu(){
+  $('#menuBtn').css({'display':'none'});
+  $('#topBtn').css({'display':'block'});
+  $('.float').css({'display':'block'});
+}
+
+//By taking the mouse off of the containter containing the two #topBtn and .float buttons, the menu will shrink back into the #menuBtn button
+function shrinkMenu(){
+  $('#menuBtn').css({'display':'block'});
+  $('#topBtn').css({'display':'none'});
+  $('.float').css({'display':'none'});
+}
 
 
 function showEur() {

@@ -107,6 +107,43 @@ nav, .nav {
     color: #333333;
 }
 
+/* Menu button */
+#menuBtn {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:20px;
+    background-color: rgba(245, 245, 245, 0.912);
+    color: rgb(0, 0, 0);
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #3336;
+    z-index: 100;
+    transform: scale(1);
+    cursor: pointer;
+    padding: 1%;
+}
+
+/* goTop button */
+#topBtn {
+    display: block;
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:20px;
+	background-color: rgba(245, 245, 245, 0.912);
+	color: rgb(0, 0, 0);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #3336;
+    z-index: 100;
+    transform: scale(1);
+    cursor: pointer;
+    padding: 1%;
+}
+
 /* ====== Home page carousel */
 .carousel-item {
     height: 100vh;
@@ -634,7 +671,7 @@ img {
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
+	bottom:115px;
 	right:20px;
 	background-color: #afe9ff;
 	color: rgb(2, 2, 112);
