@@ -1,4 +1,8 @@
-@import url("../fonts/vogue/DidotLH-Roman.otf");
+@font-face {
+    font-family: Didot;
+    src: url("../fonts/vogue/DidotLH-Roman.otf");
+  }
+
 
 /* Start main navbar */
 @media (min-width: 768px) {
