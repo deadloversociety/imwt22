@@ -79,6 +79,9 @@ nav {
     background-color: #c29969 !important;
 }
 
+a.nav-link:hover {
+    color: #646c54;
+}
 /* goTop button */
 #topBtn {
     position:fixed;
