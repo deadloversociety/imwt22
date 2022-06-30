@@ -89,6 +89,10 @@ a.nav-link:hover {
     color: #c00c2c;
     text-shadow: 2px 2px 5px rgb(135, 124, 99);
 }
+.dropdown-item:hover {
+    background-color:#c00c2c;
+ 
+}
 
 /* goTop button */
 #topBtn {
