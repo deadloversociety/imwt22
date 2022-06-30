@@ -82,6 +82,10 @@ nav {
 a.nav-link:hover {
     color: #646c54;
 }
+
+.dropdown-item:hover {
+    background-color:#c29969;
+}
 /* goTop button */
 #topBtn {
     position:fixed;
