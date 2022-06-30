@@ -231,7 +231,7 @@ html {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color:rgb(125,107,108);
+    background-color:#9e9c8d;
 }
 
 .card:hover .overlay {
@@ -480,20 +480,7 @@ a.navbar-brand {
 
 
 
-.text-charmortal {
-    background-color: red;
-}
 
-.text-charimmortal {
-    background-color: #ddffdd;
-}
-.text-places {
-    background-color: #ffffdd;
-}
-
-.text-sequence {
-    background-color: #ffe7dd;
-}
 
 
 .aldina::first-letter {
@@ -576,20 +563,17 @@ a:sec-nav:hover {
 }
 
 .text-charmortal {
-    background-color: #ffddff;
+    background-color: #5e5f4d;
 }
 
 .text-charimmortal {
-    background-color: #ddffdd;
+    background-color: ##646c54;
 }
 
 .text-places {
-    background-color: #ffffdd;
+    background-color: #786e51;
 }
 
-.text-sequence {
-    background-color: #ffffdd;
-}
 
 ul.minimal {
     padding-inline-start: 0.5em;
