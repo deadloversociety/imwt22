@@ -166,7 +166,7 @@ a.btnLink:link,
 a.btnLink:visited,
 a.btnLink:hover,
 a.btnLink:active {
-    color: #beaa93 !important;
+    color: #white !important;
     text-decoration: none;
 }
 
