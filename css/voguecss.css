@@ -613,7 +613,7 @@ color:#c00c2c;
 }
 
 .text-charmortal {
-    background-color: #f#b43c1c;
+    background-color: #b43c1c;
 }
 
 .text-charimmortal {
@@ -621,7 +621,7 @@ color:#c00c2c;
 }
 
 .text-places {
-    background-color: #2c7c9c;
+    background-color: #9b84ac;
 }
 
 
@@ -658,7 +658,8 @@ ul.minimal {
     }
 
     to {
-        background-color: ##9b84ac;
+        background-color:#048b9b ;
+	   color:white;
     }
 }
 
