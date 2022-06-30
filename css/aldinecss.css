@@ -563,15 +563,15 @@ a:sec-nav:hover {
 }
 
 .text-charmortal {
-    background-color: #5e5f4d;
+    background-color: #c9c0bb;
 }
 
 .text-charimmortal {
-    background-color: ##646c54;
+    background-color:#a69390;
 }
 
 .text-places {
-    background-color: #786e51;
+    background-color: #d2cdc7;
 }
 
 
@@ -593,13 +593,7 @@ ul.minimal {
     margin: 0;
 }
 
-.list-sequence:before {
-    content: "«";
-}
 
-.list-sequence:after {
-    content: "»";
-}
 
 .animate1 {
     animation-name: bgcolor;
