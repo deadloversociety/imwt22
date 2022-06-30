@@ -59,21 +59,6 @@ $(document).ready(function(){
   }
 })
 
-// By hovering over the menuBtn this button disappears and the other two appear (one on top of the other)
-function expandMenu(){
-  $('#menuBtn').css({'display':'none'});
-  $('#topBtn').css({'display':'block'});
-  $('.float').css({'display':'block'});
-}
-
-//By taking the mouse off of the containter containing the two #topBtn and .float buttons, the menu will shrink back into the #menuBtn button
-function shrinkMenu(){
-  $('#menuBtn').css({'display':'block'});
-  $('#topBtn').css({'display':'none'});
-  $('.float').css({'display':'none'});
-}
-
-
 function showEur() {
   var x = document.getElementById("MedeaEur");
   var y = document.getElementById("MedeaApp");

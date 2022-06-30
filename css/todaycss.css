@@ -80,6 +80,7 @@ nav {
 }
 
 /* goTop button */
+
 #topBtn {
     position:fixed;
 	width:60px;
@@ -95,6 +96,10 @@ nav {
     transform: scale(1);
     cursor: pointer;
     padding: 1%;
+}
+
+#topBtn:hover {
+	background-color: rgba(176, 176, 176, 0.912);
 }
 
 /* ====== Home page carousel */
@@ -566,7 +571,7 @@ a.navbar-brand {
 }
 
 .float{
-    display: none;
+    display: none !important;
 }
 
 /* ARTICLES UPLOAD SECTION STYLE */

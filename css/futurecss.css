@@ -107,8 +107,9 @@ nav, .nav {
     color: #333333;
 }
 
-/* Menu button */
+/* Menu button 
 #menuBtn {
+    display: block;
     position:fixed;
     width:60px;
     height:60px;
@@ -123,11 +124,11 @@ nav, .nav {
     transform: scale(1);
     cursor: pointer;
     padding: 1%;
-}
+}*/
 
 /* goTop button */
 #topBtn {
-    display: block;
+    display:block;
     position:fixed;
 	width:60px;
 	height:60px;
@@ -142,6 +143,10 @@ nav, .nav {
     transform: scale(1);
     cursor: pointer;
     padding: 1%;
+}
+
+#topBtn:hover {
+	background-color: rgba(176, 176, 176, 0.912);
 }
 
 /* ====== Home page carousel */

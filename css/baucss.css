@@ -95,7 +95,9 @@ a:any-link {
     font-size: 1em;
 }
 
+
 /* goTop button */
+
 #topBtn {
     position:fixed;
 	width:60px;
@@ -111,6 +113,10 @@ a:any-link {
     transform: scale(1);
     cursor: pointer;
     padding: 1%;
+}
+
+#topBtn:hover {
+	background-color: rgba(176, 176, 176, 0.912);
 }
 
 /* ====== Home page carousel */
@@ -675,7 +681,7 @@ img {
 }
 
 .float{
-    display: none;
+    display: none !important;
 }
 
 /* ARTICLES UPLOAD SECTION STYLE */
