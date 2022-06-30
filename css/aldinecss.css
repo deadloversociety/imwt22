@@ -641,3 +641,8 @@ ul.minimal {
     display: none;
     /* for Chrome, Safari, and Opera */
 }
+
+.dropdown-menu
+{
+ background-color:#c29969;
+}
