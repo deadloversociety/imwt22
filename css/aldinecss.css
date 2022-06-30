@@ -637,7 +637,7 @@ ul.minimal {
     /* for Chrome, Safari, and Opera */
 }
 
-.dropdown-menu dropdown-menu-end animate slideIn show
+.dropdown-menu
 {
  background-color:#c29969;
 }
