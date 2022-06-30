@@ -53,6 +53,10 @@
 }
 
 /* End main Navbar */
+.dropdown-menu {
+    background-color:#c29969;
+   
+}
 
 /* Secondary navbar */
 .sec-nav {
@@ -94,9 +98,8 @@ nav {
 }
 
 #topBtn:hover {
-	background-color: rgba(215, 215, 215, 0.912);
+    background-color: rgba(215, 215, 215, 0.912);
 }
-
 
 /* ====== Home page carousel */
 .carousel-item {
@@ -549,7 +552,7 @@ a:sec-nav:hover {
 }
 
 .float{
-    display: none !important;
+    display: none;
 }
 
 /* ARTICLES UPLOAD SECTION STYLE */
@@ -614,7 +617,7 @@ ul.minimal {
     content: "»";
 }
 
-.animate {
+.animate1 {
     animation-name: bgcolor;
     animation-duration: 0.75s;
     animation-iteration-count: 3;
@@ -627,7 +630,7 @@ ul.minimal {
     }
 
     to {
-        background-color: #cccc00;
+        background-color:#e3dcc3;
     }
 }
 
@@ -642,7 +645,5 @@ ul.minimal {
     /* for Chrome, Safari, and Opera */
 }
 
-.dropdown-menu
-{
- background-color:#c29969;
-}
+
+
