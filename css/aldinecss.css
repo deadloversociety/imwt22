@@ -79,6 +79,13 @@ nav {
     background-color: #c29969 !important;
 }
 
+a.nav-link:hover {
+    color: ##d3ccbc;
+}
+
+.dropdown-item:hover {
+    background-color:#c29969;
+}
 /* goTop button */
 #topBtn {
     position:fixed;
@@ -166,7 +173,7 @@ a.btnLink:link,
 a.btnLink:visited,
 a.btnLink:hover,
 a.btnLink:active {
-    color: white !important;
+    color: #white !important;
     text-decoration: none;
 }
 
@@ -231,7 +238,7 @@ html {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color:rgb(125,107,108);
+    background-color:#9e9c8d;
 }
 
 .card:hover .overlay {
@@ -480,20 +487,7 @@ a.navbar-brand {
 
 
 
-.text-charmortal {
-    background-color: red;
-}
 
-.text-charimmortal {
-    background-color: #ddffdd;
-}
-.text-places {
-    background-color: #ffffdd;
-}
-
-.text-sequence {
-    background-color: #ffe7dd;
-}
 
 
 .aldina::first-letter {
@@ -576,20 +570,17 @@ a:sec-nav:hover {
 }
 
 .text-charmortal {
-    background-color: #ffddff;
+    background-color: #c9c0bb;
 }
 
 .text-charimmortal {
-    background-color: #ddffdd;
+    background-color:#cbc7b4;
 }
 
 .text-places {
-    background-color: #ffffdd;
+    background-color: #d2cdc7;
 }
 
-.text-sequence {
-    background-color: #ffffdd;
-}
 
 ul.minimal {
     padding-inline-start: 0.5em;
@@ -609,13 +600,7 @@ ul.minimal {
     margin: 0;
 }
 
-.list-sequence:before {
-    content: "«";
-}
 
-.list-sequence:after {
-    content: "»";
-}
 
 .animate1 {
     animation-name: bgcolor;
@@ -644,6 +629,30 @@ ul.minimal {
     display: none;
     /* for Chrome, Safari, and Opera */
 }
+
+.ap Medeasmonologue::second-letter{
+
+    float: left;
+  
+    line-height: 35px;
+  
+    font-size: 55px;
+  
+    border: solid #292926;;
+  
+    padding-top: 5px;
+  
+    padding-bottom: 5px;
+  
+    padding-right: 5px;
+  
+    padding-left: 5px;
+  
+    margin-right: 5px;
+  
+    margin-bottom: -5px;
+  
+  }
 
 
 
