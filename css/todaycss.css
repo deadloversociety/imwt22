@@ -636,7 +636,7 @@ ul.minimal {
     content: "»";
 }
 
-.animate {
+.animate1 {
     animation-name: bgcolor;
     animation-duration: 0.75s;
     animation-iteration-count: 3;
