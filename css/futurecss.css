@@ -107,25 +107,6 @@ nav, .nav {
     color: #333333;
 }
 
-/* Menu button 
-#menuBtn {
-    display: block;
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:20px;
-    background-color: rgba(245, 245, 245, 0.912);
-    color: rgb(0, 0, 0);
-    border-radius:50px;
-    text-align:center;
-    box-shadow: 2px 2px 3px #3336;
-    z-index: 100;
-    transform: scale(1);
-    cursor: pointer;
-    padding: 1%;
-}*/
-
 /* goTop button */
 #topBtn {
     display:block;
@@ -134,7 +115,7 @@ nav, .nav {
 	height:60px;
 	bottom:40px;
 	right:20px;
-	background-color: rgba(245, 245, 245, 0.912);
+	background-color: rgba(245, 245, 245, 0.785);
 	color: rgb(0, 0, 0);
 	border-radius:50px;
 	text-align:center;
@@ -146,7 +127,7 @@ nav, .nav {
 }
 
 #topBtn:hover {
-	background-color: rgba(215, 215, 215, 0.912);
+	background-color: rgba(215, 215, 215, 0.785);
 }
 
 /* ====== Home page carousel */

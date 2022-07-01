@@ -112,7 +112,7 @@ a.navbar-brand:hover, a.nav-link:hover {
 	height:60px;
 	bottom:40px;
 	right:20px;
-	background-color: rgba(245, 245, 245, 0.912);
+	background-color: rgba(245, 245, 245, 0.785);
 	color: rgb(0, 0, 0);
 	border-radius:50px;
 	text-align:center;
@@ -124,7 +124,7 @@ a.navbar-brand:hover, a.nav-link:hover {
 }
 
 #topBtn:hover {
-	background-color: rgba(215, 215, 215, 0.912);
+	background-color: rgba(215, 215, 215, 0.785);
 }
 
 /* DA VEDEREWEEEEE */ 
