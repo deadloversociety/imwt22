@@ -18,9 +18,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
   </script>
-  
+
   <!-- Google icon -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
 
   <!-- Local stylesheet and javascript -->
   <link rel="stylesheet" href="css/todaycss.css" id="currentlocalcss">
@@ -70,7 +71,7 @@
         <a class="nav-link sec-nav" onclick="swapTheme('css/aldinecss.css')">Aldine</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link sec-nav" onclick="swapTheme('css/newspapercss.css')">Quotidiani 1800</a>
+        <a class="nav-link sec-nav" onclick="swapTheme('css/newspapercss.css')">Victorian Press</a>
       </li>
       <li class="nav-item">
         <a class="nav-link sec-nav" onclick="swapTheme('css/baucss.css')">Bauhaus</a>
@@ -93,12 +94,12 @@
   </header>
 
   <!-- goTop + music button-->
-    <button id="topBtn" onclick="goTop()"><span class="material-symbols-outlined">arrow_upward</span>
-    </button>
-    <audio id="myAudio" src="multimedia/Heat Waves (Slowed).mp3" preload="auto"></audio>
-    <a onclick="togglePlay()" class="float">
-      <i class="fa fa-headphones fa-2x my-float"></i>
-    </a>
+  <button id="topBtn" onclick="goTop()"><span class="material-symbols-outlined">arrow_upward</span>
+  </button>
+  <audio id="myAudio" src="multimedia/Heat Waves (Slowed).mp3" preload="auto"></audio>
+  <a onclick="togglePlay()" class="float">
+    <i class="fa fa-headphones fa-2x my-float"></i>
+  </a>
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -191,50 +192,53 @@
       typographic and layout choices are 2022 © Dead Lover Society.</p>
   </div>
 
-  <div class="textsection" id="teamsection"> <!-- https://www.web-eau.net/blog/10-team-section-bootstrap-4-snippets -->
+  <div class="textsection" id="teamsection">
+    <!-- https://www.web-eau.net/blog/10-team-section-bootstrap-4-snippets -->
     <h3>The team</h3>
     <div class="container">
       <div class="row justify-content-md-center text-center">
 
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-5 px-4 team-profile-card"><img
-              src="team/omborrini.jpeg" alt="Orsola Maria Borrini" width="200"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <div class="shadow-sm py-5 px-4 team-profile-card"><img src="team/omborrini.jpeg" alt="Orsola Maria Borrini"
+              class="img-thumbnail">
             <div class="team-caption">
-            <h5 class="mb-0">Orsola M. Borrini</h5><span class="small text-uppercase text-muted">MA "DHDK" Student</span>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item"><a href="mailto:orsolamaria.borrini@studio.unibo.it" class="social-link"><i class="fa fa-envelope"></i></i></a></li>
-            </ul>
-          </div>
+              <h5 class="mb-0">Orsola M. Borrini</h5><span class="small text-uppercase text-muted">MA "DHDK"
+                Student</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="mailto:orsolamaria.borrini@studio.unibo.it" class="social-link"><i
+                      class="fa fa-envelope"></i></i></a></li>
+              </ul>
+            </div>
           </div>
         </div><!-- End -->
 
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-5 px-4 team-profile-card"><img
-              src="team/martina.png" alt="Martina Pensalfini" width="200"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <div class="shadow-sm py-5 px-4 team-profile-card"><img src="team/martina.png" alt="Martina Pensalfini"
+              class="img-thumbnail">
             <div class="team-caption">
-            <h5 class="mb-0 text-center">Martina Pensalfini</h5><span class="small text-uppercase text-muted">MA "DHDK" Student</span>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item"><a href="mailto:martina.pensalfini@studio.unibo.it" class="social-link"><i class="fa fa-envelope"></i></i></a></li>
-            </ul>
-          </div>
+              <h5 class="mb-0 text-center">Martina Pensalfini</h5><span class="small text-uppercase text-muted">MA
+                "DHDK" Student</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="mailto:martina.pensalfini@studio.unibo.it" class="social-link"><i
+                      class="fa fa-envelope"></i></i></a></li>
+              </ul>
+            </div>
           </div>
         </div><!-- End -->
 
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-5 px-4 team-profile-card"><img
-              src="team/manuele1.png" alt="Manuele Veggi" width="200"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <div class="shadow-sm py-5 px-4 team-profile-card"><img src="team/manuele1.png" alt="Manuele Veggi"
+              class="img-thumbnail">
             <div class="team-caption">
-            <h5 class="mb-0">Manuele Veggi</h5><span class="small text-uppercase text-muted">MA "DHDK" Student</span>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item"><a href="mailto:manuele.veggi@studio.unibo.it" class="social-link"><i class="fa fa-envelope"></i></i></a></li>
-            </ul>
-          </div>
+              <h5 class="mb-0">Manuele Veggi</h5><span class="small text-uppercase text-muted">MA "DHDK" Student</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="mailto:manuele.veggi@studio.unibo.it" class="social-link"><i
+                      class="fa fa-envelope"></i></i></a></li>
+              </ul>
+            </div>
           </div>
         </div><!-- End -->
       </div>

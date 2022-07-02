@@ -339,67 +339,12 @@ html {
 
 /* ==== Team Section: https://www.foolishdeveloper.com/2021/10/our-team-section-design.html ===== */
 
-/* Si può togliere
-
-.main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4em;
+.team-profile-card img {
+    border-radius: 50% 50% 50% 50%;
+    transform: translateY(-2em);
+    width: 12em;
+    border: 0px !important;
 }
-
-.profile-card {
-    position: relative;
-
-    border-radius: 10px;
-    height: 18.75em;
-    background: #fff;
-    padding: 1.875em;
-    box-shadow: 0 0 22px #3336;
-    transition: .6s;
-    margin: 0 25px;
-    margin-top: 4em;
-}
-
-.profile-card .img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: .6s;
-    z-index: 99;
-    transform: translateY(-60px);
-}
-
-.img img {
-    width: 100%;
-    box-shadow: 0 0 22px #3336;
-    transition: .6s;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.caption {
-    text-align: center;
-    transform: translateY(-80px);
-    transition: .6s;
-}
-
-.caption h3 {
-    font-size: 21px;
-}
-
-.caption p {
-    font-size: 15px;
-    margin: 2px 0 9px 0;
-}
-
-.caption a {
-    text-decoration: none;
-    color: #000000;
-} 
-*/
 
 /* ==== Footer Section, source: https://getbootstrap.com/docs/5.2/examples/footers/ ===== */
 

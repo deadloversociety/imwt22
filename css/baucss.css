@@ -328,6 +328,8 @@ article h3::first-letter {
     padding: 2%;
     margin-top: 2em;
     margin-bottom: 2em;
+    position: sticky;
+    top: 1em;
 }
 
 .indexcompare {
@@ -407,62 +409,17 @@ article h3::first-letter {
 
 /* ==== Team Section: https://www.foolishdeveloper.com/2021/10/our-team-section-design.html ===== */
 
-.main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4em;
+.team-profile-card img {
+    transform: translateY(-2em);
+    width: 12em;
+    border: 0.2em solid black !important;
+    padding: 0!important;
 }
 
-.profile-card {
-    position: relative;
-    width: 220px;
-    height: 300px;
-    background: #fff;
-    padding: 30px;
-    box-shadow: 0 0 0 !important;
-    transition: .6s;
-    margin: 0 25px;
-    border: 0.2em solid rgb(42, 45, 110);
-}
-
-.profile-card .img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: .6s;
-    z-index: 99;
-    transform: translateY(-60px);
-}
-
-.img img {
-    width: 100%;
-    box-shadow: 0 0 22px #3336;
-    transition: .6s;
-    margin-left: auto;
-    margin-right: auto;
+.team-profile-card {
     border: 0.2em solid black;
-}
-
-.caption {
-    text-align: center;
-    transform: translateY(-80px);
-    transition: .6s;
-}
-
-.caption h3 {
-    font-size: 21px;
-}
-
-.caption p {
-    font-size: 15px;
-    margin: 2px 0 9px 0;
-}
-
-.caption a {
-    text-decoration: none;
-    color: #0c52a1;
+    background-color: whitesmoke !important;
+    border-radius: 0%;
 }
 
 /* ==== Footer Section, source: https://getbootstrap.com/docs/5.2/examples/footers/ ===== */

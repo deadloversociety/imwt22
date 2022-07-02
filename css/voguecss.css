@@ -685,6 +685,12 @@ text-transform:uppercase;
 h2 {
     text-transform:uppercase;
     }
+
+.bi {
+    color: #c00c2c !important; 
+    font-size: 1.5em;
+}
+
 .aldina::first-letter {
     float: left;
     font-size: 75px;
