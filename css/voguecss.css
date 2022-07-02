@@ -194,12 +194,9 @@ a.btnLink:active {
     font-size: 1em;
 }
 
-#disclaimer {
-    font-size: 2em;
-}
 
 #disclaimer {
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 2% 5rem 2% 5rem;
 }
 
