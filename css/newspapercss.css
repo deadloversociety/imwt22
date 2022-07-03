@@ -378,7 +378,7 @@ div .columnEU > h3 {
 .buttonShowText {
     border-radius: 0.2em;
     padding: 0.5em;
-    margin: 1em;
+    margin-top: 1em;
     background-color: rgba(225, 225, 225, 0.255) !important;
     border: 2px solid rgb(0, 0, 0);
 }
@@ -389,7 +389,7 @@ div .columnEU > h3 {
 
 .buttonHideText {
     border-radius: 0.2em;
-    margin: 0.5em;
+    margin-top: 0.5em;
     padding: 0.5em;
     background-color: rgba(225, 225, 225, 0.255) !important;
     border: 2px solid rgb(0, 0, 0);
@@ -401,7 +401,7 @@ div .columnEU > h3 {
 
 .buttonCompText {
     border-radius: 0.2em;
-    margin: 0.5em;
+    margin-top: 0.5em;
     padding: 0.5em;
     background-color: rgba(225, 225, 225, 0.255) !important;
     border: 2px solid rgb(0, 0, 0);
