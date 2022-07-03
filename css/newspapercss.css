@@ -220,7 +220,6 @@ a.btnLink:active {
     column-rule: inset 0.1em;
     margin: 1% 2% 1% 2%;
     text-align: justify;
-    text-justify: inter-word;
     font-size: 1.2em;
     line-height: 100%;
 }
@@ -416,6 +415,7 @@ article h3::first-letter {
     text-justify: inter-word;
     margin: 0px;
     display: none;
+    border-right: ;
 }
 
 #OVtextEn,
@@ -423,7 +423,7 @@ article h3::first-letter {
 #EUtextEn {
     text-align: justify;
     text-justify: inter-word;
-    margin: 0px;
+    margin-right: solid black 0.1em;
 }
 
 /* ===== DOCUMENTATION ===== */
