@@ -662,7 +662,7 @@ a.navbar-brand {
 /* ARTICLES UPLOAD SECTION STYLE */
 
 .note:hover {
-    text-transform: bold;
+    font-weight: bold;
 }
 
 .myborder {

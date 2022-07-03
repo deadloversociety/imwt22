@@ -569,6 +569,10 @@ color:#c00c2c;
     font-size: 0.8em;
 }
 
+.note:hover {
+    font-weight: bold;
+}
+
 .tab-pane {
     font-size: 1.15em;
     width: 100%;
@@ -598,10 +602,6 @@ color:#c00c2c;
 }
 
 /* ARTICLES UPLOAD SECTION STYLE */
-
-.note:hover {
-    text-transform: bold;
-}
 
 .myborder {
     border: solid rgb(220, 220, 220) 1px;

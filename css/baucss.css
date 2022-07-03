@@ -609,7 +609,7 @@ img {
 }
 
 .note:hover {
-    text-transform: bold;
+    font-weight: bold;
 }
 
 .tab-pane {
