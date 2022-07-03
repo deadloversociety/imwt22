@@ -641,5 +641,6 @@ background-image: url("https://static.vecteezy.com/ti/foto-gratuito/p1/3821013-c
 }
 .team-profile-card {
 background-image: url("https://st2.depositphotos.com/1006269/5229/i/600/depositphotos_52294747-stock-photo-old-parchment-paper-texture.jpg");
-  filter:sepia(100%)
+  filter:sepia(100%);
+      filter:greyscale(50%);
 }
