@@ -673,21 +673,19 @@ ul {
     padding: 1em;
 }
 
-/* questo non so bene se cambiarlo anche per il newspaper */
 .tab-pane {
     font-size: 1.15em;
     width: 100%;
     display: flex;
 }
 
-/* questo non so bene se cambiarlo anche per il newspaper */
 .tab-pane ul {
     margin-top: 1em;
     list-style: none;
     font-style: italic;
 }
 
-/* questo non so bene se cambiarlo anche per il newspaper */
+/* questo non so bene se cambiarlo anche per il newspaper
 .seqinmeta li {
     margin-bottom: 2em;
     margin-right: 1em;
@@ -695,6 +693,7 @@ ul {
     padding: 2% 2% 2% 2%;
     background: #d6e8e8;
 }
+*/
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
