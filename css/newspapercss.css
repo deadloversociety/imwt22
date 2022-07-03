@@ -421,6 +421,7 @@ div .columnEU > h3 {
     text-justify: inter-word;
     display: none;
     padding-left: 1.2em;
+    margin-left: 0.1em;
     font-size: 1em !important;
 }
 
@@ -429,7 +430,6 @@ div .columnEU > h3 {
 #EUtextEn {
     text-align: justify;
     text-justify: inter-word;
-    margin-right: solid black 0.1em;
 }
 
 /* ===== DOCUMENTATION ===== */
