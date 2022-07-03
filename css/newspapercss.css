@@ -651,9 +651,18 @@ a.navbar-brand {
     font-weight: bold !important;
 }
 
-/* questo non so bene se cambiarlo anche per il newspaper */
-#list li {
+#list li :hover {
+    text-shadow: 2px 2px 5px rgb(135, 124, 99);
+    font-weight: normal;
+}
+
+.metadata ul>li>a:active {
     font-weight: bold;
+}
+
+.metadata ol,
+ul {
+    padding-left: 1rem !important;
 }
 
 #sentenceTab {
