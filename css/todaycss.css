@@ -492,7 +492,7 @@ a.navbar-brand {
 }
 
 .note:hover {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .tab-pane {
