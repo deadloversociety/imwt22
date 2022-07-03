@@ -730,6 +730,7 @@ h2 {
 }
 
 #topBtn {
-background-image:url("https://play-lh.googleusercontent.com/nd7OEysrBaYUWDsa_lHRKSf6E3fuA6RAeAOhY6ln7Jz8eDhCb3ntm7ys45fUH_Ervi7a");
-    opacity:50%;
+background-color:#c00c2c;
+    color:white;
+    opacity:75%;
 }
