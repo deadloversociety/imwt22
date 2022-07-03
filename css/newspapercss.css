@@ -139,7 +139,7 @@ a.nav-link:hover {
 
 /* ===== LINKS ===== */
 a {
-    color: black;
+    color: black !important;
     text-decoration: none;
 }
 
@@ -645,6 +645,61 @@ a.navbar-brand {
     }
 }
 
+/* ARTICLES SECTION */
+
+.note:hover {
+    font-weight: bold !important;
+}
+
+/* questo non so bene se cambiarlo anche per il newspaper */
+#list li {
+    font-weight: bold;
+}
+
+#sentenceTab {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1em !important;
+    color: #585757;
+    padding: 1em;
+}
+
+/* questo non so bene se cambiarlo anche per il newspaper */
+.tab-pane {
+    font-size: 1.15em;
+    width: 100%;
+    display: flex;
+}
+
+/* questo non so bene se cambiarlo anche per il newspaper */
+.tab-pane ul {
+    margin-top: 1em;
+    list-style: none;
+    font-style: italic;
+}
+
+/* questo non so bene se cambiarlo anche per il newspaper */
+.seqinmeta li {
+    margin-bottom: 2em;
+    margin-right: 1em;
+    font-size: 0.7em;
+    padding: 2% 2% 2% 2%;
+    background: #d6e8e8;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgba(225, 225, 225, 0.255) !important;
+    border: 2px solid rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.nav-pills:hover .nav-link.active:hover,
+.nav-pills:hover .show:hover>.nav-link {
+    text-shadow: none;
+}
+
+/* Audio button */
 .float {
     display: none !important;
 }
