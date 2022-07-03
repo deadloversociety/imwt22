@@ -1,7 +1,7 @@
 @font-face {
     font-family: Badaboom;
     src: url("../fonts/popart/BADABB__.TTF");
-  }
+}
 
 @font-face {
     font-family: DigitalStrip;
@@ -100,23 +100,24 @@ a.nav-link {
     background-color: white;
 }
 
-a.navbar-brand:hover, a.nav-link:hover {
+a.navbar-brand:hover,
+a.nav-link:hover {
     color: black;
 }
 
 /* goTop button */
 
 #topBtn {
-    position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:20px;
-	background-color: rgba(245, 245, 245, 0.785);
-	color: rgb(0, 0, 0);
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #3336;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(245, 245, 245, 0.785);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #3336;
     z-index: 100;
     transform: scale(1);
     cursor: pointer;
@@ -124,10 +125,10 @@ a.navbar-brand:hover, a.nav-link:hover {
 }
 
 #topBtn:hover {
-	background-color: rgba(215, 215, 215, 0.785);
+    background-color: rgba(215, 215, 215, 0.785);
 }
 
-/* DA VEDEREWEEEEE */ 
+/* DA VEDEREWEEEEE */
 /* ===== DROPDOWN MENU ===== */
 .dropdown-menu {
     background-image: url("https://unblast.com/wp-content/uploads/2020/11/Halftone-Dot-Textures-4.jpg");
@@ -135,7 +136,7 @@ a.navbar-brand:hover, a.nav-link:hover {
 }
 
 .dropdown-item:hover {
-    background-color:rgb(255, 246, 213);
+    background-color: rgb(255, 246, 213);
     filter: opacity(60%);
     font-weight: bold;
 }
@@ -247,11 +248,13 @@ a.btnLink:active {
     transform: rotate(0.5deg);
 }
 
-.textsection > h3, h2 {
+.textsection>h3,
+h2 {
     font-family: 'Badaboom';
     font-size: 2.5em;
     color: red;
-    -webkit-text-stroke: 2px black;}
+    -webkit-text-stroke: 2px black;
+}
 
 
 .textsection#disclaimer {
@@ -301,6 +304,7 @@ html {
 #abstractMedea h2::first-letter {
     font-size: 1em;
 }
+
 article h3::first-letter {
     font-size: 2em;
 }
@@ -330,7 +334,7 @@ article h3::first-letter {
     background-color: #8d7588;
 }
 
-/* ===== CARDS DA RIVEDERE ===== */ 
+/* ===== CARDS DA RIVEDERE ===== */
 .card {
     filter: brightness(150%) contrast(150%) saturate(150%);
 }
@@ -405,7 +409,7 @@ article h3::first-letter {
 }
 
 .buttonShowText:hover {
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonHideText {
@@ -418,7 +422,7 @@ article h3::first-letter {
 }
 
 .buttonHideText:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonCompText {
@@ -431,12 +435,12 @@ article h3::first-letter {
 }
 
 .buttonCompText:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#OVoriginalText, 
+#OVoriginalText,
 #ARoriginalText,
-#EUoriginalText  {
+#EUoriginalText {
     text-align: justify;
     text-justify: inter-word;
     margin: 0px;
@@ -453,7 +457,8 @@ article h3::first-letter {
 
 /* ===== DOCUMENTATION ===== */
 #docimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd"); /* maybe here even change the picture :P */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
+    /* maybe here even change the picture :P */
     filter: brightness(200%) contrast(200%);
 }
 
@@ -655,7 +660,7 @@ a.navbar-brand {
     }
 }
 
-.float{
+.float {
     display: none !important;
 }
 

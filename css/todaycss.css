@@ -65,7 +65,10 @@ a:any-link {
     color: purple;
 }
 
-.navbar a:any-link, .nav a:any-link, .nav a:hover, .navbar a:hover {
+.navbar a:any-link,
+.nav a:any-link,
+.nav a:hover,
+.navbar a:hover {
     color: black;
 }
 
@@ -82,16 +85,16 @@ nav {
 /* goTop button */
 
 #topBtn {
-    position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:20px;
-	background-color: rgba(245, 245, 245, 0.785);
-	color: rgb(0, 0, 0);
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #3336;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(245, 245, 245, 0.785);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #3336;
     z-index: 100;
     transform: scale(1);
     cursor: pointer;
@@ -99,7 +102,7 @@ nav {
 }
 
 #topBtn:hover {
-	background-color: rgba(215, 215, 215, 0.785);
+    background-color: rgba(215, 215, 215, 0.785);
 }
 
 /* ====== Home page carousel */
@@ -291,7 +294,7 @@ html {
 }
 
 .buttonShowText:hover {
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonHideText {
@@ -304,7 +307,7 @@ html {
 }
 
 .buttonHideText:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonCompText {
@@ -317,12 +320,12 @@ html {
 }
 
 .buttonCompText:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#OVoriginalText, 
+#OVoriginalText,
 #ARoriginalText,
-#EUoriginalText  {
+#EUoriginalText {
     text-align: justify;
     text-justify: inter-word;
     margin: 0px;
@@ -480,7 +483,7 @@ a.navbar-brand {
 }
 
 .bi {
-    color: red !important; 
+    color: red !important;
     font-size: 1.5em;
 }
 
@@ -507,19 +510,20 @@ a.navbar-brand {
     font-style: italic;
 }
 
-.seqinmeta li{
+.seqinmeta li {
     margin-bottom: 2em;
     margin-right: 1em;
     padding: 2% 0% 2% 2%;
     background: lavenderblush;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: #4c008a !important;
     font-weight: bold;
 }
 
-.float{
+.float {
     display: none !important;
 }
 

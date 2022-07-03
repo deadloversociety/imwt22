@@ -1,7 +1,7 @@
 @font-face {
     font-family: Griffo Classico;
     src: url("../fonts/aldine/GriffoClassico.ttf");
-  }
+}
 
 /* Start main navbar */
 @media (min-width: 768px) {
@@ -54,8 +54,8 @@
 
 /* End main Navbar */
 .dropdown-menu {
-    background-color:#c29969;
-   
+    background-color: #c29969;
+
 }
 
 /* Secondary navbar */
@@ -65,8 +65,8 @@
 
 body {
     font-family: 'Griffo Classico', serif;
-    background-color: rgba(228,217,202,255);
-    color:#292926;
+    background-color: rgba(228, 217, 202, 255);
+    color: #292926;
 }
 
 nav {
@@ -84,20 +84,21 @@ a.nav-link:hover {
 }
 
 .dropdown-item:hover {
-    background-color:#c29969;
+    background-color: #c29969;
 }
+
 /* goTop button */
 #topBtn {
-    position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:20px;
-	background-color: rgba(245, 245, 245, 0.785);
-	color: rgb(0, 0, 0);
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #3336;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(245, 245, 245, 0.785);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #3336;
     z-index: 100;
     transform: scale(1);
     cursor: pointer;
@@ -117,7 +118,8 @@ a.nav-link:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    filter: sepia(100%); -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
 }
 
 .hero-text {
@@ -208,7 +210,8 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    filter: sepia(100%); -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
 }
 
 #docimg {
@@ -238,7 +241,7 @@ html {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color:#9e9c8d;
+    background-color: #9e9c8d;
 }
 
 .card:hover .overlay {
@@ -299,7 +302,7 @@ html {
 }
 
 .buttonShowText:hover {
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonHideText {
@@ -312,7 +315,7 @@ html {
 }
 
 .buttonHideText:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonCompText {
@@ -325,13 +328,13 @@ html {
 }
 
 .buttonCompText:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
-#OVoriginalText, 
+#OVoriginalText,
 #ARoriginalText,
-#EUoriginalText  {
+#EUoriginalText {
     text-align: justify;
     text-justify: inter-word;
     margin: 0px;
@@ -405,7 +408,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 20px;
-    background-color:#71706e;
+    background-color: #71706e;
 }
 
 footer .fa-github {
@@ -489,63 +492,65 @@ a.navbar-brand {
 .aldina::first-letter {
 
     float: left;
-  
+
     line-height: 35px;
-  
+
     font-size: 55px;
-  
-    border: solid #292926;;
-  
+
+    border: solid #292926;
+    ;
+
     padding-top: 5px;
-  
+
     padding-bottom: 5px;
-  
+
     padding-right: 5px;
-  
+
     padding-left: 5px;
-  
+
     margin-right: 5px;
-  
+
     margin-bottom: -5px;
-  
-  }
-  
-  .showNotes {
+
+}
+
+.showNotes {
     border-radius: 0.2em;
     margin-top: 1em;
     margin-left: 1em;
     padding: 0.5em;
-    background-color: #c29969 ;
+    background-color: #c29969;
     border: none;
 }
 
 .showNotes:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .note:hover {
     font-weight: bold !important;
 }
 
-a:any-link{
+a:any-link {
     color: #6f5e4e;
 }
 
-a:hover:any-link  {
-    color:#888173;
+a:hover:any-link {
+    color: #888173;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: #585757;
     font-weight: bold;
 }
 
 
 a:sec-nav:hover {
-    color:#888173;
+    color: #888173;
 }
 
-.float{
+.float {
     display: none;
 }
 
@@ -574,7 +579,7 @@ a:sec-nav:hover {
 }
 
 .text-charimmortal {
-    background-color:#cbc7b4;
+    background-color: #cbc7b4;
 }
 
 .text-places {
@@ -615,7 +620,7 @@ ul.minimal {
     }
 
     to {
-        background-color:#e3dcc3;
+        background-color: #e3dcc3;
     }
 }
 
@@ -630,29 +635,27 @@ ul.minimal {
     /* for Chrome, Safari, and Opera */
 }
 
-.ap Medeasmonologue::second-letter{
+.ap Medeasmonologue::second-letter {
 
     float: left;
-  
+
     line-height: 35px;
-  
+
     font-size: 55px;
-  
-    border: solid #292926;;
-  
+
+    border: solid #292926;
+    ;
+
     padding-top: 5px;
-  
+
     padding-bottom: 5px;
-  
+
     padding-right: 5px;
-  
+
     padding-left: 5px;
-  
+
     margin-right: 5px;
-  
+
     margin-bottom: -5px;
-  
-  }
 
-
-
+}

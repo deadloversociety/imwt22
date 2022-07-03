@@ -18,10 +18,11 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-  </script>
+    </script>
 
   <!-- Google icon -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
 
   <!-- Local stylesheet and javascript -->
   <link rel="stylesheet" href="css/todaycss.css" id="currentlocalcss">
@@ -37,13 +38,15 @@
           <img id="logo" src="./imgs/heart.png" />
           <a class="navbar-brand" href="index.html"><span id="dead">Dead</span> Lovers Society</a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse navbar-menu" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Issues</a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Issues</a>
               <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="medea.html">Medea</a>
                 <a class="dropdown-item">Dido</a>
@@ -103,11 +106,12 @@
     <h2>Documentation of the Project</h2>
     <div id="projintro">
       <div class="aldina">
-      <h3>Project introduction</h3>
-      <p><i>Dead Lovers Society</i> is a metadata-enriched and stylistically
-        customizable magazine on tragic love stories. The project has been developed in the framework of the course
-        “Information Modelling and Web Technologies”, held by Prof Vitali for the MA in “Digital Humanities and Digital
-        Knowledge” in the a. y. 2021/2022.</p>
+        <h3>Project introduction</h3>
+        <p><i>Dead Lovers Society</i> is a metadata-enriched and stylistically
+          customizable magazine on tragic love stories. The project has been developed in the framework of the course
+          “Information Modelling and Web Technologies”, held by Prof Vitali for the MA in “Digital Humanities and
+          Digital
+          Knowledge” in the a. y. 2021/2022.</p>
       </div>
 
       <p>The topic of this digital-born magazine stems out from one of the most important masterpiece of Latin
@@ -124,76 +128,96 @@
     <div id="websitstruct">
       <h3>Website infrastructure</h3>
       <div class="aldina">
-      <p>The web-application mainly consists of a set of HTML pages, edited through CSS
-        stylesheets and animated thanks to JavaScript scripts. Some parts of its (e.g. navbar, footer, heroimage etc)
-        are rendered through predefined model taken from Bootstrap or other sources. Their provenance is usually
-        indicated in a comment within the source-code. These assets have been slightly modified according to our needs
-        and to respect the stylistic features of the historical teaming. These imported assets are the sole situations
-        where the dimensions can be measured in absolute value (i.e. in pixel). The original contents of the web
-        application are instead measured in em, which grants the overall responsivity of the site</p>
+        <p>The web-application mainly consists of a set of HTML pages, edited through CSS
+          stylesheets and animated thanks to JavaScript scripts. Some parts of its (e.g. navbar, footer, heroimage etc)
+          are rendered through predefined model taken from Bootstrap or other sources. Their provenance is usually
+          indicated in a comment within the source-code. These assets have been slightly modified according to our needs
+          and to respect the stylistic features of the historical teaming. These imported assets are the sole situations
+          where the dimensions can be measured in absolute value (i.e. in pixel). The original contents of the web
+          application are instead measured in em, which grants the overall responsivity of the site</p>
       </div>
       <p> Up to now, the application consists of three main HTML pages:
-        <ul>
-          <li>index.html: homepage of the website, containing the general information about the project and a carousel
-            displaying all the issues of the magazine</li>
-          <li>medea.html: containing the first issue, dedicated to the Greek witch Medea. Here character is briefly
-            presented by an abstract and her story is told by Euripides, Apollonius Rhodius and Ovid. Each text, which
-            has been separatedly marked up and here uploaded through an Ajax function, can be read in English and
-            compared (also paragraph to paragraph) with the original Greek and Latin source. Moreover, an ad hoc tab
-            allow to surf through the metadata of the publication (see under). The other two issues about Dido and
-            Guinevevre are not available yet.</li>
-          <li>documentation.html: currently displayed, contains the documentation of the project</li>
-        </ul>
-        Each page starts with a double navbar: the first one is the sitemap, while the second one allows to change the
-        different styles at any moment.</p>
+      <ul>
+        <li>index.html: homepage of the website, containing the general information about the project and a carousel
+          displaying all the issues of the magazine</li>
+        <li>medea.html: containing the first issue, dedicated to the Greek witch Medea. Here character is briefly
+          presented by an abstract and her story is told by Euripides, Apollonius Rhodius and Ovid. Each text, which
+          has been separatedly marked up and here uploaded through an Ajax function, can be read in English and
+          compared (also paragraph to paragraph) with the original Greek and Latin source. Moreover, an ad hoc tab
+          allow to surf through the metadata of the publication (see under). The other two issues about Dido and
+          Guinevevre are not available yet.</li>
+        <li>documentation.html: currently displayed, contains the documentation of the project</li>
+      </ul>
+      Each page starts with a double navbar: the first one is the sitemap, while the second one allows to change the
+      different styles at any moment.</p>
     </div>
     <div id="metadatadoc">
       <h3>Metadata enrichment</h3>
       <div class="aldina">
-      <p>Marti? Quisque gravida vel lacus a accumsan. Vivamus sagittis rhoncus pellentesque. Quisque aliquet tortor eu
-        nulla
-        tempus, in cursus elit dignissim. Donec eu accumsan nisi. Aliquam magna massa, efficitur facilisis ullamcorper
-        eu,
-        elementum eget lectus. Nam imperdiet dolor vel tempor interdum. Suspendisse sem mi, faucibus vitae porta sed,
-        venenatis rhoncus neque. Donec hendrerit mi a urna hendrerit, nec imperdiet risus iaculis. Vestibulum eu libero
-        pretium, iaculis lectus ut, imperdiet sapien.</p>
+        <p>Marti? Quisque gravida vel lacus a accumsan. Vivamus sagittis rhoncus pellentesque. Quisque aliquet tortor eu
+          nulla
+          tempus, in cursus elit dignissim. Donec eu accumsan nisi. Aliquam magna massa, efficitur facilisis ullamcorper
+          eu,
+          elementum eget lectus. Nam imperdiet dolor vel tempor interdum. Suspendisse sem mi, faucibus vitae porta sed,
+          venenatis rhoncus neque. Donec hendrerit mi a urna hendrerit, nec imperdiet risus iaculis. Vestibulum eu
+          libero
+          pretium, iaculis lectus ut, imperdiet sapien.</p>
       </div>
     </div>
     <div id="histolayout">
       <h3>Historical theming</h3>
       <div class="aldina">
-      <p>The website was at first projected in the style currently displayed as
-        "2020s". It is based on nowadays trending features in typography (such as, <i>Wired</i>) both in font and in
-        page layout and adopts a
-        very minimalistic aesthetic to what concerns colors and image filters. On the basis of these stylesheet, other
-        six different themes, in order to philologically reconstruct specific typographical tastes. The general concepts
-        of historical typography is taken from Guity Novin, "History of Layout Design and Modern Newspaper & Magazins",
-        <i>A History of Graphic Design</i>.</p>
+        <p>The website was at first projected in the style currently displayed as
+          "2020s". It is based on nowadays trending features in typography (such as, <i>Wired</i>) both in font and in
+          page layout and adopts a
+          very minimalistic aesthetic to what concerns colors and image filters. On the basis of these stylesheet, other
+          six different themes, in order to philologically reconstruct specific typographical tastes. The general
+          concepts
+          of historical typography is taken from Guity Novin, "History of Layout Design and Modern Newspaper &
+          Magazins",
+          <i>A History of Graphic Design</i>.
+        </p>
       </div>
       <h4>Aldo Manuzio&apos;s print edition (<i>Aldine</i>)</h4>
       <div class="aldina">
-        	<p>Aldus Manuntius was probably one of the most influential men during the end of the XV and the beginning of the XVI century.</p>
-    <p>In 1494 he changed for ever the way people were able to perceive culture, through opening the "Aldine Press" and starting the creating of <q>libelli portatiles.</q></p>
-    <p>In fact the books that he created were printed in the small <q>octavo</q> size, which isn't much different from our own paperback editions, effectively handling to people an instrument that could be read easily, everywhere and efficiently.</q>
-    <p>Other than coming up with a new book format, Aldus Manuntius also was one of the first that started printing ancient Greek and Latin texts, for example, publishing Plato's works, with a Latin preface and dedicating such an edition to Pope Leo X.</p>
-    <p>We thought that this detail might be very interesting and quite fitting for the texts we have chosen, which are part of Greek and Latin works, hence in our choice we continue Manuntius' goal to further educate people, in these new subjects.</p>
-    <p>Aside from handling his own publishing house, Manuntius also collaborated with Francesco Griffo to further create and embellish his style and he both came up with new typefaces: 
+        <p>Aldus Manuntius was probably one of the most influential men during the end of the XV and the beginning of
+          the XVI century.</p>
+        <p>In 1494 he changed for ever the way people were able to perceive culture, through opening the "Aldine Press"
+          and starting the creating of <q>libelli portatiles.</q></p>
+        <p>In fact the books that he created were printed in the small <q>octavo</q> size, which isn't much different
+          from our own paperback editions, effectively handling to people an instrument that could be read easily,
+          everywhere and efficiently.</q>
+        <p>Other than coming up with a new book format, Aldus Manuntius also was one of the first that started printing
+          ancient Greek and Latin texts, for example, publishing Plato's works, with a Latin preface and dedicating such
+          an edition to Pope Leo X.</p>
+        <p>We thought that this detail might be very interesting and quite fitting for the texts we have chosen, which
+          are part of Greek and Latin works, hence in our choice we continue Manuntius' goal to further educate people,
+          in these new subjects.</p>
+        <p>Aside from handling his own publishing house, Manuntius also collaborated with Francesco Griffo to further
+          create and embellish his style and he both came up with new typefaces:
         <ul>
-            <li> the humanist typeface </li>
-            <li> the italic typeface </li>
+          <li> the humanist typeface </li>
+          <li> the italic typeface </li>
         </ul>
-    <p>Both typefaces are well known to us and are still very much use (mostly the second one), but these aren't the only things that Manuntius' collaboration with Francesco Griffo created.</p>
-    <p>Francesco Griffo (or better Francesco da Bologna, as he was known before 1883) actually created a new font, the Griffo, which we employed in the Aldine style, as an homage to this artisan who created a new style and was actually a strict collaborator of Aldus Manuntius till a fight brought them apart</p>
-    <p>We also were very careful with the choice of the colors, basing ourself on the editions that have arrived to us, to make our reader feel like he is reading an actual Aldine edition but also giving them the best accessible possible and readability for the texts</p>
-    <p>We do hope we were able to convey with our style the simplicity, correcteness and beauty that characterized many of the Aldine editions</p>
+        <p>Both typefaces are well known to us and are still very much use (mostly the second one), but these aren't the
+          only things that Manuntius' collaboration with Francesco Griffo created.</p>
+        <p>Francesco Griffo (or better Francesco da Bologna, as he was known before 1883) actually created a new font,
+          the Griffo, which we employed in the Aldine style, as an homage to this artisan who created a new style and
+          was actually a strict collaborator of Aldus Manuntius till a fight brought them apart</p>
+        <p>We also were very careful with the choice of the colors, basing ourself on the editions that have arrived to
+          us, to make our reader feel like he is reading an actual Aldine edition but also giving them the best
+          accessible possible and readability for the texts</p>
+        <p>We do hope we were able to convey with our style the simplicity, correcteness and beauty that characterized
+          many of the Aldine editions</p>
         Bibliography:
         <ul>
           <li>Clough, James:<i>Chi era Francesco Griffo?</i>, Grriffo La Grande Festa delle Lettere, 2016</li>
           <!-- Mettiamo anche il link oppure no? http://www.griffoggl.com/chi-era-francesco-griffo/ -->
           <li>Smith, Lorenza:<i>Aldo Manuzio (Aldus Manutius): inventor of the modern book</i>, Khan Academy, 2019 </li>
           <!-- Eventuale link: https://www.khanacademy.org/humanities/renaissance-reformation/early-renaissance1/venice-early-ren/a/aldo-manuzio-aldus-manutius-inventor-of-the-modern-book -->
-          <li><i>Aldus Manutius: the inventor of the paperback saved the Greeks with his Aldine Press revolution</i>,Typeroom, 2020</li>
-                    <!-- Eventuale link: https://www.typeroom.eu/aldus-manutius-inventor-paperback-saved-greeks-aldine-press-revolution -->
+          <li><i>Aldus Manutius: the inventor of the paperback saved the Greeks with his Aldine Press
+              revolution</i>,Typeroom, 2020</li>
+          <!-- Eventuale link: https://www.typeroom.eu/aldus-manutius-inventor-paperback-saved-greeks-aldine-press-revolution -->
         </ul>
         <a href="https://www.pinterest.it/brokenhrtsclub/xix-century/"><i class="bi bi-pinterest"></i></a> Discover our
         moodboard on Pinterest</p>
@@ -219,24 +243,27 @@
         some of them).</p>
       <p>
         Bibliography:
-        <ul>
-          <li><i>American Newspapers, 1800-1860: An Introduction</i>, Illinois Library</li>
-          <!-- Mettiamo anche il link oppure no? https://www.library.illinois.edu/hpnl/tutorials/antebellum-newspapers-introduction/ -->
-          <li><i>The Early Nineteenth-Century Newspaper Boom</i> - The News Media and the Making of America, 1730-1865
-            (American Antiquarian Society)</li>
-          <!-- Eventuale link: https://americanantiquarian.org/earlyamericannewsmedia/exhibits/show/news-in-antebellum-america/the-newspaper-boom -->
-          <li><i>Chronicling America: Historic American Newspapers</i>, Library of Congress</li>
-        </ul>
-        <a href="https://www.pinterest.it/brokenhrtsclub/xix-century/"><i class="bi bi-pinterest"></i></a> Discover our
-        moodboard on Pinterest</p>
+      <ul>
+        <li><i>American Newspapers, 1800-1860: An Introduction</i>, Illinois Library</li>
+        <!-- Mettiamo anche il link oppure no? https://www.library.illinois.edu/hpnl/tutorials/antebellum-newspapers-introduction/ -->
+        <li><i>The Early Nineteenth-Century Newspaper Boom</i> - The News Media and the Making of America, 1730-1865
+          (American Antiquarian Society)</li>
+        <!-- Eventuale link: https://americanantiquarian.org/earlyamericannewsmedia/exhibits/show/news-in-antebellum-america/the-newspaper-boom -->
+        <li><i>Chronicling America: Historic American Newspapers</i>, Library of Congress</li>
+      </ul>
+      <a href="https://www.pinterest.it/brokenhrtsclub/xix-century/"><i class="bi bi-pinterest"></i></a> Discover our
+      moodboard on Pinterest</p>
       <h4>Bauhaus</h4>
-  <div class="aldina">
-      <p>To epitomize a typographic style of the first half of the 20th century we
-        decided to draw inspiration from the Bauhaus. Indeed, the design school paid attention not only to architecture
-        and object design but devoted many effort also in the typographical domain. This impact resulted not only in the
-        worldwide famous panel with writings laid in geometrical manner, but also in famous commercial products, as the
-        cover of the "Penguin Classics", proposed by Jan Tschichold.</p>
-  </div>
+      <div class="aldina">
+        <p>To epitomize a typographic style of the first half of the 20th century we
+          decided to draw inspiration from the Bauhaus. Indeed, the design school paid attention not only to
+          architecture
+          and object design but devoted many effort also in the typographical domain. This impact resulted not only in
+          the
+          worldwide famous panel with writings laid in geometrical manner, but also in famous commercial products, as
+          the
+          cover of the "Penguin Classics", proposed by Jan Tschichold.</p>
+      </div>
       <p>In this project, the "Bauhaus" style is strictly based on real example of the Weimar school of design. As
         reference text, we used the original version of Gropius' manifesto <i>Idee und Aufbau des staatlichen
           Bauhaus</i>. Analyzing a digital facsmile available on Monoskop it was possible to infere the proportion of
@@ -253,37 +280,39 @@
         of the div elements (either on the four sides or only on two, in right angle).</p>
       <p>
         Bibliography:
-        <ul>
-          <li>Gropius, Walter: <i>Idee und Aufbau des staatlichen Bauhaus</i>, Bauhausverlag, 1923</li>
-          <!-- Mettiamo anche il link oppure no? https://monoskop.org/images/a/a7/Gropius_Walter_Idee_und_Aufbau_des_staatlichen_bauhauses_Weimar_1923.pdf -->
-          <li>Malherek, Joseph: “The Industrialist and the Artist: László Moholy-Nagy, Walter Paepcke, and the New
-            Bauhaus in Chicago, 1918–46.” <i>Journal of Austrian-American History</i>, vol. 2, no. 1, 2018, pp. 51–76
-          </li>
-          <li>Moriarty, Ana: <i>The Modern Letter - The Best of the Bauhaus Typography</i>, Widewalls, 2016</li>
-          <!-- Mettiamo anche il link oppure no? https://www.widewalls.ch/magazine/bauhaus-typography -->
-        </ul>
-        <a href="https://www.pinterest.it/brokenhrtsclub/first-half-xx/"><i class="bi bi-pinterest"></i></a> Discover
-        our moodboard on Pinterest</p>
+      <ul>
+        <li>Gropius, Walter: <i>Idee und Aufbau des staatlichen Bauhaus</i>, Bauhausverlag, 1923</li>
+        <!-- Mettiamo anche il link oppure no? https://monoskop.org/images/a/a7/Gropius_Walter_Idee_und_Aufbau_des_staatlichen_bauhauses_Weimar_1923.pdf -->
+        <li>Malherek, Joseph: “The Industrialist and the Artist: László Moholy-Nagy, Walter Paepcke, and the New
+          Bauhaus in Chicago, 1918–46.” <i>Journal of Austrian-American History</i>, vol. 2, no. 1, 2018, pp. 51–76
+        </li>
+        <li>Moriarty, Ana: <i>The Modern Letter - The Best of the Bauhaus Typography</i>, Widewalls, 2016</li>
+        <!-- Mettiamo anche il link oppure no? https://www.widewalls.ch/magazine/bauhaus-typography -->
+      </ul>
+      <a href="https://www.pinterest.it/brokenhrtsclub/first-half-xx/"><i class="bi bi-pinterest"></i></a> Discover
+      our moodboard on Pinterest</p>
       <h4>Pop Art</h4>
       <p>Praesent quis blandit ligula. Praesent ipsum lectus, tempus non placerat sit amet, fringilla sit amet mi. Ut
         aliquam viverra erat, sed cursus metus viverra in. Sed maximus rhoncus placerat.<br><br>
         <a href="https://www.pinterest.it/brokenhrtsclub/second-half-xx/"><i class="bi bi-pinterest"></i></a> Discover
-        our moodboard on Pinterest</p>
+        our moodboard on Pinterest
+      </p>
       <h4>Vogue</h4>
-  <div class="aldina">
-      <p>In tincidunt dui in viverra semper. Nunc molestie pellentesque fringilla. Duis iaculis nibh nulla, ac semper
-        diam ultrices eget. Nunc pretium semper congue. Vestibulum varius.<br><br>
-        <a href="https://www.pinterest.it/brokenhrtsclub/late-xx-beginning-xxi/"><i class="bi bi-pinterest"></i></a>
-        Discover our moodboard on Pinterest</p>
-  </div>
+      <div class="aldina">
+        <p>In tincidunt dui in viverra semper. Nunc molestie pellentesque fringilla. Duis iaculis nibh nulla, ac semper
+          diam ultrices eget. Nunc pretium semper congue. Vestibulum varius.<br><br>
+          <a href="https://www.pinterest.it/brokenhrtsclub/late-xx-beginning-xxi/"><i class="bi bi-pinterest"></i></a>
+          Discover our moodboard on Pinterest
+        </p>
+      </div>
       <h4>Future</h4>
-  <div class="aldina">
-      <p>We define as "future" a style which is likely to be applied in the close
-        future (approximately, 2030). For this reason, it was not possible to faithfully emulate an original document.
-        We hence took inspiration from recent technological development such as "Google Infinite Scroll": in
-        contradiction with the paradigm of little content in a broad space, we decided to mantain the layout structure
-        used nowadays. To increase the breath of the text we set higher left and right margins.</p>
-  </div>
+      <div class="aldina">
+        <p>We define as "future" a style which is likely to be applied in the close
+          future (approximately, 2030). For this reason, it was not possible to faithfully emulate an original document.
+          We hence took inspiration from recent technological development such as "Google Infinite Scroll": in
+          contradiction with the paradigm of little content in a broad space, we decided to mantain the layout structure
+          used nowadays. To increase the breath of the text we set higher left and right margins.</p>
+      </div>
       <p>
         To what concerns typographic and color details we relied on the aesthetical canon of the vaporwave movement,
         which has been often used in science fiction content. The page is hence characterized by two different fonts:
@@ -307,7 +336,8 @@
         Animals' refrain.</p>
       <p>
         <a href="https://www.pinterest.it/brokenhrtsclub/future/"><i class="bi bi-pinterest"></i></a> Discover our
-        moodboard on Pinterest</p>
+        moodboard on Pinterest
+      </p>
     </div>
   </div>
   <footer class="py-3 my-4">

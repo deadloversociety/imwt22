@@ -1,12 +1,12 @@
 @font-face {
     font-family: Newspaper;
     src: url("../fonts/newspaperxix/OldNewspaperTypes.ttf");
-  }
+}
 
 @font-face {
     font-family: Nameplate;
     src: url("../fonts/newspaperxix/walbaum-fraktur.regular.ttf");
-  }
+}
 
 
 /* Start main navbar */
@@ -105,16 +105,16 @@ a.nav-link:hover {
 /* goTop button */
 
 #topBtn {
-    position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:20px;
-	background-color: rgba(217, 217, 217, 0.592);
-	color: rgb(0, 0, 0);
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 5px rgb(135, 124, 99);
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(217, 217, 217, 0.592);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgb(135, 124, 99);
     z-index: 100;
     transform: scale(1);
     cursor: pointer;
@@ -122,7 +122,7 @@ a.nav-link:hover {
 }
 
 #topBtn:hover {
-	background-color: rgba(215, 215, 215, 0.878);
+    background-color: rgba(215, 215, 215, 0.878);
 }
 
 /* ===== DROPDOWN MENU ===== */
@@ -132,7 +132,7 @@ a.nav-link:hover {
 }
 
 .dropdown-item:hover {
-    background-color:rgb(255, 246, 213);
+    background-color: rgb(255, 246, 213);
     filter: opacity(60%);
     font-weight: bold;
 }
@@ -318,9 +318,11 @@ article h3::first-letter {
 #overEu {
     background-color: #8b7b65;
 }
+
 #overAr {
     background-color: #8b7b65;
 }
+
 #overOv {
     background-color: #8b7b65;
 }
@@ -378,7 +380,7 @@ article h3::first-letter {
 }
 
 .buttonShowText:hover {
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonHideText {
@@ -391,7 +393,7 @@ article h3::first-letter {
 }
 
 .buttonHideText:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonCompText {
@@ -404,12 +406,12 @@ article h3::first-letter {
 }
 
 .buttonCompText:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#OVoriginalText, 
+#OVoriginalText,
 #ARoriginalText,
-#EUoriginalText  {
+#EUoriginalText {
     text-align: justify;
     text-justify: inter-word;
     margin: 0px;
@@ -426,7 +428,8 @@ article h3::first-letter {
 
 /* ===== DOCUMENTATION ===== */
 #docimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd"); /* maybe here even change the picture :P */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
+    /* maybe here even change the picture :P */
     filter: brightness(190%) grayscale(100%) opacity(50%) contrast(200%) sepia(25%);
 }
 
@@ -490,12 +493,6 @@ article h3::first-letter {
 .caption a {
     text-shadow: 2px 2px 10px black;
 }
-
-
-
-
-
-
 
 /* ===== FOOTER ===== */
 .bd-placeholder-img {
@@ -648,7 +645,7 @@ a.navbar-brand {
     }
 }
 
-.float{
+.float {
     display: none !important;
 }
 

@@ -1,8 +1,8 @@
 @font-face {
     font-family: Bauhaus;
     src: url("../fonts/bauhaus/BauhausRegular.ttf");
-  }
-  
+}
+
 /* Start main navbar */
 body {
     font-family: 'Bauhaus', sans-serif !important;
@@ -19,7 +19,10 @@ a:any-link {
     color: rgb(181, 76, 76);
 }
 
-.navbar a:any-link, .nav a:any-link, .nav a:hover, .navbar a:hover {
+.navbar a:any-link,
+.nav a:any-link,
+.nav a:hover,
+.navbar a:hover {
     color: white;
 }
 
@@ -31,7 +34,8 @@ a:any-link {
     background-color: rgb(181, 76, 76) !important;
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand,
+.nav-link {
     color: white !important;
 }
 
@@ -99,16 +103,16 @@ a:any-link {
 /* goTop button */
 
 #topBtn {
-    position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:20px;
-	background-color: rgba(245, 245, 245, 0.785);
-	color: rgb(0, 0, 0);
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #3336;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(245, 245, 245, 0.785);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #3336;
     z-index: 100;
     transform: scale(1);
     cursor: pointer;
@@ -116,7 +120,7 @@ a:any-link {
 }
 
 #topBtn:hover {
-	background-color: rgba(215, 215, 215, 0.785);
+    background-color: rgba(215, 215, 215, 0.785);
 }
 
 /* ====== Home page carousel */
@@ -142,7 +146,10 @@ a:any-link {
 
 .buttonHero {
     filter: none !important;
-    background-color: red/*#16161618*/ !important; /* PERCHE NON VA!?!?!?!!?!?*/
+    background-color: red
+        /*#16161618*/
+         !important;
+    /* PERCHE NON VA!?!?!?!!?!?*/
     border: 1px solid whitesmoke;
     color: white;
     padding: 15px 32px;
@@ -166,7 +173,7 @@ a:any-link {
     color: white;
     text-decoration: none;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    
+
 }
 
 #didocar:hover {
@@ -178,7 +185,7 @@ a:any-link {
 }
 
 .buttonHero h3 {
-    color: white; 
+    color: white;
     text-decoration: none;
 }
 
@@ -201,23 +208,24 @@ a.btnLink:active {
 
 .onlybau {
     display: block !important;
-    height: 2px; 
-    width: 99%; 
-    margin:0 auto;
-    line-height:2px;
-    background-color: white; 
-    border:0 none;
+    height: 2px;
+    width: 99%;
+    margin: 0 auto;
+    line-height: 2px;
+    background-color: white;
+    border: 0 none;
 }
 
 
-#projectinfo, #teamsection {
+#projectinfo,
+#teamsection {
     border: rgb(181, 76, 76) 0.3em solid;
     padding: 1em;
 }
 
 #disclaimer {
     font-size: 0.9em;
-    border:  rgb(42, 45, 110) 0.25em solid;
+    border: rgb(42, 45, 110) 0.25em solid;
     padding: 0.5em;
 }
 
@@ -262,6 +270,7 @@ html {
 #abstractMedea h2::first-letter {
     font-size: 2em;
 }
+
 article h3::first-letter {
     font-size: 2em;
 }
@@ -297,9 +306,11 @@ article h3::first-letter {
 #overEu {
     background-color: #ada641;
 }
+
 #overAr {
     background-color: rgb(181, 76, 76);
 }
+
 #overOv {
     background-color: rgb(42, 45, 110);
 }
@@ -354,12 +365,12 @@ article h3::first-letter {
     padding: 0.5em;
     margin-top: 1em;
     color: white;
-    background-color:  #ada641;
+    background-color: #ada641;
     border: none;
 }
 
 .buttonShowText:hover {
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonHideText {
@@ -367,13 +378,13 @@ article h3::first-letter {
     margin-top: 1em;
     margin-left: 1em;
     padding: 0.5em;
-    background-color:rgb(181, 76, 76);
+    background-color: rgb(181, 76, 76);
     border: none;
     color: white;
 }
 
 .buttonHideText:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonCompText {
@@ -387,7 +398,7 @@ article h3::first-letter {
 }
 
 .buttonCompText:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #OVoriginalText,
@@ -413,7 +424,7 @@ article h3::first-letter {
     transform: translateY(-2em);
     width: 12em;
     border: 0.2em solid black !important;
-    padding: 0!important;
+    padding: 0 !important;
 }
 
 .team-profile-card {
@@ -558,7 +569,7 @@ a.navbar-brand {
 
 img {
     filter: grayscale(100%);
-} 
+}
 
 /* Documentation */
 #documentation h2::first-letter {
@@ -597,7 +608,7 @@ img {
 }
 
 .bi {
-    color: rgb(181, 76, 76); 
+    color: rgb(181, 76, 76);
     font-size: 1.5em;
 }
 
@@ -624,7 +635,7 @@ img {
     font-style: italic;
 }
 
-.seqinmeta li{
+.seqinmeta li {
     margin-bottom: 2em;
     margin-right: 1em;
     padding: 2% 0% 2% 2%;
@@ -637,11 +648,11 @@ img {
 }
 
 #sentenceTab .nav-link.active {
-    background-color:#ada641;
+    background-color: #ada641;
     font-weight: bold;
 }
 
-.float{
+.float {
     display: none !important;
 }
 
