@@ -375,8 +375,8 @@ article h3::first-letter {
     border-radius: 0.2em;
     padding: 0.5em;
     margin-top: 1em;
-    background-color: #E9D5DA;
-    border: none;
+    background-color: rgba(225, 225, 225, 0.255) !important;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .buttonShowText:hover {
@@ -388,8 +388,8 @@ article h3::first-letter {
     margin-top: 1em;
     margin-left: 1em;
     padding: 0.5em;
-    background-color: #E9D5DA;
-    border: none;
+    background-color: rgba(225, 225, 225, 0.255) !important;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .buttonHideText:hover {
@@ -401,8 +401,8 @@ article h3::first-letter {
     margin-top: 1em;
     margin-left: 1em;
     padding: 0.5em;
-    background-color: #E9D5DA;
-    border: none;
+    background-color: rgba(225, 225, 225, 0.255) !important;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .buttonCompText:hover {
@@ -684,16 +684,6 @@ ul {
     list-style: none;
     font-style: italic;
 }
-
-/* questo non so bene se cambiarlo anche per il newspaper
-.seqinmeta li {
-    margin-bottom: 2em;
-    margin-right: 1em;
-    font-size: 0.7em;
-    padding: 2% 2% 2% 2%;
-    background: #d6e8e8;
-}
-*/
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
