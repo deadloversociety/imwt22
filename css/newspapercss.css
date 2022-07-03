@@ -231,7 +231,7 @@ a.btnLink:active {
 }
 
 #voices {
-    margin: 1% 2% 1% 2%;
+    margin: 1% 2% 1% 2% !important;
     text-align: justify;
     font-size: 1.2em;
 }
@@ -352,7 +352,7 @@ article h3::first-letter {
 }
 
 /* ===== CHECK THIS ===== */
-div .columnEU > h3 {
+div.columnEu > h3 {
     padding-top: 0.5em;
 }
 
