@@ -345,6 +345,10 @@ article h3::first-letter {
     display: none;
 }
 
+div .columnEU > h3 {
+    padding-top: 0.5em;
+}
+
 .metadata {
     background-color: transparent;
     border: thick double black;
