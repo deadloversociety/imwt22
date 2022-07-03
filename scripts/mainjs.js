@@ -51,13 +51,6 @@ function goTop(){
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera  
 }
 
-// When the document is ready I can check the style: if we are in the future I can change the value of the display attribute of the #menuBtn element to block and make the other display attribute of #topBtn set to none
-$(document).ready(function(){
-  if (sessionStorage.getItem('href')=='css/futurecss.css') {
-    $('#menuBtn').css({'display':'block'});
-    $('#topBtn').css({'display':'none'});
-  }
-})
 
 function showEur() {
   var x = document.getElementById("MedeaEur");
