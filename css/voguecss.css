@@ -599,6 +599,10 @@ color:#c00c2c;
 
 /* ARTICLES UPLOAD SECTION STYLE */
 
+.note:hover {
+    text-transform: bold;
+}
+
 .myborder {
     border: solid rgb(220, 220, 220) 1px;
     padding: 10px;

@@ -608,6 +608,10 @@ img {
     font-size: 0.8em;
 }
 
+.note:hover {
+    text-transform: bold;
+}
+
 .tab-pane {
     font-size: 1.15em;
     width: 100%;
