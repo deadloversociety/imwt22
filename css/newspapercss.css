@@ -230,6 +230,12 @@ a.btnLink:active {
     font-size: 1.2em;
 }
 
+#voices {
+    margin: 1% 2% 1% 2%;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
 #disclaimer {
     font-size: 1.1em;
 }
