@@ -270,23 +270,6 @@ html {
     position: relative;
 }
 
-/* THIS WHOLE PART IS TAKEN FROM BAUHAUS BUT COULD BE MODIFIED IF NECESSARY TO ADAPT IT */
-/*#abstractMedea {
-}
-
-
-#abstractMedea hr {
-    display: none;
-}
-
-#abstractMedea h2::first-letter {
-    font-size: 1em;
-}
-article h3::first-letter {
-    font-size: 2em;
-}
-*/
-
 /* WHERE IS THIS CLASS IN THE HMTLS????? */
 .image {
     display: flex;
@@ -351,9 +334,8 @@ article h3::first-letter {
     display: none;
 }
 
-/* ===== CHECK THIS ===== */
-div.columnEu > h3 {
-    padding-top: 0.5em;
+div.columnEu>h3 {
+    padding-top: 0.5em !important;
 }
 
 .metadata {
@@ -475,7 +457,7 @@ div.columnEu > h3 {
 }
 
 /* Team images */
-.img img {
+.img-thumbnail {
     width: 100%;
     box-shadow: 0 0 22px #3336;
     transition: .6s;
@@ -485,22 +467,22 @@ div.columnEu > h3 {
     margin-right: auto;
 }
 
-.caption {
+.team-caption {
     text-align: center;
     transform: translateY(-80px);
     transition: .6s;
 }
 
-.caption h3 {
+.team-caption h5 {
     font-size: 21px;
 }
 
-.caption p {
+.team-caption span {
     font-size: 15px;
     margin: 2px 0 9px 0;
 }
 
-.caption a {
+.team-caption a {
     text-shadow: 2px 2px 10px black;
 }
 
