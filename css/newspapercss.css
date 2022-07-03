@@ -655,7 +655,8 @@ a.navbar-brand {
 /* ARTICLES UPLOAD SECTION STYLE */
 
 .note:hover {
-    font-weight: bold;
+    font-weight: bold !important;
+    text-shadow: 2px 2px 5px rgb(135, 124, 99);
 }
 
 .myborder {

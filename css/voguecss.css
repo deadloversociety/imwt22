@@ -570,7 +570,7 @@ color:#c00c2c;
 }
 
 .note:hover {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .tab-pane {

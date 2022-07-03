@@ -564,7 +564,7 @@ img {
 }
 
 .note:hover {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 #list li {
