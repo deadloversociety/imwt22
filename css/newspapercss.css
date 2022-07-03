@@ -243,7 +243,7 @@ a.btnLink:active {
 .onlyXIX {
     height: 2px;
     width: 30%;
-    margin: 0 auto;
+    margin: 0.5em auto;
     background-color: black;
     display: block !important;
 }
