@@ -404,8 +404,8 @@ div.columnEu>h3 {
     text-align: justify;
     text-justify: inter-word;
     display: none;
-    padding-left: 1.2em;
-    margin-left: 0.1em;
+    /* padding-left: 1.2em; */
+    /*margin-left: 0.1em;*/
     font-size: 1em !important;
 }
 
@@ -512,6 +512,7 @@ div.columnEu>h3 {
     height: 100vh;
 }
 
+/* CHE CAZZO è STA ROBA */
 .bi {
     vertical-align: -.125em;
     fill: currentColor;
