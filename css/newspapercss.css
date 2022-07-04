@@ -619,7 +619,7 @@ a.navbar-brand {
 
 /* ===== RESPONSIVE WEBSITE ===== */
 @media screen and (max-width: 1000px) {
-    .textsection:not(#teamsection){
+    .textsection:not(#teamsection):not(#voices){
         column-count: 3;
         column-gap: 1.5em;
         column-rule: inset 0.1em;
@@ -627,7 +627,7 @@ a.navbar-brand {
 }
 
 @media screen and (max-width: 700px) {
-    .textsection:not(#teamsection){
+    .textsection:not(#teamsection):not(#voices){
         column-count: 2;
         column-gap: 1.5em;
         column-rule: inset 0.1em;
