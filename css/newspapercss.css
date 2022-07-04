@@ -397,16 +397,15 @@ div.columnEu>h3 {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* ===== HERE YOU CAN CHANGE THE SIZE OF THE GREEK TEXT ===== */
 #OVoriginalText,
 #ARoriginalText,
 #EUoriginalText {
     text-align: justify;
     text-justify: inter-word;
     display: none;
-    padding-left: 1.5em;
+    padding-left: 1.5em !important;
     font-size: 1.03em !important;
-    border-left: solid black 1px;
+    border-left: solid black 1px !important;
 }
 
 #OVtextEn,
