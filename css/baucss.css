@@ -652,6 +652,16 @@ img {
     font-weight: bold;
 }
 
+#topBtn {
+    background-color: rgb(181, 76, 76);
+    color: rgb(255, 255, 255);
+}
+
+#topBtn:hover {
+    background-color: #ada641;
+    color: rgb(0, 0, 0);
+}
+
 .float {
     display: none !important;
 }

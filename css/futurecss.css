@@ -620,7 +620,14 @@ img {
     font-weight: bold;
 }
 
-/* Audio button*/
+/* Go To button */
+
+#topBtn {
+    background-image: linear-gradient(to right, #cbffe6 , #feffbe);
+    color: #300350;
+}
+
+/* Audio button */
 
 .float {
     position: fixed;
