@@ -213,7 +213,6 @@ a.btnLink:active {
 }
 
 /* TEXT SECTIONS */
-
 .textsection:not(#teamsection):not(#voices) {
     column-count: 4;
     column-gap: 1.5em;
@@ -458,13 +457,12 @@ div.columnEu>h3 {
 
 /* Team images */
 .img-thumbnail {
-    width: 100%;
+    width: 80%;
     box-shadow: 0 0 22px #3336;
     transition: .6s;
     border-radius: 100%;
     border: solid black;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0%;
 }
 
 .team-caption {
