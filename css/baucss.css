@@ -688,18 +688,17 @@ img {
 
 .text-charmortal {
     background-color: #91144e;
+    color: white;
 }
 
 .text-charimmortal {
     background-color: #4f186b;
+    color: white;
 }
 
 .text-places {
     background-color: #ad6d37;
-}
-
-.text-sequence {
-    background-color: #f1ca00;
+    color: white;
 }
 
 ul.minimal {

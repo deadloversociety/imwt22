@@ -311,6 +311,6 @@ function togglePlay() {
     $('.float').css('animation', 'none');
   } else {
     myAudio.play();
-    $('.float').css('animation', 'pulse 1.5s infinite');
+    $('.float').css('animation', 'pulse 1.75s infinite');
   }
 }
