@@ -489,13 +489,15 @@ a.navbar-brand {
 }
 
 
-.aldina::first-letter {
+.textsection p:first-of-type::first-letter {
 
     float: left;
 
     line-height: 35px;
 
     font-size: 55px;
+
+    font-style: normal;
 
     border: solid #292926;
     ;
