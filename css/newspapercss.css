@@ -426,7 +426,6 @@ div.columnEu>h3 {
 
 
 /* ==== THE TEAM SECTION (MAIN HTML) ===== */
-
 #team {
     margin: 0px !important;
     padding-top: 2em;
@@ -454,11 +453,6 @@ div.columnEu>h3 {
     transform: translateY(-80px);
     transition: .6s;
     padding-top: 5em;
-}
-
-/* ===== MUSIC BUTTON ===== */
-.fa {
-    text-shadow: 2px 2px 5px rgb(135, 124, 99);
 }
 
 /* ===== FOOTER ===== */
