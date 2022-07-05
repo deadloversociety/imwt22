@@ -752,3 +752,30 @@ background-image:url("https://github.com/deadloversociety/imwt22/blob/main/team/
 background-image:url("https://github.com/deadloversociety/imwt22/blob/main/team/voguevogue.png.png?raw=true");");
     color:#c00c2c;
 }
+
+.textsection p:first-of-type::first-letter {
+
+    float: left;
+
+    line-height: 35px;
+
+    font-size: 55px;
+
+    font-style: normal;
+
+    border: solid #292926;
+
+
+    padding-top: 5px;
+
+    padding-bottom: 5px;
+
+    padding-right: 5px;
+
+    padding-left: 5px;
+
+    margin-right: 5px;
+
+    margin-bottom: -5px;
+
+}
