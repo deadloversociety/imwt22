@@ -110,7 +110,7 @@ a.nav-link:hover {
     display: block !important;
     position: fixed;
     height: 10%;
-    bottom: 35px;
+    bottom: 50px;
     right: -18px;
     transform: rotate(90deg) scaleX(-1) scale(1) !important;
     filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.552));
