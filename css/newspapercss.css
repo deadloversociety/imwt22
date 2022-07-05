@@ -101,27 +101,30 @@ a.nav-link:hover {
     text-shadow: 2px 2px 5px rgb(135, 124, 99);
 }
 
-/* goTop button */
-
+/* GO-TOP BUTTON */
 #topBtn {
+    display: none;
+}
+
+
+#handTopBtn {
+    display: block !important;
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 20px;
-    background-color: rgba(217, 217, 217, 0.592);
+    height: 10%;
+    bottom: 35px;
+    right: -18px;
+    transform: rotate(90deg) scaleX(-1) scale(1) !important;
+    filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.552));
     color: rgb(0, 0, 0);
-    border-radius: 50px;
     text-align: center;
-    box-shadow: 2px 2px 5px rgb(135, 124, 99);
     z-index: 100;
-    transform: scale(1);
     cursor: pointer;
     padding: 1%;
 }
 
-#topBtn:hover {
-    background-color: rgba(215, 215, 215, 0.878);
+/* Remove arrow upwards */
+.material-symbols-outlined {
+    display: none;
 }
 
 /* ===== DROPDOWN MENU ===== */
@@ -454,6 +457,7 @@ div.columnEu>h3 {
     padding-top: 5em;
 }
 
+/* ===== MUSIC BUTTON ===== */
 .fa {
     text-shadow: 2px 2px 5px rgb(135, 124, 99);
 }

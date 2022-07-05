@@ -51,7 +51,6 @@ function goTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera  
 }
 
-
 function showEur() {
   var x = document.getElementById("MedeaEur");
   var y = document.getElementById("MedeaApp");
