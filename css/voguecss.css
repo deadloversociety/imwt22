@@ -748,3 +748,8 @@ background-image:url("https://github.com/deadloversociety/imwt22/blob/main/team/
 background-image:url("https://github.com/deadloversociety/imwt22/blob/main/team/voguevogue.png.png?raw=true");
     color:black;
 }
+
+.modal-content{
+background-color:#dedcde;
+    color:#c00c2c;
+}
