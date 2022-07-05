@@ -313,3 +313,8 @@ function togglePlay() {
     $('.float').css('animation', 'pulse 1.75s infinite');
   }
 }
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
