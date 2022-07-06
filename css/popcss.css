@@ -280,7 +280,8 @@ html {
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.ilsuperuovo.it/wp-content/uploads/2019/06/gGAnw0h9TdQMfJYqztWBY0MSgdO-1.jpg");
-    filter: brightness(200%) contrast(200%);
+    filter: brightness(200%) contrast(200%) opacity(80%);
+
 
     /* Set a specific height */
     height: 50%;
@@ -338,13 +339,14 @@ article h3::first-letter {
 
 /* ===== CARDS DA RIVEDERE ===== */
 .card {
-    filter: brightness(150%) contrast(150%) saturate(150%);
+    filter: brightness(150%) contrast(150%) saturate(150%) opacity(80%);
 }
 
 .card:hover .overlay {
     opacity: 1;
 }
 
+/* RIFARE QUESTI COLORI */
 #overEu {
     background-color: #d5ab20;
     filter: none;
@@ -372,6 +374,7 @@ article h3::first-letter {
     text-align: center;
 }
 
+/* === PRESENTAZIONE AUTORI === */
 #MedeaEur,
 #MedeaApp,
 #MedeaOvi {
@@ -385,6 +388,7 @@ article h3::first-letter {
     transform: rotate(-0.5deg);
 }
 
+/* === SEZIONE ARTICOLI === */
 .metadata {
     background-color: lavender;
     padding: 2%;
@@ -475,8 +479,154 @@ article h3::first-letter {
 #docimg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
     /* maybe here even change the picture :P */
-    filter: brightness(200%) contrast(200%);
+    filter: brightness(200%) contrast(200%) opacity(80%);
 }
+
+#projintro {
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 12px;
+    display: inline-block;
+    margin: .5em;
+    padding: .5em 1em;
+    position: relative;
+}
+
+#projintro::before {
+    border: solid 11px transparent;
+    border-left: solid 11px #000;
+    border-top: solid 11px #000;
+    bottom: 192px;
+    content: "";
+    height: 0;
+    left: -24px;
+    position: absolute;
+    transform: rotate(90deg) skew(0deg) scaleX(-1.5);
+    width: 0;
+}
+
+#projintro::after {
+    border: solid 10px transparent;
+    border-left: solid 10px #fff;
+    border-top: solid 10px #fff;
+    bottom: 194px;
+    content: "";
+    height: 0;
+    left: -20px;
+    position: absolute;
+    transform: rotate(90deg) skew(0deg) scaleX(-1.5);
+    width: 0;
+}
+
+#websitstruct {
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 12px;
+    display: inline-block;
+    margin: .5em;
+    padding: .5em 1em;
+    position: relative;
+}
+
+#websitstruct::before {
+    border: solid 11px transparent;
+    border-left: solid 11px #000;
+    border-top: solid 11px #000;
+    bottom: 71px;
+    content: "";
+    height: 0;
+    right: -24px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+#websitstruct::after {
+    border: solid 10px transparent;
+    border-left: solid 10px #fff;
+    border-top: solid 10px #fff;
+    bottom: 72px;
+    content: "";
+    height: 0;
+    right: -20px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+#metadatadoc {
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 12px;
+    display: inline-block;
+    margin: .5em;
+    padding: .5em 1em;
+    position: relative;
+}
+
+#metadatadoc::before {
+    border: solid 11px transparent;
+    border-left: solid 11px #000;
+    border-top: solid 11px #000;
+    bottom: 192px;
+    content: "";
+    height: 0;
+    left: -24px;
+    position: absolute;
+    transform: rotate(90deg) skew(0deg) scaleX(-1.5);
+    width: 0;
+}
+
+#metadatadoc::after {
+    border: solid 10px transparent;
+    border-left: solid 10px #fff;
+    border-top: solid 10px #fff;
+    bottom: 194px;
+    content: "";
+    height: 0;
+    left: -20px;
+    position: absolute;
+    transform: rotate(90deg) skew(0deg) scaleX(-1.5);
+    width: 0;
+}
+
+#histolayout {
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 12px;
+    display: inline-block;
+    margin: .5em;
+    padding: .5em 1em;
+    position: relative;
+}
+
+#histolayout::before {
+    border: solid 11px transparent;
+    border-left: solid 11px #000;
+    border-top: solid 11px #000;
+    bottom: 71px;
+    content: "";
+    height: 0;
+    right: -24px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+#histolayout::after {
+    border: solid 10px transparent;
+    border-left: solid 10px #fff;
+    border-top: solid 10px #fff;
+    bottom: 72px;
+    content: "";
+    height: 0;
+    right: -20px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+
 
 /* ==== THE TEAM SECTION (MAIN HTML) ===== */
 #team {
@@ -511,13 +661,7 @@ article h3::first-letter {
     transform: rotate(0.5deg);
 }
 
-/*
-div.text-center {
-    border: 0.1em solid #ada641;
-} */
-
-/* ===== FOOTER ===== */
-.bd-placeholder-img {
+/*.bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
     -webkit-user-select: none;
@@ -543,20 +687,22 @@ div.text-center {
     flex-shrink: 0;
     width: 1.5rem;
     height: 100vh;
-}
+}*/
 
+/* Pinterest boards */
 .bi {
     vertical-align: -.125em;
     fill: currentColor;
 }
 
+/*
 .nav-scroller {
     position: relative;
     z-index: 2;
     height: 2.75rem;
     overflow-y: hidden;
-}
-
+}*/
+/*
 .nav-scroller .nav {
     display: flex;
     flex-wrap: nowrap;
@@ -566,8 +712,9 @@ div.text-center {
     text-align: center;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-}
+} */
 
+/* ===== FOOTER ===== */
 footer {
     bottom: 0;
     width: 100%;
@@ -575,6 +722,16 @@ footer {
     border-top: solid 0.2em black;
     background-image: url("https://unblast.com/wp-content/uploads/2020/11/Halftone-Dot-Textures-7.jpg");
     filter: brightness(50%);
+}
+
+footer>.text-center {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    border: 0.1em solid black;
+    background-color: rgba(245, 245, 245, 0.899);
+    border-width: 0.3em 0.4em 0.3em 0.5em;
+    border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
+    transform: rotate(-0.5deg);
 }
 
 footer .fa-github {
@@ -655,7 +812,7 @@ a.navbar-brand {
     display: none !important;
 }
 
-/* ARTICLES UPLOAD SECTION STYLE */
+/* ===== ARTICLES UPLOAD SECTION STYLE ===== */
 
 .note:hover {
     font-weight: bold !important;
