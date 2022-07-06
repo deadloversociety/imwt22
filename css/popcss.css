@@ -230,7 +230,7 @@ a.btnLink:active {
 /* ----------- */
 
 .textsection {
-    margin: 2% 10% 2% 10%;
+    margin: 2% 10% 4% 10%;
     text-align: justify;
     text-justify: inter-word;
     font-size: 1.2em;
@@ -268,8 +268,9 @@ h2 {
     transform: rotate(-0.5deg);
 }
 
-/* ===== ISSUE PAGE ===== */
 
+
+/* ===== ISSUE PAGE ===== */
 /* Hero image */
 body,
 html {
@@ -301,13 +302,14 @@ html {
     transform: rotate(-0.5deg);
 }
 
+/*
 #abstractMedea h2::first-letter {
     font-size: 1em;
 }
 
 article h3::first-letter {
     font-size: 2em;
-}
+}*/
 
 /* ??? WHERE IS THIS CLASS IN THE HMTLS ??? */
 .image {
@@ -374,6 +376,13 @@ article h3::first-letter {
 #MedeaApp,
 #MedeaOvi {
     display: none;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    border: 0.1em solid black;
+    background-color: #FEE300;
+    border-width: 0.3em 0.4em 0.3em 0.5em;
+    border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
+    transform: rotate(-0.5deg);
 }
 
 .metadata {
@@ -445,6 +454,13 @@ article h3::first-letter {
     text-justify: inter-word;
     margin: 0px;
     display: none;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    border: 0.1em solid black;
+    background-color: #FEE300;
+    border-width: 0.3em 0.4em 0.3em 0.5em;
+    border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
+    transform: rotate(-0.5deg);
 }
 
 #OVtextEn,
@@ -481,14 +497,18 @@ article h3::first-letter {
     transition: .6s;
     border: solid black;
     padding: 0%;
-    filter: brightness(200%) contrast(200%);
+    filter: brightness(150%) contrast(200%) opacity(80%);
 }
 
 .team-caption {
     text-align: center;
     transform: translateY(-80px);
     transition: .6s;
-    padding-top: 5em;
+    padding-top: 1em;
+    background-color: #ffffff;
+    border-width: 0.3em 0.4em 0.3em 0.5em;
+    border-radius: 0% 2% 90% 2%/4% 100% 6% 95%;
+    transform: rotate(0.5deg);
 }
 
 /*
