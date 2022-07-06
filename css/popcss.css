@@ -116,6 +116,7 @@ a.nav-link:hover {
     display: block !important;
     position: fixed;
     background: red;
+    /* SHOULD WE ADD A BACKGROUND COLOR / BORDER ?*/
     width: 60px;
     height: 10%;
     bottom: 50px;
