@@ -108,6 +108,7 @@ a.nav-link:hover {
 /* goTop button */
 
 #topBtn {
+    display: none;
     position: fixed;
     width: 60px;
     height: 60px;
@@ -123,6 +124,39 @@ a.nav-link:hover {
     cursor: pointer;
     padding: 1%;
 }
+
+/* GO TOP BUTTON DIFFERENT FOR POP ART STYLE */
+/* Try on documentation.html */
+/* #boomTopBtn {
+    display: inline-block !important;
+    vertical-align: top;
+    position: relative;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 0em 2em 2em 4em;
+    -webkit-filter: drop-shadow(0 4px 0 #f3655d);
+    filter: drop-shadow(0 4px 0 #f3655d);
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    -webkit-transition: 2s;
+    transition: 2s;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#boomTopBtn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+#boomTopBtn::hover {
+    top: -30px;
+    -webkit-filter: drop-shadow(0 10px 0 #f3655d);
+    filter: drop-shadow(0 10px 0 #f3655d);
+}
+*/
 
 #topBtn:hover {
     background-color: rgba(215, 215, 215, 0.785);
@@ -625,8 +659,6 @@ article h3::first-letter {
     transform: scaleY(-1);
     width: 0;
 }
-
-
 
 /* ==== THE TEAM SECTION (MAIN HTML) ===== */
 #team {
