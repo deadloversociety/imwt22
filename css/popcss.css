@@ -556,10 +556,10 @@ html {
     border: solid 11px transparent;
     border-left: solid 11px #000;
     border-top: solid 11px #000;
-    bottom: 192px;
+    bottom: 71px;
     content: "";
     height: 0;
-    left: -24px;
+    right: 383px;
     position: absolute;
     transform: rotate(90deg) skew(0deg) scaleX(-1.5);
     width: 0;
@@ -571,10 +571,10 @@ html {
     border: solid 10px transparent;
     border-left: solid 10px #fff;
     border-top: solid 10px #fff;
-    bottom: 194px;
+    bottom: 72px;
     content: "";
     height: 0;
-    left: -20px;
+    right: 382px;
     position: absolute;
     transform: rotate(90deg) skew(0deg) scaleX(-1.5);
     width: 0;
