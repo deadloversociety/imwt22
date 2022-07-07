@@ -548,7 +548,7 @@ html {
     padding-left: 0.6em;
     padding-right: 0.6em;
     border: 0.1em solid black;
-    background-color: rgba(245, 245, 245, 0.899);
+    background-color: white;
     border-width: 0.3em 0.4em 0.3em 0.5em;
     border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
     transform: rotate(-0.5deg);
@@ -557,6 +557,7 @@ html {
 /* HERE MODIFY THE METADATA BUTTONS */
 .nav:not(#sentenceTab)
 
+/* Compare, show, hide text buttons */
 .indexcompare {
     padding: 2%;
     margin-top: 2em;
