@@ -272,22 +272,46 @@ a.btnLink:active {
 
 /* ===== TEXT SECTIONS ===== */
 .textsection {
-    margin: 2% 10% 4% 10%;
+    margin: 2% 5% 2% 5%;
     text-align: justify;
     text-justify: inter-word;
     font-size: 1.2em;
     line-height: 100%;
 }
 
-
 .textsection#projectinfo {
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    border: 0.1em solid black;
-    background-color: #FEE300;
-    border-width: 0.3em 0.4em 0.3em 0.5em;
-    border-radius: 0% 2% 90% 2%/4% 100% 6% 95%;
-    transform: rotate(0.5deg);
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 12px;
+    display: inline-block;
+    padding: .5em 1em;
+    position: relative;
+}
+
+.textsection#projectinfo::before {
+    border: solid 11px transparent;
+    border-left: solid 11px #000;
+    border-top: solid 11px #000;
+    bottom: 193px;
+    content: "";
+    height: 0;
+    left: -23px;
+    position: absolute;
+    transform: rotate(90deg) skew(0deg) scaleX(-1.5);
+    width: 0;
+}
+
+.textsection#projectinfo::after {
+    border: solid 10px transparent;
+    border-left: solid 10px #fff;
+    border-top: solid 10px #fff;
+    bottom: 194px;
+    content: "";
+    height: 0;
+    left: -20px;
+    position: absolute;
+    transform: rotate(90deg) skew(0deg) scaleX(-1.5);
+    width: 0;
 }
 
 div>h3,
@@ -307,13 +331,42 @@ div>h4 {
 
 .textsection#disclaimer {
     font-size: 1em;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    border: 0.1em solid black;
-    background-color: #FEE300;
-    border-width: 0.3em 0.4em 0.3em 0.5em;
-    border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
-    transform: rotate(-0.5deg);
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 12px;
+    display: inline-block;
+    padding: .5em 1em;
+    position: relative;
+}
+
+.textsection#disclaimer::before {
+    border: solid 11px transparent;
+    border-left: solid 11px #000;
+    border-top: solid 11px #000;
+    bottom: 71px;
+    content: "";
+    height: 0;
+    right: -24px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+.textsection#disclaimer::after {
+    border: solid 10px transparent;
+    border-left: solid 10px #fff;
+    border-top: solid 10px #fff;
+    bottom: 72px;
+    content: "";
+    height: 0;
+    right: -20px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+.textsection#teamsection {
+    margin: 2% 5% 8% 5%;
 }
 
 /* ===== ISSUE PAGE ===== */
@@ -339,14 +392,40 @@ html {
     position: relative;
 }
 
+/* ==== ABSTRACT ON MEDEA ==== */
 #abstractMedea {
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    border: 0.1em solid black;
-    background-color: #FEE300;
-    border-width: 0.3em 0.4em 0.3em 0.5em;
-    border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
-    transform: rotate(-0.5deg);
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 12px;
+    display: inline-block;
+    padding: .5em 1em;
+    position: relative;
+}
+
+#abstractMedea::before {
+    border: solid 11px transparent;
+    border-left: solid 11px #000;
+    border-top: solid 11px #000;
+    bottom: 71px;
+    content: "";
+    height: 0;
+    right: -24px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+#abstractMedea::after {
+    border: solid 10px transparent;
+    border-left: solid 10px #fff;
+    border-top: solid 10px #fff;
+    bottom: 72px;
+    content: "";
+    height: 0;
+    right: -20px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
 }
 
 /* ??? WHERE IS THIS CLASS IN THE HMTLS ??? also comment in newspaper.css*/
@@ -415,19 +494,55 @@ html {
 }
 
 /* ==== AUTHORS PRESENTATION ==== */
+
 #MedeaEur,
 #MedeaApp,
 #MedeaOvi {
     display: none;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    border: 0.1em solid black;
-    background-color: #FEE300;
-    border-width: 0.3em 0.4em 0.3em 0.5em;
-    border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
-    transform: rotate(-0.5deg);
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 12px;
+    display: inline-block;
+    padding: .5em 1em;
+    position: relative;
 }
 
+#MedeaEur::before,
+#MedeaApp::before,
+#MedeaOvi::before {
+    border: solid 11px transparent;
+    border-left: solid 11px #000;
+    border-top: solid 11px #000;
+    bottom: 193px;
+    content: "";
+    height: 0;
+    left: -23px;
+    position: absolute;
+    transform: rotate(90deg) skew(0deg) scaleX(-1.5);
+    width: 0;
+}
+
+
+#MedeaEur::after,
+#MedeaApp::after,
+#MedeaOvi::after {
+    border: solid 10px transparent;
+    border-left: solid 10px #fff;
+    border-top: solid 10px #fff;
+    bottom: 194px;
+    content: "";
+    height: 0;
+    left: -20px;
+    position: absolute;
+    transform: rotate(90deg) skew(0deg) scaleX(-1.5);
+    width: 0;
+}
+
+
+
+
+
+/* ===== TBD ===== */
 /* ==== ARTICLES SECTION ==== */
 .metadata {
     background-color: lavender;
