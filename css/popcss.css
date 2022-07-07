@@ -164,21 +164,14 @@ a.nav-link:hover {
     transform: rotate(-15deg);
 }
 
-/* DA VEDEREWEEEEE */
 /* ===== DROPDOWN MENU ===== */
 .dropdown-menu {
-    background-image: url("https://unblast.com/wp-content/uploads/2020/11/Halftone-Dot-Textures-4.jpg");
-    filter: brightness(90%)
+    background-color: whitesmoke;
 }
 
 .dropdown-item:hover {
-    background-color: rgb(255, 246, 213);
-    filter: opacity(60%);
     font-weight: bold;
 }
-
-
-
 
 /* ===== LINKS ===== */
 a {
