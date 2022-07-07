@@ -1,3 +1,6 @@
+/* ========== POP ART CSS ========== */
+
+/* ===== SPECIFIC FONTS ===== */
 @font-face {
     font-family: Badaboom;
     src: url("../fonts/popart/BADABB__.TTF");
@@ -8,8 +11,7 @@
     src: url("../fonts/popart/digistrip_i.ttf");
 }
 
-
-/* Start main navbar */
+/* ===== MAIN NAVBAR ===== */
 @media (min-width: 768px) {
     .animate {
         animation-duration: 0.3s;
@@ -58,9 +60,7 @@
     animation-name: slideIn;
 }
 
-/* End main Navbar */
-
-/* Secondary navbar */
+/* ===== SECONDARY NAVBAR ===== */
 .sec-nav {
     color: #000000;
 }
@@ -107,13 +107,13 @@ a.nav-link:hover {
     cursor: pointer;
 }
 
-/* goTop button */
+/* ===== GO TOP BUTTON =====*/
 
 #topBtn {
     display: none;
 }
 
-/* GO TOP BUTTON DIFFERENT FOR POP ART STYLE */
+/* DIFFERENT BUTTON FOR POP ART STYLE */
 #boomTopBtn {
     display: block !important;
     position: fixed;
@@ -123,7 +123,6 @@ a.nav-link:hover {
     height: 10%;
     bottom: 50px;
     right: 34px;
-    /* text-align: center; */
     z-index: 99;
     cursor: pointer;
     padding: 1%;
@@ -271,8 +270,7 @@ a.btnLink:active {
     text-decoration: none;
 }
 
-/* ----------- */
-
+/* ===== TEXT SECTIONS ===== */
 .textsection {
     margin: 2% 10% 4% 10%;
     text-align: justify;
@@ -318,8 +316,6 @@ div>h4 {
     transform: rotate(-0.5deg);
 }
 
-
-
 /* ===== ISSUE PAGE ===== */
 /* Hero image */
 body,
@@ -353,7 +349,7 @@ html {
     transform: rotate(-0.5deg);
 }
 
-/* ??? WHERE IS THIS CLASS IN THE HMTLS ??? */
+/* ??? WHERE IS THIS CLASS IN THE HMTLS ??? also comment in newspaper.css*/
 .image {
     display: flex;
     width: 100%;
@@ -415,7 +411,7 @@ html {
     text-align: center;
 }
 
-/* === PRESENTAZIONE AUTORI === */
+/* ==== AUTHORS PRESENTATION ==== */
 #MedeaEur,
 #MedeaApp,
 #MedeaOvi {
@@ -429,7 +425,7 @@ html {
     transform: rotate(-0.5deg);
 }
 
-/* === SEZIONE ARTICOLI === */
+/* ==== ARTICLES SECTION ==== */
 .metadata {
     background-color: lavender;
     padding: 2%;
@@ -493,23 +489,6 @@ html {
 }
 
 /* ==== ORIGINAL TEXT ==== */
-
-/* #OVoriginalText,
-#ARoriginalText,
-#EUoriginalText {
-    text-align: justify;
-    text-justify: inter-word;
-    margin: 0px;
-    display: none;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    border: 0.1em solid black;
-    background-color: #FEE300;
-    border-width: 0.3em 0.4em 0.3em 0.5em;
-    border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
-    transform: rotate(-0.5deg);
-} */
-
 #OVoriginalText,
 #ARoriginalText,
 #EUoriginalText {
@@ -553,7 +532,6 @@ html {
 }
 
 /* ==== ENGLISH TEXT ==== */
-
 #OVtextEn,
 #ARtextEn,
 #EUtextEn {
@@ -602,25 +580,6 @@ html {
     transform: scaleY(-1);
     width: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ===== DOCUMENTATION ===== */
 #docimg {
@@ -906,12 +865,12 @@ a.navbar-brand {
     }
 }
 
+/* ==== AUDIO BUTTON ==== */
 .float {
     display: none !important;
 }
 
 /* ===== ARTICLES UPLOAD SECTION STYLE ===== */
-
 .note:hover {
     font-weight: bold !important;
 }

@@ -1,3 +1,6 @@
+/* ========== VICTORIAN PRESS CSS ========== */
+
+/* ===== SPECIFIC FONTS ===== */
 @font-face {
     font-family: Newspaper;
     src: url("../fonts/newspaperxix/OldNewspaperTypes.ttf");
@@ -9,7 +12,7 @@
 }
 
 
-/* Start main navbar */
+/* ===== MAIN NAVBAR ===== */
 @media (min-width: 768px) {
     .animate {
         animation-duration: 0.3s;
@@ -58,9 +61,7 @@
     animation-name: slideIn;
 }
 
-/* End main Navbar */
-
-/* Secondary navbar */
+/* ===== SECONDARY NAVBAR ===== */
 .sec-nav {
     color: #000000;
 }
@@ -102,11 +103,12 @@ a.nav-link:hover {
     cursor: pointer;
 }
 
-/* GO-TOP BUTTON */
+/* ===== GO TOP BUTTON =====*/
 #topBtn {
     display: none;
 }
 
+/* DIFFERENT BUTTON FOR VICTORIAN PRESS STYLE */
 #handTopBtn {
     display: block !important;
     position: fixed;
@@ -215,7 +217,7 @@ a.btnLink:active {
     cursor: pointer;
 }
 
-/* TEXT SECTIONS */
+/* ===== TEXT SECTIONS ===== */
 .textsection:not(#teamsection):not(#voices) {
     column-count: 4;
     column-gap: 1.5em;
@@ -272,7 +274,7 @@ html {
     position: relative;
 }
 
-/* WHERE IS THIS CLASS IN THE HMTLS????? */
+/* WHERE IS THIS CLASS IN THE HMTLS????? also comment in popart.css*/
 .image {
     display: flex;
     width: 100%;
@@ -330,6 +332,7 @@ html {
     text-align: center;
 }
 
+/* ==== AUTHORS PRESENTATION ==== */
 #MedeaEur,
 #MedeaApp,
 #MedeaOvi {
@@ -340,6 +343,7 @@ div.columnEu>h3 {
     padding-top: 0.5em !important;
 }
 
+/* ==== ARTICLES SECTION ==== */
 .metadata {
     background-color: transparent;
     border: thick double black;
@@ -401,6 +405,7 @@ div.columnEu>h3 {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* ==== ORIGINAL TEXT ==== */
 #OVoriginalText,
 #ARoriginalText,
 #EUoriginalText {
@@ -412,6 +417,7 @@ div.columnEu>h3 {
     border-left: solid black 1px !important;
 }
 
+/* ==== ENGLISH TEXT ==== */
 #OVtextEn,
 #ARtextEn,
 #EUtextEn {
@@ -425,7 +431,6 @@ div.columnEu>h3 {
     /* maybe here even change the picture :P */
     filter: brightness(190%) grayscale(100%) opacity(50%) contrast(200%) sepia(25%);
 }
-
 
 /* ==== THE TEAM SECTION (MAIN HTML) ===== */
 #team {
@@ -457,7 +462,15 @@ div.columnEu>h3 {
     padding-top: 5em;
 }
 
+/* Pinterest boards */
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
 /* ===== FOOTER ===== */
+/* What is this whole section of the website? */
+/* From here */
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -486,12 +499,6 @@ div.columnEu>h3 {
     height: 100vh;
 }
 
-/* CHE CAZZO è STA ROBA */
-.bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-}
-
 .nav-scroller {
     position: relative;
     z-index: 2;
@@ -509,14 +516,13 @@ div.columnEu>h3 {
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
 }
-
+/* To here */
 footer {
     bottom: 0;
     width: 100%;
     padding: 20px;
     background-image: url("https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1910&q=80");
     filter: brightness(50%);
-    /*background-color: #7d6f5c;*/
 }
 
 footer .fa-github {
@@ -609,11 +615,12 @@ a.navbar-brand {
     }
 }
 
-/* ARTICLES SECTION */
-
-.note:hover {
-    font-weight: bold !important;
+/* ==== AUDIO BUTTON ==== */
+.float {
+    display: none !important;
 }
+
+/* ===== ARTICLES UPLOAD SECTION STYLE ===== */
 
 #list li :hover {
     text-shadow: 2px 2px 5px rgb(135, 124, 99);
@@ -660,13 +667,6 @@ ul {
 .nav-pills:hover .show:hover>.nav-link {
     text-shadow: none;
 }
-
-/* Audio button */
-.float {
-    display: none !important;
-}
-
-/* ARTICLES UPLOAD SECTION STYLE */
 
 .note:hover {
     font-weight: bold !important;
