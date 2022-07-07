@@ -498,7 +498,6 @@ html {
     background-color: #fff;
     border: solid 2px #000;
     border-radius: 12px;
-    display: inline-block;
     padding: .5em 1em;
     position: relative;
 }
