@@ -84,7 +84,7 @@ nav {
     border-bottom: 0.2em solid black;
 }
 
-.nav {
+.nav:not(#sentenceTab){
     background-image: url("https://unblast.com/wp-content/uploads/2020/11/Halftone-Dot-Textures-4.jpg");
     border-bottom: 0.2em solid black;
 }
@@ -463,18 +463,18 @@ html {
 }
 
 #overEu {
-    background-color: #d5ab20;
-    -webkit-text-stroke: 4px #ba3d32;
+    background-color: #FEE300;
+    -webkit-text-stroke: 2px #ba3d32;
 }
 
 #overAr {
     background-color: #ba3d32;
-    -webkit-text-stroke: 4px #2a3f72;
+    -webkit-text-stroke: 2px #2a3f72;
 }
 
 #overOv {
     background-color: #2a3f72;
-    -webkit-text-stroke: 4px #7c6c12;
+    -webkit-text-stroke: 2px #7c6c12;
 }
 
 .text {
@@ -536,13 +536,22 @@ html {
 /* ===== TBD ===== */
 /* ==== ARTICLES SECTION ==== */
 .metadata {
-    background-color: lavender;
-    padding: 2%;
+    padding: 3%;
     margin-top: 2em;
     margin-bottom: 2em;
     position: sticky;
     top: 1em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    border: 0.1em solid black;
+    background-color: rgba(245, 245, 245, 0.899);
+    border-width: 0.3em 0.4em 0.3em 0.5em;
+    border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
+    transform: rotate(-0.5deg);
 }
+
+/* HERE MODIFY THE METADATA BUTTONS */
+.nav:not(#sentenceTab)
 
 .indexcompare {
     padding: 2%;
