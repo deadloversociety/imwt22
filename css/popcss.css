@@ -493,6 +493,7 @@ html {
 #ARoriginalText,
 #EUoriginalText {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.03em !important;
     background-color: #fff;
     border: solid 2px #000;
     border-radius: 34px;
