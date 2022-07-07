@@ -495,7 +495,7 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #fff;
     border: solid 2px #000;
-    border-radius: 12px;
+    border-radius: 34px;
     display: inline-block;
     padding: .5em 1em;
     position: relative;
@@ -555,10 +555,10 @@ html {
     border: solid 11px transparent;
     border-left: solid 11px #000;
     border-top: solid 11px #000;
-    bottom: 71px;
+    bottom: 192px;
     content: "";
     height: 0;
-    right: -24px;
+    left: -24px;
     position: absolute;
     transform: rotate(90deg) skew(0deg) scaleX(-1.5);
     width: 0;
@@ -570,10 +570,10 @@ html {
     border: solid 10px transparent;
     border-left: solid 10px #fff;
     border-top: solid 10px #fff;
-    bottom: 72px;
+    bottom: 194px;
     content: "";
     height: 0;
-    right: -20px;
+    left: -20px;
     position: absolute;
     transform: rotate(90deg) skew(0deg) scaleX(-1.5);
     width: 0;
