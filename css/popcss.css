@@ -302,7 +302,7 @@ h2 {
     -webkit-text-stroke: 2px black;
 }
 
-div>h4{
+div>h4 {
     font-family: 'Badaboom';
     font-size: 2em;
     color: #FEE300;
@@ -354,15 +354,6 @@ html {
     border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
     transform: rotate(-0.5deg);
 }
-
-/*
-#abstractMedea h2::first-letter {
-    font-size: 1em;
-}
-
-article h3::first-letter {
-    font-size: 2em;
-}*/
 
 /* ??? WHERE IS THIS CLASS IN THE HMTLS ??? */
 .image {
@@ -503,7 +494,7 @@ article h3::first-letter {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#OVoriginalText,
+/* #OVoriginalText,
 #ARoriginalText,
 #EUoriginalText {
     text-align: justify;
@@ -517,7 +508,75 @@ article h3::first-letter {
     border-width: 0.3em 0.4em 0.3em 0.5em;
     border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
     transform: rotate(-0.5deg);
+} */
+
+#OVoriginalText,
+#ARoriginalText,
+#EUoriginalText {
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 12px;
+    display: inline-block;
+    margin: .5em;
+    padding: .5em 1em;
+    position: relative;
 }
+
+#OVoriginalText::before,
+#ARoriginalText::before,
+#EUoriginalText::before {
+    border: solid 11px transparent;
+    border-left: solid 11px #000;
+    border-top: solid 11px #000;
+    bottom: 71px;
+    content: "";
+    height: 0;
+    right: -24px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+#OVoriginalText::after,
+#ARoriginalText::after,
+#EUoriginalText::after {
+    border: solid 10px transparent;
+    border-left: solid 10px #fff;
+    border-top: solid 10px #fff;
+    bottom: 72px;
+    content: "";
+    height: 0;
+    right: -20px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #OVtextEn,
 #ARtextEn,
@@ -678,7 +737,7 @@ article h3::first-letter {
     width: 0;
 }
 
-/* ==== THE TEAM SECTION (MAIN HTML) ===== */
+/* ==== TEAM SECTION (MAIN HTML) ===== */
 #team {
     margin: 0px !important;
     padding-top: 2em;
@@ -711,58 +770,11 @@ article h3::first-letter {
     transform: rotate(0.5deg);
 }
 
-/*.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-}
-
-.b-example-divider {
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-
-.b-example-vr {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh;
-}*/
-
 /* Pinterest boards */
 .bi {
     vertical-align: -.125em;
     fill: currentColor;
 }
-
-/*
-.nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-}*/
-/*
-.nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-} */
 
 /* ===== FOOTER ===== */
 footer {
