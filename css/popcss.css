@@ -479,7 +479,7 @@ html {
 
 .text {
     font-family: 'Badaboom';
-    font-size: 4em;
+    font-size: 3em;
     color: white;
     position: absolute;
     top: 50%;
@@ -609,7 +609,7 @@ html {
     padding: .5em 1em;
     position: relative;
     max-width: 45%;
-    margin: 1em;
+    margin: 0.5%;
 }
 
 /* Latin characters -> DigitalStrip font */
@@ -621,7 +621,7 @@ html {
     padding: .5em 1em;
     position: relative;
     max-width: 45%;
-    margin: 1em;
+    margin: 0.5%;
 }
 
 #OVoriginalText::before,
@@ -667,7 +667,7 @@ html {
     padding: 0.5em 1em;
     position: relative;
     max-width: 45%;
-    margin: 1em;
+    margin: 0.5%;
 }
 
 #OVtextEn::before,
