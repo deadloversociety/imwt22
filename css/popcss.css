@@ -376,32 +376,35 @@ html {
 
 /* ===== CARDS DA RIVEDERE ===== */
 .card {
-    filter: brightness(150%) contrast(150%) saturate(150%) opacity(80%);
+    filter: brightness(130%) contrast(150%) saturate(150%) opacity(80%);
 }
 
 .card:hover .overlay {
     opacity: 1;
+    filter: none;
 }
 
 /* RIFARE QUESTI COLORI */
+
 #overEu {
     background-color: #d5ab20;
-    filter: none;
+    -webkit-text-stroke: 4px #ba3d32;
 }
 
 #overAr {
     background-color: #ba3d32;
-    filter: none;
+    -webkit-text-stroke: 4px #2a3f72;
 }
 
 #overOv {
     background-color: #2a3f72;
-    filter: none;
+    -webkit-text-stroke: 4px #d5ab20;
 }
 
 .text {
+    font-family: 'Badaboom';
+    font-size: 4em;
     color: white;
-    font-size: 2em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -493,7 +496,19 @@ html {
 #ARoriginalText,
 #EUoriginalText {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.03em !important;
+    font-size: 1.2em !important;
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 34px;
+    display: inline-block;
+    padding: .5em 1em;
+    position: relative;
+    max-width: 45%;
+    margin: 1em;
+}
+
+/* Latin characters -> DigitalStrip font */
+#OVoriginalText {
     background-color: #fff;
     border: solid 2px #000;
     border-radius: 34px;
