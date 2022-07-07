@@ -453,7 +453,6 @@ html {
     background-color: #8d7588;
 }
 
-/* ===== CARDS DA RIVEDERE ===== */
 .card {
     filter: brightness(130%) contrast(150%) saturate(150%) opacity(80%);
 }
@@ -462,8 +461,6 @@ html {
     opacity: 1;
     filter: none;
 }
-
-/* RIFARE QUESTI COLORI */
 
 #overEu {
     background-color: #d5ab20;
@@ -477,7 +474,7 @@ html {
 
 #overOv {
     background-color: #2a3f72;
-    -webkit-text-stroke: 4px #d5ab20;
+    -webkit-text-stroke: 4px #7c6c12;
 }
 
 .text {
