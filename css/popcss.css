@@ -494,7 +494,6 @@ html {
 }
 
 /* ==== AUTHORS PRESENTATION ==== */
-
 #MedeaEur,
 #MedeaApp,
 #MedeaOvi {
@@ -510,6 +509,7 @@ html {
 #MedeaEur::before,
 #MedeaApp::before,
 #MedeaOvi::before {
+    display: none;
     border: solid 11px transparent;
     border-left: solid 11px #000;
     border-top: solid 11px #000;
@@ -525,6 +525,7 @@ html {
 #MedeaEur::after,
 #MedeaApp::after,
 #MedeaOvi::after {
+    display: none;
     border: solid 10px transparent;
     border-left: solid 10px #fff;
     border-top: solid 10px #fff;
@@ -536,9 +537,6 @@ html {
     transform: rotate(90deg) skew(0deg) scaleX(-1.5);
     width: 0;
 }
-
-
-
 
 
 /* ===== TBD ===== */
