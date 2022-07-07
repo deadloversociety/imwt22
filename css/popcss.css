@@ -157,10 +157,10 @@ a.nav-link:hover {
     -webkit-text-stroke: 2px black;
     z-index: 100;
     cursor: pointer;
-    bottom: 4px;
-    line-height: 1em;
+    bottom: 10%;
+    line-height: 0.9em;
     text-align: center;
-    right: 1px;
+    right: 1%;
     transform: rotate(-15deg);
 }
 
