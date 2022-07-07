@@ -598,12 +598,12 @@ html {
 /* ==== ORIGINAL TEXT ==== */
 #ARoriginalText,
 #EUoriginalText {
+    display: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.18em !important;
     background-color: #fff;
     border: solid 2px #000;
     border-radius: 34px;
-    display: inline-block;
     padding: .5em 1em;
     position: relative;
     max-width: 45%;
