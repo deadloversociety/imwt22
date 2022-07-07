@@ -81,6 +81,7 @@ nav {
 
 a.nav-link:hover {
     color: #d3ccbc;
+    cursor: pointer;
 }
 
 .dropdown-item:hover {

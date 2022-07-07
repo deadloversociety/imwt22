@@ -63,6 +63,7 @@ body {
 a:any-link {
     text-decoration: none;
     color: purple;
+    cursor: pointer;
 }
 
 .navbar a:any-link,

@@ -24,6 +24,7 @@ a:any-link {
 .nav a:hover,
 .navbar a:hover {
     color: whitesmoke !important;
+    cursor: pointer;
 }
 
 .dropdown-menu a:any-link {

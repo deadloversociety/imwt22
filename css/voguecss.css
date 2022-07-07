@@ -69,6 +69,7 @@ body {
 a:any-link {
     text-decoration: none;
     color: #c00c2c;
+    cursor: pointer;
 }
 
 .navbar a:any-link,
@@ -730,27 +731,28 @@ h2 {
 }
 
 #topBtn {
-background-color:#c00c2c;
-    color:white;
-    opacity:75%;
+    background-color: #c00c2c;
+    color: white;
+    opacity: 75%;
 }
 
 .team-profile-card {
-background-image:url("https://github.com/deadloversociety/imwt22/blob/main/team/vogue1.png?raw=true");
-    color:#c00c2c;
+    background-image: url("https://github.com/deadloversociety/imwt22/blob/main/team/vogue1.png?raw=true");
+    color: #c00c2c;
 }
 
 .note:hover {
     font-weight: bold !important;
-    color:#c00c2c;
-}
-.modal-content{
-    color:black;
+    color: #c00c2c;
 }
 
-.modal-content{
-background-image:url("https://github.com/deadloversociety/imwt22/blob/main/team/voguevogue.png.png?raw=true");");
-    color:#c00c2c;
+.modal-content {
+    color: black;
+}
+
+.modal-content {
+    background-image: url("https://github.com/deadloversociety/imwt22/blob/main/team/voguevogue.png.png?raw=true");
+ color: #c00c2c;
 }
 
 .textsection p:first-of-type::first-letter {
