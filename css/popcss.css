@@ -679,7 +679,7 @@ html {
     bottom: 71px;
     content: "";
     height: 0;
-    right: 383px;
+    left: -23px;
     position: absolute;
     transform: rotate(90deg) skew(0deg) scaleX(-1.5);
     width: 0;
@@ -694,7 +694,7 @@ html {
     bottom: 72px;
     content: "";
     height: 0;
-    right: 382px;
+    left: -20px;
     position: absolute;
     transform: rotate(90deg) skew(0deg) scaleX(-1.5);
     width: 0;
