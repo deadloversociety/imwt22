@@ -492,6 +492,8 @@ html {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* ==== ORIGINAL TEXT ==== */
+
 /* #OVoriginalText,
 #ARoriginalText,
 #EUoriginalText {
@@ -511,11 +513,11 @@ html {
 #OVoriginalText,
 #ARoriginalText,
 #EUoriginalText {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #fff;
     border: solid 2px #000;
     border-radius: 12px;
     display: inline-block;
-    margin: .5em;
     padding: .5em 1em;
     position: relative;
 }
@@ -550,31 +552,7 @@ html {
     width: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ==== ENGLISH TEXT ==== */
 
 #OVtextEn,
 #ARtextEn,
@@ -583,6 +561,67 @@ html {
     text-justify: inter-word;
     margin: 0px;
 }
+
+#OVtextEn,
+#ARtextEn,
+#EUtextEn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 12px;
+    display: inline-block;
+    padding: .5em 1em;
+    position: relative;
+}
+
+#OVtextEn::before,
+#ARtextEn::before,
+#EUtextEn::before {
+    border: solid 11px transparent;
+    border-left: solid 11px #000;
+    border-top: solid 11px #000;
+    bottom: 71px;
+    content: "";
+    height: 0;
+    right: -24px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+#OVtextEn::after,
+#ARtextEn::after,
+#EUtextEn::after {
+    border: solid 10px transparent;
+    border-left: solid 10px #fff;
+    border-top: solid 10px #fff;
+    bottom: 72px;
+    content: "";
+    height: 0;
+    right: -20px;
+    position: absolute;
+    transform: scaleY(-1);
+    width: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ===== DOCUMENTATION ===== */
 #docimg {
