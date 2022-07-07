@@ -499,6 +499,8 @@ html {
     display: inline-block;
     padding: .5em 1em;
     position: relative;
+    max-width: 45%;
+    margin: 1em;
 }
 
 #OVoriginalText::before,
@@ -537,18 +539,14 @@ html {
 #EUtextEn {
     text-align: justify;
     text-justify: inter-word;
-    margin: 0px;
-}
-
-#OVtextEn,
-#ARtextEn,
-#EUtextEn {
     background-color: #fff;
     border: solid 2px #000;
-    border-radius: 12px;
+    border-radius: 34px;
     display: inline-block;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     position: relative;
+    max-width: 45%;
+    margin: 1em;
 }
 
 #OVtextEn::before,
@@ -562,7 +560,7 @@ html {
     height: 0;
     right: -24px;
     position: absolute;
-    transform: scaleY(-1);
+    transform: rotate(90deg) skew(0deg) scaleX(-1.5);
     width: 0;
 }
 
@@ -577,7 +575,7 @@ html {
     height: 0;
     right: -20px;
     position: absolute;
-    transform: scaleY(-1);
+    transform: rotate(90deg) skew(0deg) scaleX(-1.5);
     width: 0;
 }
 
