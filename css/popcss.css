@@ -578,9 +578,10 @@ html {
     transform: rotate(-0.5deg);
 }
 
-.metadata ul>li>a:active {
+/* NON CAPISCO COSA FACCIA QUESTO */
+/* .metadata ul>li>a:active {
     font-weight: bold;
-}
+} */
 
 .metadata ol,
 ul {
@@ -588,9 +589,8 @@ ul {
 }
 
 /* == Select the text == */ 
-#list li :hover {
-    text-shadow: 2px 2px 5px rgb(135, 124, 99);
-    font-weight: normal;
+#list li :hover{
+    font-weight: bold;
 }
 
 /* == Buttons entities == */
@@ -607,6 +607,7 @@ ul {
     background-color: rgba(225, 225, 225, 0.255) !important;
     border: 2px solid rgb(0, 0, 0);
     font-weight: bold;
+    color: black;
 }
 
 .nav-pills:hover .nav-link.active:hover,
@@ -769,6 +770,9 @@ ul.minimal {
         background-color: #cccc00;
     }
 }
+
+
+
 
 
 
