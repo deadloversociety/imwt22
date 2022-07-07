@@ -88,6 +88,7 @@ nav {
 .navbar,
 .nav {
     background-color: #dedcde !important;
+    cursor: pointer;
 }
 
 a.nav-link:hover {

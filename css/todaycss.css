@@ -81,6 +81,7 @@ nav {
 .navbar,
 .nav {
     background-color: #f8f9fa !important;
+    cursor: pointer;
 }
 
 /* goTop button */
