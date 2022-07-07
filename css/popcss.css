@@ -272,7 +272,7 @@ a.btnLink:active {
 
 /* ===== TEXT SECTIONS ===== */
 .textsection {
-    margin: 2% 5% 2% 5%;
+    margin: 2% 5% 1% 5%;
     text-align: justify;
     text-justify: inter-word;
     font-size: 1.2em;
