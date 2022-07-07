@@ -294,7 +294,7 @@ a.btnLink:active {
     transform: rotate(0.5deg);
 }
 
-.textsection>h3,
+div>h3,
 h2 {
     font-family: 'Badaboom';
     font-size: 2.5em;
@@ -302,6 +302,12 @@ h2 {
     -webkit-text-stroke: 2px black;
 }
 
+div>h4{
+    font-family: 'Badaboom';
+    font-size: 2em;
+    color: #FEE300;
+    -webkit-text-stroke: 2px black;
+}
 
 .textsection#disclaimer {
     font-size: 1em;
