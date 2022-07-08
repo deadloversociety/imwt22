@@ -581,20 +581,12 @@ ul {
 }
 
 /* == Button entities == */
-#sentenceTab {
-    padding: 0em;
-}
-
 .nav-pills .nav-link.active,
 .show>.nav-link {
     background-color: #FEE300 !important;
     font-weight: bold;
     border: 4px solid #2a3f72;
-}
-
-.nav-pills:hover >.nav-link {
-    text-shadow: none;
-    border: 4px solid #ba3d32;
+    color: #ba3d32;
 }
 
 /* == Highlight colours of entities == */
@@ -612,13 +604,9 @@ ul {
 
 /* == List of tagged entities == */
 .myBorder {
-    border: solid rgb(220, 220, 220) 1px;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-
-.myBorder-notop {
-    border-top: none;
+    border: 0.1em solid black;
+    /*padding: 10px;
+    margin-bottom: 15px;*/
 }
 
 .tab-pane {
