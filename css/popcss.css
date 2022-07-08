@@ -573,9 +573,7 @@ html {
     padding-right: 0.6em;
     border: 0.1em solid black;
     background-color: white;
-    border-width: 0.3em 0.4em 0.3em 0.5em;
-    border-radius: 1% 95% 1% 9%/95% 4% 92% 5%;
-    transform: rotate(-0.5deg);
+    border-width: 0.1em 0.2em 0.1em 0.2em;
 }
 
 /* NON CAPISCO COSA FACCIA QUESTO */
@@ -634,7 +632,7 @@ ul {
 
 /* == List of tagged entities == */
 .myBorder {
-    border: double black;
+    border: 2px solid black;
 }
 
 .tab-pane { /* Questo tag può essere unito con .tab-pane ul? */
@@ -698,6 +696,7 @@ ul.minimal {
     padding: 2%;
     margin-top: 2em;
     margin-bottom: 2em;
+    border: 2px solid black !important;
     display: none;
 }
 
@@ -705,6 +704,7 @@ ul.minimal {
     font-weight: bold;
 }
 
+/* E' necessaria questa specifica? */
 .container {
     width: 100% !important;
 }
@@ -753,13 +753,9 @@ ul.minimal {
 /* == Notes and Tab panes (see: articles html files) == */
 .note:hover {
     font-weight: bold !important;
-    text-shadow: 2px 2px 5px rgb(135, 124, 99);
 }
 
-.modal {
-    background-image: url("https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1910&q=80");
-}
-
+/* = When clickin on an item of the entities' list = */
 .animate1 {
     animation-name: bgcolor;
     animation-duration: 0.75s;
