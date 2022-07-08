@@ -604,13 +604,9 @@ ul {
 
 /* == List of tagged entities == */
 .myBorder {
-    border: solid rgb(220, 220, 220) 1px;
+    border: 0.1em solid #ba3d32;
     padding: 10px;
     margin-bottom: 15px;
-}
-
-.myBorder-notop {
-    border-top: none;
 }
 
 .tab-pane {
