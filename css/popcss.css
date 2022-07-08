@@ -575,6 +575,11 @@ html {
     font-weight: bold;
 }
 
+.metadata ol,
+ul{
+    padding-left: 0.1rem !important;
+}
+
 /* == Button entities == */
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
