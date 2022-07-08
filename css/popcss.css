@@ -781,19 +781,25 @@ ul.minimal {
 #ARoriginalText,
 #EUoriginalText {
     display: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
     font-size: 1.18em !important;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px;
     background-color: #fff;
     border: solid 2px #000;
     border-radius: 34px;
     padding: .5em 1em;
     position: relative;
     max-width: 45%;
-    margin: 0.5%;
+    /* margin: 0.5%; */
 }
 
 /* Latin characters -> DigitalStrip font */
 #OVoriginalText {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px;
     background-color: #fff;
     border: solid 2px #000;
     border-radius: 34px;
@@ -801,7 +807,7 @@ ul.minimal {
     padding: .5em 1em;
     position: relative;
     max-width: 45%;
-    margin: 0.5%;
+    /* margin: 0.5%; */
 }
 
 #OVoriginalText::before,
@@ -840,13 +846,14 @@ ul.minimal {
 #EUtextEn {
     text-align: justify;
     text-justify: inter-word;
+    margin: 0px;
     background-color: #fff;
     border: solid 2px #000;
     border-radius: 34px;
     display: inline-block;
     padding: 0.5em 1em;
     position: relative;
-    margin: 0.5%;
+    /*margin: 0.5%;*/
 }
 
 #OVtextEn::before,
