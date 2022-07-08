@@ -582,7 +582,7 @@ html {
 } */
 
 .metadata ol,
-ul {
+ul{
     padding-left: 0.1rem !important;
 }
 
@@ -633,6 +633,7 @@ ul {
 /* == List of tagged entities == */
 .myBorder {
     border: 2px solid black;
+    padding-left: 0.6em;
 }
 
 .tab-pane { /* Questo tag può essere unito con .tab-pane ul? */
