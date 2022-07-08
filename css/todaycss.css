@@ -1,6 +1,9 @@
+/* ========== 2020s CSS ========== */
+
+/* ===== SPECIFIC FONTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap%27');
 
-/* Start main navbar */
+/* ===== MAIN NAVBAR ===== */
 @media (min-width: 768px) {
     .animate {
         animation-duration: 0.3s;
@@ -49,9 +52,7 @@
     animation-name: slideIn;
 }
 
-/* End main Navbar */
-
-/* Secondary navbar */
+/* ===== SECONDARY NAVBAR ===== */
 .sec-nav {
     color: #333333;
 }
@@ -84,8 +85,7 @@ nav {
     cursor: pointer;
 }
 
-/* goTop button */
-
+/* ===== GO TOP BUTTON =====*/
 #topBtn {
     position: fixed;
     width: 60px;
@@ -107,7 +107,7 @@ nav {
     background-color: rgba(215, 215, 215, 0.785);
 }
 
-/* ====== Home page carousel */
+/* ===== HOME PAGE CAROUSEL ===== */
 .carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -175,7 +175,7 @@ a.btnLink:active {
     text-decoration: none;
 }
 
-/* ----------- */
+/* ===== TEXT SECTIONS ===== */
 .textsection {
     margin: 2% 4rem 2% 4rem;
     text-align: justify;
@@ -187,13 +187,12 @@ a.btnLink:active {
     font-size: 0.9em;
 }
 
-/* ====== Hero image */
+/* ===== ISSUE PAGE ===== */
 body,
 html {
     height: 100%;
 }
 
-/* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.ilsuperuovo.it/wp-content/uploads/2019/06/gGAnw0h9TdQMfJYqztWBY0MSgdO-1.jpg");
