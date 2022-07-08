@@ -419,11 +419,6 @@ ul {
     background-color: #ffffdd;
 }
 
-/* NON CAPISCO COSA SIA QUESTO NELL'HTML */
-.text-sequence {
-    background-color: #ffffdd;
-}
-
 /* == List of tagged entities == */
 .myBorder {
     border: double black;
@@ -442,17 +437,6 @@ ul {
     font-style: italic;
 }
 
-/* NON CAPISCO COSA SIA QUESTO NELL'HTML */
-.breath {
-    margin-top: 15px;
-}
-
-/* NON CAPISCO COSA SIA QUESTO NELL'HTML */
-ul.minimal {
-    padding-inline-start: 0.5em;
-}
-
-/* NON CAPISCO COSA SIA QUESTO NELL'HTML --> NON DOVREBBE ESSERE UN ID?*/
 .list {
     font-size: 80%;
     line-height: 1.2;
@@ -462,23 +446,11 @@ ul.minimal {
     list-style-position: inside;
 }
 
-/* NON CAPISCO COSA SIA QUESTO NELL'HTML --> NON DOVREBBE ESSERE UN ID?*/
 .list a {
     color: black;
     margin: 0;
 }
 
-/* NON CAPISCO COSA SIA QUESTO NELL'HTML */
-.list-sequence:before {
-    content: "«";
-}
-
-/* NON CAPISCO COSA SIA QUESTO NELL'HTML */
-.list-sequence:after {
-    content: "»";
-}
-
-/* NON CAPISCO COSA SIA QUESTO NELL'HTML */
 .list::-webkit-scrollbar {
     display: none;
     /* for Chrome, Safari, and Opera */
@@ -496,7 +468,7 @@ ul.minimal {
     font-weight: bold;
 }
 
-/* E' necessaria questa specifica? */
+/* necessario? s*/
 .container {
     width: 100% !important;
 }
