@@ -578,29 +578,22 @@ html {
 /* == Button entities == */
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    background-color: #4c008a !important;
+    background-color: white !important;
     font-weight: bold;
+    border: 2px solid #2a3f72;
 }
-
-/* .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: rgba(225, 225, 225, 0.255) !important;
-    border: 2px solid rgb(0, 0, 0);
-    font-weight: bold;
-    color: black;
-} */
 
 /* == Highlight colours of entities == */
 .text-charmortal {
-    background-color: #ffddff;
+    background-color: #93aae1;
 }
 
 .text-charimmortal {
-    background-color: #ddffdd;
+    background-color: #eb786e;
 }
 
 .text-places {
-    background-color: #ffffdd;
+    background-color: #fff38b;
 }
 
 /* == List of tagged entities == */
@@ -741,8 +734,6 @@ html {
     border-radius: 34px;
     padding: .5em 1em;
     position: relative;
-    max-width: 45%;
-    /* margin: 0.5%; */
 }
 
 /* Latin characters -> DigitalStrip font */
@@ -756,8 +747,6 @@ html {
     display: inline-block;
     padding: .5em 1em;
     position: relative;
-    max-width: 45%;
-    /* margin: 0.5%; */
 }
 
 #OVoriginalText::before,
