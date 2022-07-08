@@ -496,6 +496,7 @@ ul.minimal {
     font-weight: bold;
 }
 
+/* E' necessaria questa specifica? */
 .container {
     width: 100% !important;
 }

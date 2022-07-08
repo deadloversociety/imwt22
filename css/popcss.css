@@ -581,10 +581,10 @@ html {
     font-weight: bold;
 } */
 
-.metadata ol,
+/* .metadata ol,
 ul{
     padding-left: 0.1rem !important;
-}
+} */
 
 /* == Select the text == */ 
 #list li :hover{
@@ -633,7 +633,7 @@ ul{
 /* == List of tagged entities == */
 .myBorder {
     border: 2px solid black;
-    padding-left: 0.6em;
+    /* padding-left: 0.6em; */
 }
 
 .tab-pane { /* Questo tag può essere unito con .tab-pane ul? */
