@@ -581,10 +581,10 @@ html {
     font-weight: bold;
 } */
 
-/* .metadata ol,
+.metadata ol,
 ul {
-    padding-left: 1rem !important;
-} */
+    padding-left: 0.1rem !important;
+}
 
 /* == Select the text == */ 
 #list li :hover{
