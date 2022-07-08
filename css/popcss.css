@@ -581,6 +581,10 @@ ul {
 }
 
 /* == Button entities == */
+#sentenceTab {
+    padding: 0em;
+}
+
 .nav-pills .nav-link.active,
 .show>.nav-link {
     background-color: #FEE300 !important;
