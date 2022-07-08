@@ -233,7 +233,7 @@ html {
     background-size: cover;
     position: relative;
     filter: sepia(100%);
-    -webkit-filter: sepia(100%);
+
 }
 
 #docimg {
