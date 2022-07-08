@@ -529,13 +529,13 @@ a.navbar-brand {
 
 /* ARTICLES UPLOAD SECTION STYLE */
 
-.myborder {
+.myBorder {
     border: solid rgb(220, 220, 220) 1px;
     padding: 10px;
     margin-bottom: 15px;
 }
 
-.myborder-notop {
+.myBorder-notop {
     border-top: none;
 }
 
@@ -556,10 +556,6 @@ a.navbar-brand {
 }
 
 .text-places {
-    background-color: #ffffdd;
-}
-
-.text-sequence {
     background-color: #ffffdd;
 }
 
