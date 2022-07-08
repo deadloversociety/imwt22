@@ -1,9 +1,12 @@
+/* ========== ALDINE PRESS CSS ========== */
+
+/* ========== SPECIFIC FONT ========== */
 @font-face {
     font-family: Griffo Classico;
     src: url("../fonts/aldine/GriffoClassico.ttf");
 }
 
-/* Start main navbar */
+/* ========== MAIN NAVBAR ========== */
 @media (min-width: 768px) {
     .animate {
         animation-duration: 0.3s;
