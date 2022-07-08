@@ -1,10 +1,26 @@
+
+ /* ========== VOGUE 90s CSS ========== */
+
+ /* ========== SPECIFIC FONTS ========== */
 @font-face {
     font-family: Didot;
     src: url("../fonts/vogue/DidotLH-Roman.otf");
 }
 
 
-/* Start main navbar */
+ /* ========== MAIN NAVBAR ========== */
+ a.navbar-brand {
+    font-size: 1.45rem;
+    font-weight: bold;
+    position: relative;
+    top: 0.2rem;
+}
+#logo {
+    margin-right: 0.7rem;
+    height: 2rem;
+    width: 2rem;
+}
+
 @media (min-width: 768px) {
     .animate {
         animation-duration: 0.3s;
@@ -53,9 +69,7 @@
     animation-name: slideIn;
 }
 
-/* End main Navbar */
-
-/* Secondary navbar */
+/* ===== SECONDARY NAVBAR ===== */
 .sec-nav {
     color: #c00c2c;
 }
@@ -66,18 +80,7 @@ body {
 
 }
 
-a:any-link {
-    text-decoration: none;
-    color: #c00c2c;
-    cursor: pointer;
-}
 
-.navbar a:any-link,
-.nav a:any-link,
-.nav a:hover,
-.navbar a:hover {
-    color: black;
-}
 
 nav {
     font-family: 'Didot';
@@ -91,25 +94,27 @@ nav {
     cursor: pointer;
 }
 
-a.nav-link:hover {
-    color: #c00c2c;
-    text-shadow: 2px 2px 5px rgb(135, 124, 99);
+
+
+.navbar a:any-link,
+.nav a:any-link,
+.nav a:hover,
+.navbar a:hover {
+    color: black;
 }
 
-.dropdown-item:hover {
-    background-color: #c00c2c;
 
-}
 
-/* goTop button */
+/* ===== GO TOP BUTTON =====*/
 #topBtn {
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 40px;
     right: 20px;
-    background-color: rgba(245, 245, 245, 0.785);
-    color: rgb(0, 0, 0);
+    background-color: #c00c2c;
+    color: white;
+    opacity: 75%;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #3336;
@@ -122,9 +127,32 @@ a.nav-link:hover {
 #topBtn:hover {
     background-color: rgba(215, 215, 215, 0.785);
 }
+/* ==== AUDIO BUTTON ==== */
+.float {
+    display: none !important;
+}
 
+/* ===== DROPDOWN MENU ===== */
+.dropdown-menu {
+    background-color: #c29969;
 
-/* ====== Home page carousel */
+}
+.dropdown-item:hover {
+    background-color: #c00c2c;
+
+}
+/* ===== LINKS ===== */
+a.nav-link:hover {
+    color: #c00c2c;
+    text-shadow: 2px 2px 5px rgb(135, 124, 99);
+}
+a:any-link {
+    text-decoration: none;
+    color: #c00c2c;
+    cursor: pointer;
+}
+/* ===== HOME PAGE CAROUSEL ===== */
+
 .carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -193,7 +221,8 @@ a.btnLink:active {
     text-decoration: none;
 }
 
-/* ----------- */
+/* ===== TEXT SECTIONS ===== */
+
 .textsection {
     margin: 2% 4rem 2% 4rem;
     text-align: justify;
@@ -207,21 +236,21 @@ a.btnLink:active {
     margin: 2% 5rem 2% 5rem;
 }
 
-/* ====== Hero image */
+/* ===== ISSUE PAGE ===== */
+/* Hero image */
 body,
 html {
     height: 100%;
 }
 
-/* The hero image */
+
 .hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+
     background-image: url("https://www.ilsuperuovo.it/wp-content/uploads/2019/06/gGAnw0h9TdQMfJYqztWBY0MSgdO-1.jpg");
 
-    /* Set a specific height */
+
     height: 50%;
 
-    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,16 +259,8 @@ html {
     filter: opacity(95%);
 }
 
-#docimg {
-    background-image: url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
-    ;
-    filter: brightness(300%);
-    filter: opacity(95%);
-    filter: grayscale(75%)
-}
 
-/* ====== Menu to choose the author */
-
+/* ==== CARDS AUTHORS ==== */
 
 .image {
     display: flex;
@@ -281,12 +302,13 @@ html {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
+/* ==== AUTHORS PRESENTATION ==== */
 #MedeaEur,
 #MedeaApp,
 #MedeaOvi {
     display: none;
 }
+/* ==== ARTICLES-METADATA SECTION ==== */
 
 .metadata {
     background-color: #ffffff;
@@ -297,6 +319,52 @@ html {
     top: 1em;
 }
 
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #c00c2c !important;
+    font-weight: bold;
+}
+.text-mortal {
+    background-color: #dcada4;
+}
+
+.text-charimmortal {
+    background-color: #e4a834;
+}
+
+.text-places {
+    background-color: #9b84ac;
+}
+.tab-pane {
+    font-size: 1.15em;
+    width: 100%;
+    display: flex;
+}
+
+.tab-pane ul {
+    margin-top: 1em;
+    list-style: none;
+    font-style: italic;
+}
+.list {
+    font-size: 80%;
+    line-height: 1.2;
+    margin: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    list-style-position: inside;
+}
+
+.list a {
+    color: black;
+    margin: 0;
+}
+.list::-webkit-scrollbar {
+    display: none;
+
+}
+/* == Compare, show, hide text buttons (see: articles html files) == */
 .indexcompare {
     padding: 2%;
     margin-top: 2em;
@@ -352,6 +420,31 @@ html {
 .buttonCompText:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/* == Notes and Tab panes (see: articles html files) == */
+.note:hover {
+    font-weight: bold !important;
+}
+.modal-content {
+    background-image: url("https://github.com/deadloversociety/imwt22/blob/main/team/voguevogue.png.png?raw=true");
+ color: #c00c2c;
+}
+.animate1 {
+    animation-name: bgcolor;
+    animation-duration: 0.75s;
+    animation-iteration-count: 3;
+    animation-fill-mode: backwards;
+}
+
+@keyframes bgcolor {
+    from {
+        background-color: #ffffff;
+    }
+
+    to {
+        background-color: #048b9b;
+        color: white;
+    }
+}/* ==== ORIGINAL TEXT ==== */
 
 #OVoriginalText,
 #ARoriginalText,
@@ -361,7 +454,7 @@ html {
     margin: 0px;
     display: none;
 }
-
+/* ==== ENGLISH TEXT ==== */
 #OVtextEn,
 #ARtextEn,
 #EUtextEn {
@@ -369,63 +462,35 @@ html {
     text-justify: inter-word;
     margin: 0px;
 }
+/* ===== DOCUMENTATION ===== */
+#docimg {
+    background-image: url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
+    ;
+    filter: brightness(300%);
+    filter: opacity(95%);
+    filter: grayscale(75%)
+}
 
-/* ==== Team Section: https://www.foolishdeveloper.com/2021/10/our-team-section-design.html ===== */
+/* Pinterest boards */
 
-/* Si può togliere
-.main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4em;
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
 }
-.profile-card {
-    position: relative;
-    border-radius: 10px;
-    height: 18.75em;
-    background: #fff;
-    padding: 1.875em;
-    box-shadow: 0 0 22px #3336;
-    transition: .6s;
-    margin: 0 25px;
-    margin-top: 4em;
-}
-.profile-card .img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: .6s;
-    z-index: 99;
-    transform: translateY(-60px);
-}
-.img img {
-    width: 100%;
-    box-shadow: 0 0 22px #3336;
-    transition: .6s;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.caption {
-    text-align: center;
-    transform: translateY(-80px);
-    transition: .6s;
-}
-.caption h3 {
-    font-size: 21px;
-}
-.caption p {
-    font-size: 15px;
-    margin: 2px 0 9px 0;
-}
-.caption a {
-    text-decoration: none;
-    color: #000000;
-} 
-*/
 
-/* ==== Footer Section, source: https://getbootstrap.com/docs/5.2/examples/footers/ ===== */
+/* ==== THE TEAM SECTION (MAIN HTML) ===== */
+
+.team-profile-card {
+    background-image: url("https://i.pinimg.com/originals/4b/6a/4e/4b6a4e56fff3b6ab86eff138ef4a52c2.png");
+    color: #c00c2c;
+}
+
+.small {
+    font-size: 80%;
+    line-height: 1.2;
+    margin: 0;
+}
+/* ===== FOOTER ===== */
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -455,10 +520,6 @@ html {
     height: 100vh;
 }
 
-.bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-}
 
 .nav-scroller {
     position: relative;
@@ -491,25 +552,8 @@ footer .fa-github {
     color: whitesmoke;
 }
 
-a.navbar-brand {
-    font-size: 1.45rem;
-    font-weight: bold;
-    position: relative;
-    top: 0.2rem;
-}
 
-.navbar-brand {
-    font-family: Didot;
-    text-transform: uppercase;
-    color: #c00c2c;
-
-}
-
-#logo {
-    margin-right: 0.7rem;
-    height: 2rem;
-    width: 2rem;
-}
+/* ===== ANIMATION LOGO ===== */
 
 .shake {
     /* Start the shake animation and make the animation last for 0.5 seconds */
@@ -565,132 +609,6 @@ a.navbar-brand {
     }
 }
 
-.bi {
-    color: red !important;
-    font-size: 1.5em;
-}
-
-#Notes {
-    margin-top: 1em;
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 0.8em;
-}
-
-.note:hover {
-    font-weight: bold !important;
-}
-
-.tab-pane {
-    font-size: 1.15em;
-    width: 100%;
-    display: flex;
-}
-
-.tab-pane ul {
-    margin-top: 1em;
-    list-style: none;
-    font-style: italic;
-}
-
-.seqinmeta li {
-    margin-bottom: 2em;
-    margin-right: 1em;
-    padding: 2% 0% 2% 2%;
-    background: #e7e7e7;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: #c00c2c !important;
-    font-weight: bold;
-}
-
-.float {
-    display: none !important;
-}
-
-/* ARTICLES UPLOAD SECTION STYLE */
-
-.myborder {
-    border: solid rgb(220, 220, 220) 1px;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-
-.myborder-notop {
-    border-top: none;
-}
-
-.breath {
-    margin-top: 15px;
-}
-
-.tab-pane {
-    min-height: 150px;
-}
-
-.text-charmortal {
-    background-color: #dcada4;
-}
-
-.text-charimmortal {
-    background-color: #e4a834;
-}
-
-.text-places {
-    background-color: #9b84ac;
-}
-
-
-
-ul.minimal {
-    padding-inline-start: 0.5em;
-}
-
-.list {
-    font-size: 80%;
-    line-height: 1.2;
-    margin: 0;
-    white-space: nowrap;
-    overflow-x: hidden;
-    list-style-position: inside;
-}
-
-.list a {
-    color: black;
-    margin: 0;
-}
-
-
-.animate1 {
-    animation-name: bgcolor;
-    animation-duration: 0.75s;
-    animation-iteration-count: 3;
-    animation-fill-mode: backwards;
-}
-
-@keyframes bgcolor {
-    from {
-        background-color: #ffffff;
-    }
-
-    to {
-        background-color: #048b9b;
-        color: white;
-    }
-}
-
-.small {
-    font-size: 80%;
-    line-height: 1.2;
-    margin: 0;
-}
-
-.list::-webkit-scrollbar {
-    display: none;
-    /* for Chrome, Safari, and Opera */
-}
 
 h3 {
     text-transform: uppercase;
@@ -700,19 +618,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.bi {
-    color: #c00c2c !important;
-    font-size: 1.5em;
-}
-
-.aldina::first-letter {
-    float: left;
-    font-size: 75px;
-    line-height: 60px;
-    padding-top: 4px;
-    padding-right: 8px;
-    padding-left: 3px;
-}
+/* ===== RESPONSIVE WEBSITE ===== */
 
 @media screen and (max-width: 600px) {
     .columnEu {
@@ -731,30 +637,10 @@ h2 {
     margin: 2%;
 }
 
-#topBtn {
-    background-color: #c00c2c;
-    color: white;
-    opacity: 75%;
-}
 
-.team-profile-card {
-    background-image: url("https://i.pinimg.com/originals/4b/6a/4e/4b6a4e56fff3b6ab86eff138ef4a52c2.png");
-    color: #c00c2c;
-}
 
-.note:hover {
-    font-weight: bold !important;
-    color: #c00c2c;
-}
 
-.modal-content {
-    color: black;
-}
-
-.modal-content {
-    background-image: url("https://github.com/deadloversociety/imwt22/blob/main/team/voguevogue.png.png?raw=true");
- color: #c00c2c;
-}
+/* ===== DROP CAPS ===== */
 
 .textsection p:first-of-type::first-letter {
 
@@ -782,3 +668,4 @@ h2 {
     margin-bottom: -5px;
 
 }
+
