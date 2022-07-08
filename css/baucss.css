@@ -32,6 +32,19 @@ img {
 }
 
 /* ===== MAIN NAVBAR ===== */
+a.navbar-brand {
+    font-size: 1.45rem;
+    font-weight: bold;
+    position: relative;
+    top: 0.2rem;
+}
+
+#logo {
+    margin-right: 0.7rem;
+    height: 2rem;
+    width: 2rem;
+}
+
 nav {
     font-size: 1.2em !important;
     background-color: #f1edbb !important;
@@ -370,8 +383,22 @@ article h3::first-letter {
 }
 
 /* == Buttons entities == */
+#sentenceTab {
+    background-color: rgb(42, 45, 110) !important;
+    color: white !important;
+    font-size: 1.1em;
+}
+
+#sentenceTab .nav-link.active {
+    background-color: rgb(181, 76, 76); 
+    color: white !important;
+    font-weight: bold;
+}
+
+/* == List of tagged entities == */
 .tab-pane {
     font-size: 1.15em;
+    min-height: 150px;
     width: 100%;
     display: flex;
 }
@@ -380,27 +407,6 @@ article h3::first-letter {
     margin-top: 1em;
     list-style: none;
     font-style: italic;
-}
-
-#sentenceTab {
-    background-color: #f9f7de !important;
-    font-size: 1.1em;
-}
-
-#sentenceTab .nav-link {
-    color: black !important;
-}
-
-#sentenceTab .nav-link.active {
-    background-color: rgb(42, 45, 110); 
-    color: white !important;
-    font-weight: bold;
-}
-
-/* == List of tagged entities == */
-
-.tab-pane {
-    min-height: 150px;
 }
 
 .text-charmortal {
@@ -432,29 +438,6 @@ article h3::first-letter {
     margin: 0;
 }
 
-.animate1 {
-    animation-name: bgcolor;
-    animation-duration: 0.75s;
-    animation-iteration-count: 3;
-    animation-fill-mode: backwards;
-}
-
-@keyframes bgcolor {
-    from {
-        background-color: #ffffff;
-    }
-
-    to {
-        background-color: #cccc00;
-    }
-}
-
-.small {
-    font-size: 80%;
-    line-height: 1.2;
-    margin: 0;
-}
-
 .list::-webkit-scrollbar {
     display: none;
     /* for Chrome, Safari, and Opera */
@@ -472,10 +455,6 @@ article h3::first-letter {
 
 .indexcompare li:hover {
     font-weight: bold;
-}
-
-.container {
-    width: 100% !important;
 }
 
 .buttonShowText {
@@ -518,6 +497,29 @@ article h3::first-letter {
 .buttonCompText:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* == Notes and Tab panes (see: articles html files) == */
+.note:hover {
+    font-weight: bold !important;
+}
+
+.animate1 {
+    animation-name: bgcolor;
+    animation-duration: 0.75s;
+    animation-iteration-count: 3;
+    animation-fill-mode: backwards;
+}
+
+@keyframes bgcolor {
+    from {
+        background-color: #ffffff;
+    }
+
+    to {
+        background-color: #cccc00;
+    }
+}
+
 
 /* ==== ORIGINAL TEXT ==== */
 #OVoriginalText,
@@ -574,14 +576,10 @@ article h3::first-letter {
     margin-top: 1em;
 }
 
+/* Pinterest boards */
 .bi {
     color: rgb(181, 76, 76);
     font-size: 1.5em;
-}
-
-/* == Notes and Tab panes (see: articles html files) == */
-.note:hover {
-    font-weight: bold !important;
 }
 
 /* ==== THE TEAM SECTION (MAIN HTML) ===== */
@@ -598,9 +596,13 @@ article h3::first-letter {
     border-radius: 0%;
 }
 
+.small {
+    font-size: 80%;
+    line-height: 1.2;
+    margin: 0;
+}
+
 /* ===== FOOTER ===== */
-
-
 footer {
     color: whitesmoke;
     bottom: 0;
@@ -616,19 +618,6 @@ footer .fa-github {
 }
 
 /* ===== ANIMATION LOGO ===== */
-a.navbar-brand {
-    font-size: 1.45rem;
-    font-weight: bold;
-    position: relative;
-    top: 0.2rem;
-}
-
-#logo {
-    margin-right: 0.7rem;
-    height: 2rem;
-    width: 2rem;
-}
-
 .shake {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.8s;
