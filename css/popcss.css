@@ -569,8 +569,6 @@ html {
     margin-bottom: 2em;
     position: sticky;
     top: 1em;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
     border: 0.1em solid black;
     background-color: white;
     border-width: 0.1em 0.2em 0.1em 0.2em;
@@ -600,18 +598,18 @@ ul{
     /* padding: 1em; */
 }
 
-.nav-pills .nav-link.active,
+/* .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     background-color: rgba(225, 225, 225, 0.255) !important;
     border: 2px solid rgb(0, 0, 0);
     font-weight: bold;
     color: black;
-}
+} */
 
-.nav-pills:hover .nav-link.active:hover,
+/* .nav-pills:hover .nav-link.active:hover,
 .nav-pills:hover .show:hover>.nav-link {
     text-shadow: none;
-}
+} */
 
 .text-charmortal {
     background-color: #ffddff;
