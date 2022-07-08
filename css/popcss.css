@@ -581,10 +581,10 @@ html {
     font-weight: bold;
 } */
 
-.metadata ol,
+/* .metadata ol,
 ul {
     padding-left: 1rem !important;
-}
+} */
 
 /* == Select the text == */ 
 #list li :hover{
@@ -597,7 +597,7 @@ ul {
     text-justify: inter-word;
     font-size: 1em !important;
     color: #585757;
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 .nav-pills .nav-link.active,
