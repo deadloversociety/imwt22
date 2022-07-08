@@ -586,13 +586,8 @@ ul {
     background-color: #FEE300 !important;
     font-weight: bold;
     border: 4px solid #2a3f72;
+    color: #ba3d32;
 }
-
-ul#sentenceTab > li:hover {
-    padding: none;
-    text-shadow: none;
-    border: 4px solid #ba3d32;
-} 
 
 /* == Highlight colours of entities == */
 .text-charmortal {
