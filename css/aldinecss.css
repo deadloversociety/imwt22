@@ -1,4 +1,4 @@
-/* ========== ALDINE PRESS CSS ========== */
+/* ========== LDINE PRESS CSS ========== */
 
 /* ========== SPECIFIC FONT ========== */
 @font-face {
@@ -7,6 +7,19 @@
 }
 
 /* ========== MAIN NAVBAR ========== */
+a.navbar-brand {
+    font-size: 1.45rem;
+    font-weight: bold;
+    position: relative;
+    top: 0.2rem;
+}
+
+#logo {
+    margin-right: 0.7rem;
+    height: 2rem;
+    width: 2rem;
+}
+
 @media (min-width: 768px) {
     .animate {
         animation-duration: 0.3s;
@@ -55,13 +68,9 @@
     animation-name: slideIn;
 }
 
-/* End main Navbar */
-.dropdown-menu {
-    background-color: #c29969;
 
-}
 
-/* Secondary navbar */
+/* ========== SECONDARY NAVBAR ========== */
 .sec-nav {
     color: #333333;
 }
@@ -87,19 +96,16 @@ a.nav-link:hover {
     cursor: pointer;
 }
 
-.dropdown-item:hover {
-    background-color: #c29969;
-}
 
-/* goTop button */
+/* ===== GO TOP BUTTON =====*/
 #topBtn {
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 40px;
     right: 20px;
-    background-color: rgba(245, 245, 245, 0.785);
-    color: rgb(0, 0, 0);
+    background-image: url("https://static.vecteezy.com/ti/foto-gratuito/p1/3821013-cartone-carta-per-sfondo-vecchia-carta-pergamena-texrture-foto.jpg");
+    opacity:50%;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #3336;
@@ -112,8 +118,22 @@ a.nav-link:hover {
 #topBtn:hover {
     background-color: rgba(215, 215, 215, 0.785);
 }
+/* ==== AUDIO BUTTON ==== */
 
-/* ====== Home page carousel */
+.float {
+    display: none;
+}
+/* ===== DROPDOWN MENU ===== */
+.dropdown-menu {
+    background-color: #c29969;
+
+}
+
+.dropdown-item:hover {
+    background-color: #c29969;
+}
+
+/* ===== HOME PAGE CAROUSEL ===== */
 .carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -183,7 +203,7 @@ a.btnLink:active {
     text-decoration: none;
 }
 
-/* ----------- */
+/* ===== TEXT SECTIONS ===== */
 .textsection {
     margin: 2% 10% 2% 10%;
     text-align: justify;
@@ -195,21 +215,19 @@ a.btnLink:active {
     font-size: 1em;
 }
 
-/* ====== Hero image */
+/* ===== ISSUE PAGE ===== */
+/* Hero image */
 body,
 html {
     height: 100%;
 }
 
-/* The hero image */
 .hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.ilsuperuovo.it/wp-content/uploads/2019/06/gGAnw0h9TdQMfJYqztWBY0MSgdO-1.jpg");
 
-    /* Set a specific height */
     height: 50%;
 
-    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -223,7 +241,7 @@ html {
     ;
 }
 
-
+/* ==== CARDS AUTHORS ==== */
 .image {
     display: flex;
     width: 100%;
@@ -263,13 +281,13 @@ html {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
+/* ==== AUTHORS PRESENTATION ==== */
 #MedeaEur,
 #MedeaApp,
 #MedeaOvi {
     display: none;
 }
-
+/* ==== ARTICLES-METADATA SECTION ==== */
 .metadata {
     background-color: #f3f2f1;
     position: sticky;
@@ -279,6 +297,45 @@ html {
     border: #292926 solid 0.2em;
     top: 1em;
 }
+/* == Select the text == */ 
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #585757;
+    font-weight: bold;
+}
+.text-charmortal {
+    background-color: #c9c0bb;
+}
+
+.text-charimmortal {
+    background-color: #cbc7b4;
+}
+
+.text-places {
+    background-color: #d2cdc7;
+}
+
+.tab-pane {
+    min-height: 150px;
+}
+.list {
+    font-size: 80%;
+    line-height: 1.2;
+    margin: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    list-style-position: inside;
+}
+
+.list a {
+    color: black;
+    margin: 0;
+}
+.list::-webkit-scrollbar {
+    display: none;
+
+}
+/* == Compare, show, hide text buttons (see: articles html files) == */
 
 .indexcompare {
     padding: 2%;
@@ -334,7 +391,30 @@ html {
 .buttonCompText:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/* == Notes and Tab panes (see: articles html files) == */
+.note:hover {
+    font-weight: bold !important;
+}
+.modal-content{
+    background-image: url("https://st2.depositphotos.com/1006269/5229/i/600/depositphotos_52294747-stock-photo-old-parchment-paper-texture.jpg");
+    }
+.animate1 {
+        animation-name: bgcolor;
+        animation-duration: 0.75s;
+        animation-iteration-count: 3;
+        animation-fill-mode: backwards;
+}
+@keyframes bgcolor {
+    from {
+        background-color: #ffffff;
+    }
 
+    to {
+        background-color: #f3f2f1;
+    }
+}
+    
+/* ==== ORIGINAL TEXT ==== */
 
 #OVoriginalText,
 #ARoriginalText,
@@ -344,6 +424,7 @@ html {
     margin: 0px;
     display: none;
 }
+/* ==== ENGLISH TEXT ==== */
 
 #OVtextEn,
 #ARtextEn,
@@ -353,8 +434,21 @@ html {
     margin: 0px;
 }
 
-
-/* ==== Footer Section, source: https://getbootstrap.com/docs/5.2/examples/footers/ ===== */
+/* ===== DOCUMENTATION ===== */
+#docimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
+    ;
+}
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+/* ==== FOOTER ===== */
+.team-profile-card {
+    background-image: url("https://st2.depositphotos.com/1006269/5229/i/600/depositphotos_52294747-stock-photo-old-parchment-paper-texture.jpg");
+      filter:sepia(100%);
+          filter:greyscale(50%);
+    }
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -382,11 +476,6 @@ html {
     flex-shrink: 0;
     width: 1.5rem;
     height: 100vh;
-}
-
-.bi {
-    vertical-align: -.125em;
-    fill: currentColor;
 }
 
 .nav-scroller {
@@ -427,17 +516,12 @@ a.navbar-brand {
     top: 0.2rem;
 }
 
-#logo {
-    margin-right: 0.7rem;
-    height: 2rem;
-    width: 2rem;
-}
+/* ===== ANIMATION LOGO ===== */
 
 .shake {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
+    
     animation: shake 0.8s;
 
-    /* When the animation is finished, start again */
     animation-iteration-count: 1;
 }
 
@@ -487,10 +571,7 @@ a.navbar-brand {
     }
 }
 
-.moodboard {
-    display: block;
-    text-align: center;
-}
+/* ===== DROP CAPS ===== */
 
 
 .textsection p:first-of-type::first-letter {
@@ -520,22 +601,7 @@ a.navbar-brand {
 
 }
 
-.showNotes {
-    border-radius: 0.2em;
-    margin-top: 1em;
-    margin-left: 1em;
-    padding: 0.5em;
-    background-color: #c29969;
-    border: none;
-}
-
-.showNotes:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.note:hover {
-    font-weight: bold !important;
-}
+/* ===== LINKS ===== */
 
 a:any-link {
     color: #6f5e4e;
@@ -543,118 +609,4 @@ a:any-link {
 
 a:hover:any-link {
     color: #888173;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: #585757;
-    font-weight: bold;
-}
-
-
-a:sec-nav:hover {
-    color: #888173;
-}
-
-.float {
-    display: none;
-}
-
-/* ARTICLES UPLOAD SECTION STYLE */
-
-.myborder {
-    border: solid rgb(220, 220, 220) 1px;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-
-.myborder-notop {
-    border-top: none;
-}
-
-.breath {
-    margin-top: 15px;
-}
-
-.tab-pane {
-    min-height: 150px;
-}
-
-.text-charmortal {
-    background-color: #c9c0bb;
-}
-
-.text-charimmortal {
-    background-color: #cbc7b4;
-}
-
-.text-places {
-    background-color: #d2cdc7;
-}
-
-
-ul.minimal {
-    padding-inline-start: 0.5em;
-}
-
-.list {
-    font-size: 80%;
-    line-height: 1.2;
-    margin: 0;
-    white-space: nowrap;
-    overflow-x: hidden;
-    list-style-position: inside;
-}
-
-.list a {
-    color: black;
-    margin: 0;
-}
-
-
-
-.animate1 {
-    animation-name: bgcolor;
-    animation-duration: 0.75s;
-    animation-iteration-count: 3;
-    animation-fill-mode: backwards;
-}
-
-@keyframes bgcolor {
-    from {
-        background-color: #ffffff;
-    }
-
-    to {
-        background-color: #f3f2f1;
-    }
-}
-
-.small {
-    font-size: 80%;
-    line-height: 1.2;
-    margin: 0;
-}
-
-.list::-webkit-scrollbar {
-    display: none;
-    /* for Chrome, Safari, and Opera */
-}
-
-#topBtn {
-background-image: url("https://static.vecteezy.com/ti/foto-gratuito/p1/3821013-cartone-carta-per-sfondo-vecchia-carta-pergamena-texrture-foto.jpg");
-    opacity:50%;
-}
-.team-profile-card {
-background-image: url("https://st2.depositphotos.com/1006269/5229/i/600/depositphotos_52294747-stock-photo-old-parchment-paper-texture.jpg");
-  filter:sepia(100%);
-      filter:greyscale(50%);
-}
-.note:hover {
-    font-weight: bold !important;
-    color:#c29969;
-}
-
-.modal-content{
-background-image: url("https://st2.depositphotos.com/1006269/5229/i/600/depositphotos_52294747-stock-photo-old-parchment-paper-texture.jpg");
 }
