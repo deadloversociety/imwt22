@@ -605,8 +605,7 @@ ul {
 /* == List of tagged entities == */
 .myBorder {
     border: 0.1em solid black;
-    /*padding: 10px;
-    margin-bottom: 15px;*/
+    padding: 1em;
 }
 
 .tab-pane {
