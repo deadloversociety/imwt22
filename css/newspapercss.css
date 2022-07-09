@@ -195,13 +195,11 @@ a:hover:not(.nav-link) {
     border: 2px solid rgb(0, 0, 0);
     color: black;
     padding: 15px 32px;
-    /* REVISE UNITS*/
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1em;
     margin-bottom: 0.5em;
-    /* REVISE UNITS*/
     cursor: pointer;
     -webkit-transition-duration: 0.4s;
     /* Safari */
@@ -375,10 +373,9 @@ div.columnEu>h3 {
     font-weight: bold;
 }
 
-/*.metadata ol,
-ul {
-    padding-left: 1rem !important;
-}*/
+ol, ul {
+    padding-left: 1rem;
+}
 
 /* == Select the text == */ 
 #list li :hover {
