@@ -221,7 +221,7 @@ a#boomTopBtn:hover {
     height: 100vh;
     min-height: 350px;
     background: no-repeat center center scroll;
-    /* filter: brightness(150%) contrast(200%) opacity(70%); */
+    filter: brightness(150%) contrast(200%) opacity(70%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -408,8 +408,7 @@ html {
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.ilsuperuovo.it/wp-content/uploads/2019/06/gGAnw0h9TdQMfJYqztWBY0MSgdO-1.jpg");
-    /* filter: brightness(200%) contrast(200%) opacity(80%); */
-
+    filter: brightness(200%) contrast(200%) opacity(80%);
 
     /* Set a specific height */
     height: 50%;
@@ -482,8 +481,8 @@ html {
     background-color: #8d7588;
 }
 
-.card {
-    filter: brightness(130%) contrast(150%) saturate(150%) opacity(80%);
+ .card {
+    filter: contrast(150%) opacity(80%);
 }
 
 .card:hover .overlay {
@@ -831,7 +830,7 @@ ul {
 /* ===== DOCUMENTATION ===== */
 #docimg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://repository-images.githubusercontent.com/336619316/423fbd00-6947-11eb-8b86-369ba5ac53dd");
-    /* filter: brightness(200%) contrast(200%) opacity(80%); */
+    filter: brightness(200%) contrast(200%) opacity(80%);
 }
 
 #projintro {
@@ -1003,7 +1002,7 @@ ul {
     transition: .6s;
     border: solid black;
     padding: 0%;
-    /*filter: brightness(150%) contrast(200%) opacity(80%);*/
+    filter: brightness(150%) contrast(200%) opacity(80%);
 }
 
 .team-caption {
