@@ -10,7 +10,12 @@
 	{
 		"label": "Ovid",
 		"url": "articles/ovidio.html"
+	},
+	 {
+		"label": "Trigger",
+		"url": "articles/trigger.html"
 	}
+
 
 
 ]
