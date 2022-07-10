@@ -121,6 +121,12 @@ a.nav-link:hover {
     cursor: pointer;
 }
 
+/* ==== IMAGES FILTER ==== */
+img {
+    filter: brightness(150%) contrast(200%) opacity(70%);
+}
+
+
 /* ===== GO TOP BUTTON =====*/
 #topBtn {
     display: none;
