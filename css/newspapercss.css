@@ -429,7 +429,7 @@ ol, ul {
     border: double black;
 }
 
-.tab-pane { /* Questo tag può essere unito con .tab-pane ul? */
+.tab-pane {
     font-size: 1.15em;
     min-height: 150px;
     width: 100%;
@@ -698,15 +698,3 @@ footer .fa-github {
         column-rule: inset 0.1em;
     }
 }
-
-/* ===== ARTICLES UPLOAD SECTION STYLE + METADATA ===== */
-
-
-
-
-
-
-
-
-
-

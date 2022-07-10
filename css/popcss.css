@@ -640,7 +640,6 @@ ul {
     }
 }
 
-/* NON CAPISCO COSA SIA QUESTO NELL'HTML --> NON DOVREBBE ESSERE UN ID? a quanto pare e nella parte js in fondo a medea.html*/
 .list {
     font-size: 80%;
     line-height: 1.2;
@@ -650,7 +649,6 @@ ul {
     list-style-position: inside;
 }
 
-/* NON CAPISCO COSA SIA QUESTO NELL'HTML --> NON DOVREBBE ESSERE UN ID? a quanto pare e nella parte js in fondo a medea.html*/
 .list a {
     color: black;
     margin: 0;
@@ -798,7 +796,6 @@ ul {
     display: inline-block;
     padding: 0.5em 1em;
     position: relative;
-    /*margin: 0.5%;*/
 }
 
 #OVtextEn::before,
