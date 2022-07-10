@@ -116,7 +116,7 @@ a.nav-link:hover {
 }
 
 /* ==== IMAGES FILTER ==== */
-img:not(.card-img-top) {
+img:not(.card-img-top):not(#logo) {
     filter: brightness(190%) grayscale(100%) opacity(50%) contrast(200%) sepia(25%);
 }
 
@@ -320,7 +320,7 @@ html {
 }
 
 .card {
-    filter: opacity(50%) contrast(150%);
+    filter: sepia(25%) opacity(50%) contrast(150%);
 }
 
 .card:hover .overlay {
