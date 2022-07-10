@@ -253,7 +253,7 @@ html {
     object-fit: cover;
 }
 
-.img {
+img {
     filter:sepia(100%);
 }
 
