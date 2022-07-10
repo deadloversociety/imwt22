@@ -273,7 +273,7 @@ html {
 .image img {
     object-fit: cover;
 }
-.img {
+img {
    filter: brightness(500%);
     filter: opacity(95%);
 }
