@@ -503,6 +503,10 @@ article h3::first-letter {
     font-weight: bold !important;
 }
 
+.modal-content {
+    background-color: #f9f7de;
+}
+
 .animate1 {
     animation-name: bgcolor;
     animation-duration: 0.75s;
@@ -516,7 +520,7 @@ article h3::first-letter {
     }
 
     to {
-        background-color: #cccc00;
+        background-color: #797ad7;
     }
 }
 
