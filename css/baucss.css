@@ -175,8 +175,8 @@ nav {
 .carousel-item {
     height: 100vh;
     min-height: 350px;
-    background: no-repeat center center scroll;
     filter: grayscale(100%);
+    background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -194,9 +194,8 @@ nav {
 
 .buttonHero {
     filter: none !important;
-    background-color: red !important;
+    background-color: black !important;
     border: 1px solid whitesmoke;
-    color: white;
     padding: 15px 32px;
     /* REVISE UNITS*/
     text-align: center;
@@ -210,28 +209,16 @@ nav {
     /* Safari */
     transition-duration: 0.4s;
     border-radius: 4px;
-
-}
-
-.buttonHero:hover {
-    background-color: #764d6e;
-    color: white;
-    text-decoration: none;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-#didocar:hover {
-    background-color: #79432c;
-}
-
-#gincar:hover {
-    background-color: #a3ae8b;
 }
 
 .buttonHero h3 {
     color: white;
+}
+
+.buttonHero:hover {
+    background-color: gray !important;
     text-decoration: none;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 a.btnLink,
@@ -239,7 +226,6 @@ a.btnLink:link,
 a.btnLink:visited,
 a.btnLink:hover,
 a.btnLink:active {
-    color: white;
     text-decoration: none;
 }
 
