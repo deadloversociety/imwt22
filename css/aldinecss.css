@@ -339,8 +339,8 @@ html {
     display: none;
 
 }
-/* == Compare, show, hide text buttons (see: articles html files) == */
 
+/* == Compare, show, hide text buttons (see: articles html files) == */
 .indexcompare {
     padding: 2%;
     margin-top: 2em;
@@ -395,13 +395,16 @@ html {
 .buttonCompText:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 /* == Notes and Tab panes (see: articles html files) == */
 .note:hover {
     font-weight: bold !important;
 }
+
 .modal-content{
     background-image: url("https://st2.depositphotos.com/1006269/5229/i/600/depositphotos_52294747-stock-photo-old-parchment-paper-texture.jpg");
     }
+
 .animate1 {
         animation-name: bgcolor;
         animation-duration: 0.75s;
@@ -419,7 +422,6 @@ html {
 }
     
 /* ==== ORIGINAL TEXT ==== */
-
 #OVoriginalText,
 #ARoriginalText,
 #EUoriginalText {
@@ -428,8 +430,8 @@ html {
     margin: 0px;
     display: none;
 }
-/* ==== ENGLISH TEXT ==== */
 
+/* ==== ENGLISH TEXT ==== */
 #OVtextEn,
 #ARtextEn,
 #EUtextEn {

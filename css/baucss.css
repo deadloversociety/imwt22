@@ -194,10 +194,7 @@ nav {
 
 .buttonHero {
     filter: none !important;
-    background-color: red
-        /*#16161618*/
-         !important;
-    /* PERCHE NON VA!?!?!?!!?!?*/
+    background-color: red !important;
     border: 1px solid whitesmoke;
     color: white;
     padding: 15px 32px;
@@ -390,7 +387,7 @@ article h3::first-letter {
 }
 
 #sentenceTab .nav-link.active {
-    background-color: rgb(181, 76, 76); 
+    background-color: rgb(181, 76, 76);
     color: white !important;
     font-weight: bold;
 }
