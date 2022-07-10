@@ -273,6 +273,10 @@ html {
 .image img {
     object-fit: cover;
 }
+.img {
+   filter: brightness(500%);
+    filter: opacity(95%);
+}
 
 .overlay {
     position: absolute;
