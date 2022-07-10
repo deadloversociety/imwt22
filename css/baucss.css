@@ -410,17 +410,17 @@ article h3::first-letter {
 }
 
 .text-charmortal {
-    background-color: #91144e;
+    background-color: rgb(181, 76, 76);
     color: white;
 }
 
 .text-charimmortal {
-    background-color: #4f186b;
+    background-color: rgb(42, 45, 110);
     color: white;
 }
 
 .text-places {
-    background-color: #ad6d37;
+    background-color: #ada641;
     color: white;
 }
 
@@ -503,6 +503,10 @@ article h3::first-letter {
     font-weight: bold !important;
 }
 
+.modal-content {
+    background-color: #f9f7de;
+}
+
 .animate1 {
     animation-name: bgcolor;
     animation-duration: 0.75s;
@@ -516,7 +520,7 @@ article h3::first-letter {
     }
 
     to {
-        background-color: #cccc00;
+        background-color: #797ad7;
     }
 }
 

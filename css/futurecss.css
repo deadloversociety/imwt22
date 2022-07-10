@@ -528,6 +528,10 @@ html {
     font-weight: bold !important;
 }
 
+.modal-content {
+    background-image: linear-gradient(to right, #cbffe6 , #feffbe);
+}
+
 .animate1 {
     animation-name: bgcolor;
     animation-duration: 0.75s;
@@ -541,7 +545,7 @@ html {
     }
 
     to {
-        background-color: #cccc00;
+        background-color: #fcde18;
     }
 }
 
