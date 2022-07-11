@@ -116,7 +116,7 @@ a.nav-link:hover {
 }
 
 /* ==== IMAGES FILTER ==== */
-img:not(.card-img-top):not(#logo) {
+img:not(.card-img-top):not(#logo):not(#handTopBtn) {
     filter: brightness(190%) grayscale(100%) opacity(50%) contrast(200%) sepia(25%);
 }
 
