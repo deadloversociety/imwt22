@@ -283,7 +283,7 @@ function abortShaking() {
     clearTimeout(logoTimer);
     logo.classList.remove("shake");
   }
-  // Change the icon to th original png
+  // Change the icon to the original png
   logo.src = "imgs/heart.png";
   dead.style.fontStyle = "normal";
 }
